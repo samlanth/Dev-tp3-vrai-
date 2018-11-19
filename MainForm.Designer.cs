@@ -57,7 +57,7 @@
             this.groupBox1.Controls.Add(this.CBX_UsersList);
             this.groupBox1.Location = new System.Drawing.Point(245, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(227, 59);
+            this.groupBox1.Size = new System.Drawing.Size(227, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -95,28 +95,28 @@
             // MI_Account_Login
             // 
             this.MI_Account_Login.Name = "MI_Account_Login";
-            this.MI_Account_Login.Size = new System.Drawing.Size(180, 22);
+            this.MI_Account_Login.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Login.Text = "Login";
             this.MI_Account_Login.Click += new System.EventHandler(this.MI_Account_Login_Click);
             // 
             // MI_Account_Profil
             // 
             this.MI_Account_Profil.Name = "MI_Account_Profil";
-            this.MI_Account_Profil.Size = new System.Drawing.Size(180, 22);
+            this.MI_Account_Profil.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Profil.Text = "Profil";
             this.MI_Account_Profil.Click += new System.EventHandler(this.MI_Account_Profil_Click);
             // 
             // Mi_Account_Create
             // 
             this.Mi_Account_Create.Name = "Mi_Account_Create";
-            this.Mi_Account_Create.Size = new System.Drawing.Size(180, 22);
+            this.Mi_Account_Create.Size = new System.Drawing.Size(108, 22);
             this.Mi_Account_Create.Text = "Create";
             this.Mi_Account_Create.Click += new System.EventHandler(this.Mi_Account_Create_Click);
             // 
             // MI_Account_Exit
             // 
             this.MI_Account_Exit.Name = "MI_Account_Exit";
-            this.MI_Account_Exit.Size = new System.Drawing.Size(180, 22);
+            this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Exit.Text = "Exit";
             // 
             // groupBox2
@@ -124,7 +124,7 @@
             this.groupBox2.Controls.Add(this.CBX_Keywords);
             this.groupBox2.Location = new System.Drawing.Point(478, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 59);
+            this.groupBox2.Size = new System.Drawing.Size(170, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
@@ -147,7 +147,7 @@
             this.groupBox3.Controls.Add(this.BTN_Left);
             this.groupBox3.Location = new System.Drawing.Point(995, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(146, 59);
+            this.groupBox3.Size = new System.Drawing.Size(146, 105);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Placement";
@@ -200,7 +200,7 @@
             // 
             this.groupBox4.Location = new System.Drawing.Point(12, 27);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(227, 59);
+            this.groupBox4.Size = new System.Drawing.Size(227, 105);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Commands";
@@ -209,7 +209,7 @@
             // 
             this.groupBox5.Location = new System.Drawing.Point(654, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(336, 59);
+            this.groupBox5.Size = new System.Drawing.Size(336, 105);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
@@ -219,7 +219,7 @@
             this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 92);
+            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
             this.PhotoBrowser.Name = "PhotoBrowser";
             this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
             this.PhotoBrowser.SelectedPhoto = null;
