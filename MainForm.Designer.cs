@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CBX_UsersList = new System.Windows.Forms.ComboBox();
             this.MS_Account = new System.Windows.Forms.MenuStrip();
@@ -44,12 +45,19 @@
             this.BTN_Top = new System.Windows.Forms.Button();
             this.BTN_Left = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.flashButton1 = new PhotoManagerClient.FlashButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.flashButton4 = new PhotoManagerClient.FlashButton();
+            this.flashButton3 = new PhotoManagerClient.FlashButton();
+            this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -198,12 +206,29 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.flashButton1);
             this.groupBox4.Location = new System.Drawing.Point(12, 27);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(227, 105);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Commands";
+            // 
+            // flashButton1
+            // 
+            this.flashButton1.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
+            this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton1.ClickedImage = null;
+            this.flashButton1.DisabledImage = null;
+            this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
+            this.flashButton1.Location = new System.Drawing.Point(6, 41);
+            this.flashButton1.Name = "flashButton1";
+            this.flashButton1.NeutralImage = null;
+            this.flashButton1.OverImage = null;
+            this.flashButton1.Size = new System.Drawing.Size(33, 31);
+            this.flashButton1.TabIndex = 3;
+            this.flashButton1.Text = "flashButton1";
+            this.flashButton1.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -226,6 +251,66 @@
             this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
             this.PhotoBrowser.TabIndex = 0;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.flashButton4);
+            this.groupBox6.Controls.Add(this.flashButton3);
+            this.groupBox6.Controls.Add(this.flashButton2);
+            this.groupBox6.Location = new System.Drawing.Point(12, 27);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(227, 105);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Commands";
+            // 
+            // flashButton4
+            // 
+            this.flashButton4.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Editer_Neutre;
+            this.flashButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton4.ClickedImage = null;
+            this.flashButton4.DisabledImage = null;
+            this.flashButton4.Image = ((System.Drawing.Image)(resources.GetObject("flashButton4.Image")));
+            this.flashButton4.Location = new System.Drawing.Point(84, 41);
+            this.flashButton4.Name = "flashButton4";
+            this.flashButton4.NeutralImage = null;
+            this.flashButton4.OverImage = null;
+            this.flashButton4.Size = new System.Drawing.Size(33, 31);
+            this.flashButton4.TabIndex = 3;
+            this.flashButton4.Text = "flashButton1";
+            this.flashButton4.UseVisualStyleBackColor = true;
+            // 
+            // flashButton3
+            // 
+            this.flashButton3.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Delete_Neutral;
+            this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton3.ClickedImage = null;
+            this.flashButton3.DisabledImage = null;
+            this.flashButton3.Image = ((System.Drawing.Image)(resources.GetObject("flashButton3.Image")));
+            this.flashButton3.Location = new System.Drawing.Point(45, 41);
+            this.flashButton3.Name = "flashButton3";
+            this.flashButton3.NeutralImage = null;
+            this.flashButton3.OverImage = null;
+            this.flashButton3.Size = new System.Drawing.Size(33, 31);
+            this.flashButton3.TabIndex = 3;
+            this.flashButton3.Text = "flashButton1";
+            this.flashButton3.UseVisualStyleBackColor = true;
+            // 
+            // flashButton2
+            // 
+            this.flashButton2.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
+            this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton2.ClickedImage = null;
+            this.flashButton2.DisabledImage = null;
+            this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
+            this.flashButton2.Location = new System.Drawing.Point(6, 41);
+            this.flashButton2.Name = "flashButton2";
+            this.flashButton2.NeutralImage = null;
+            this.flashButton2.OverImage = null;
+            this.flashButton2.Size = new System.Drawing.Size(33, 31);
+            this.flashButton2.TabIndex = 3;
+            this.flashButton2.Text = "flashButton1";
+            this.flashButton2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -234,6 +319,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.PhotoBrowser);
@@ -250,6 +336,8 @@
             this.MS_Account.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,6 +363,11 @@
         private System.Windows.Forms.Button BTN_Left;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
+        private PhotoManagerClient.FlashButton flashButton1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private PhotoManagerClient.FlashButton flashButton4;
+        private PhotoManagerClient.FlashButton flashButton3;
+        private PhotoManagerClient.FlashButton flashButton2;
     }
 }
 
