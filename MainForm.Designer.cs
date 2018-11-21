@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.CBX_UsersList = new System.Windows.Forms.ComboBox();
             this.MS_Account = new System.Windows.Forms.MenuStrip();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +39,7 @@
             this.Mi_Account_Create = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_Account_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.CBX_Keywords = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Bottom = new System.Windows.Forms.Button();
@@ -46,17 +48,21 @@
             this.BTN_Left = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.topToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
             this.flashButton4 = new PhotoManagerClient.FlashButton();
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.flashButton1 = new PhotoManagerClient.FlashButton();
-            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
+            this.flashButton5 = new PhotoManagerClient.FlashButton();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,6 +83,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 23);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(222, 24);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Ne pas afficher mes photos";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // CBX_UsersList
             // 
             this.CBX_UsersList.FormattingEnabled = true;
@@ -89,7 +105,8 @@
             // MS_Account
             // 
             this.MS_Account.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.accountToolStripMenuItem});
+            this.accountToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.MS_Account.Location = new System.Drawing.Point(0, 0);
             this.MS_Account.Name = "MS_Account";
             this.MS_Account.Size = new System.Drawing.Size(1153, 24);
@@ -144,6 +161,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(205, 24);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Recherche avec keyword";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // CBX_Keywords
             // 
@@ -234,38 +261,6 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
             // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.flashButton4);
-            this.groupBox6.Controls.Add(this.flashButton3);
-            this.groupBox6.Controls.Add(this.flashButton2);
-            this.groupBox6.Location = new System.Drawing.Point(12, 27);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(177, 105);
-            this.groupBox6.TabIndex = 1;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Commands";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(205, 24);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Recherche avec keyword";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 23);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(222, 24);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Ne pas afficher mes photos";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
@@ -274,15 +269,6 @@
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 28);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -293,9 +279,77 @@
             this.comboBox2.TabIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(45, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(197, 28);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.flashButton5);
+            this.groupBox6.Controls.Add(this.flashButton4);
+            this.groupBox6.Controls.Add(this.flashButton3);
+            this.groupBox6.Controls.Add(this.flashButton2);
+            this.groupBox6.Location = new System.Drawing.Point(12, 27);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(177, 105);
+            this.groupBox6.TabIndex = 1;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Commands";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.topToolStripMenuItem,
+            this.downToolStripMenuItem,
+            this.leftToolStripMenuItem,
+            this.rightToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(55, 20);
+            this.toolStripMenuItem1.Text = "Layout";
+            // 
+            // topToolStripMenuItem
+            // 
+            this.topToolStripMenuItem.Name = "topToolStripMenuItem";
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.topToolStripMenuItem.Text = "Top";
+            // 
+            // downToolStripMenuItem
+            // 
+            this.downToolStripMenuItem.Name = "downToolStripMenuItem";
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.downToolStripMenuItem.Text = "Down";
+            // 
+            // leftToolStripMenuItem
+            // 
+            this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
+            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.leftToolStripMenuItem.Text = "Left";
+            // 
+            // rightToolStripMenuItem
+            // 
+            this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
+            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.rightToolStripMenuItem.Text = "Right";
+            // 
+            // PhotoBrowser
+            // 
+            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
+            this.PhotoBrowser.Name = "PhotoBrowser";
+            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
+            this.PhotoBrowser.SelectedPhoto = null;
+            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
+            this.PhotoBrowser.TabIndex = 0;
+            // 
             // flashButton4
             // 
-            this.flashButton4.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Editer_Neutre;
             this.flashButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton4.ClickedImage = null;
             this.flashButton4.DisabledImage = null;
@@ -311,7 +365,6 @@
             // 
             // flashButton3
             // 
-            this.flashButton3.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Delete_Neutral;
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
@@ -327,7 +380,6 @@
             // 
             // flashButton2
             // 
-            this.flashButton2.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
             this.flashButton2.DisabledImage = null;
@@ -357,17 +409,21 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             // 
-            // PhotoBrowser
+            // flashButton5
             // 
-            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
-            this.PhotoBrowser.Name = "PhotoBrowser";
-            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
-            this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
-            this.PhotoBrowser.TabIndex = 0;
+            this.flashButton5.BackgroundImage = global::Client_PM.Properties.Resources.female_eye1;
+            this.flashButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton5.ClickedImage = null;
+            this.flashButton5.DisabledImage = null;
+            this.flashButton5.Image = ((System.Drawing.Image)(resources.GetObject("flashButton5.Image")));
+            this.flashButton5.Location = new System.Drawing.Point(123, 38);
+            this.flashButton5.Name = "flashButton5";
+            this.flashButton5.NeutralImage = null;
+            this.flashButton5.OverImage = null;
+            this.flashButton5.Size = new System.Drawing.Size(36, 36);
+            this.flashButton5.TabIndex = 4;
+            this.flashButton5.Text = "flashButton5";
+            this.flashButton5.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -436,6 +492,12 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem topToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem downToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem leftToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rightToolStripMenuItem;
+        private PhotoManagerClient.FlashButton flashButton5;
     }
 }
 
