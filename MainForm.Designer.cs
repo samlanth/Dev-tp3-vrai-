@@ -38,6 +38,11 @@
             this.MI_Account_Profil = new System.Windows.Forms.ToolStripMenuItem();
             this.Mi_Account_Create = new System.Windows.Forms.ToolStripMenuItem();
             this.MI_Account_Exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.topToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.CBX_Keywords = new System.Windows.Forms.ComboBox();
@@ -52,17 +57,12 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.topToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.downToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
+            this.flashButton5 = new PhotoManagerClient.FlashButton();
             this.flashButton4 = new PhotoManagerClient.FlashButton();
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.flashButton1 = new PhotoManagerClient.FlashButton();
-            this.flashButton5 = new PhotoManagerClient.FlashButton();
+            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -150,6 +150,41 @@
             this.MI_Account_Exit.Name = "MI_Account_Exit";
             this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Exit.Text = "Exit";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.topToolStripMenuItem,
+            this.downToolStripMenuItem,
+            this.leftToolStripMenuItem,
+            this.rightToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(55, 20);
+            this.toolStripMenuItem1.Text = "Layout";
+            // 
+            // topToolStripMenuItem
+            // 
+            this.topToolStripMenuItem.Name = "topToolStripMenuItem";
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.topToolStripMenuItem.Text = "Top";
+            // 
+            // downToolStripMenuItem
+            // 
+            this.downToolStripMenuItem.Name = "downToolStripMenuItem";
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.downToolStripMenuItem.Text = "Down";
+            // 
+            // leftToolStripMenuItem
+            // 
+            this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
+            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.leftToolStripMenuItem.Text = "Left";
+            // 
+            // rightToolStripMenuItem
+            // 
+            this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
+            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.rightToolStripMenuItem.Text = "Right";
             // 
             // groupBox2
             // 
@@ -301,55 +336,25 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
             // 
-            // toolStripMenuItem1
+            // flashButton5
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.topToolStripMenuItem,
-            this.downToolStripMenuItem,
-            this.leftToolStripMenuItem,
-            this.rightToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(55, 20);
-            this.toolStripMenuItem1.Text = "Layout";
-            // 
-            // topToolStripMenuItem
-            // 
-            this.topToolStripMenuItem.Name = "topToolStripMenuItem";
-            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.topToolStripMenuItem.Text = "Top";
-            // 
-            // downToolStripMenuItem
-            // 
-            this.downToolStripMenuItem.Name = "downToolStripMenuItem";
-            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.downToolStripMenuItem.Text = "Down";
-            // 
-            // leftToolStripMenuItem
-            // 
-            this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
-            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.leftToolStripMenuItem.Text = "Left";
-            // 
-            // rightToolStripMenuItem
-            // 
-            this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
-            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.rightToolStripMenuItem.Text = "Right";
-            // 
-            // PhotoBrowser
-            // 
-            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
-            this.PhotoBrowser.Name = "PhotoBrowser";
-            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
-            this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
-            this.PhotoBrowser.TabIndex = 0;
+            this.flashButton5.BackgroundImage = global::Client_PM.Properties.Resources._201_spy_eyes;
+            this.flashButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton5.ClickedImage = null;
+            this.flashButton5.DisabledImage = null;
+            this.flashButton5.Image = ((System.Drawing.Image)(resources.GetObject("flashButton5.Image")));
+            this.flashButton5.Location = new System.Drawing.Point(123, 38);
+            this.flashButton5.Name = "flashButton5";
+            this.flashButton5.NeutralImage = null;
+            this.flashButton5.OverImage = null;
+            this.flashButton5.Size = new System.Drawing.Size(36, 36);
+            this.flashButton5.TabIndex = 4;
+            this.flashButton5.Text = "flashButton5";
+            this.flashButton5.UseVisualStyleBackColor = true;
             // 
             // flashButton4
             // 
+            this.flashButton4.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Delete_Neutral;
             this.flashButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton4.ClickedImage = null;
             this.flashButton4.DisabledImage = null;
@@ -365,6 +370,7 @@
             // 
             // flashButton3
             // 
+            this.flashButton3.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Annuler_Neutral;
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
@@ -380,6 +386,7 @@
             // 
             // flashButton2
             // 
+            this.flashButton2.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
             this.flashButton2.DisabledImage = null;
@@ -409,21 +416,17 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             // 
-            // flashButton5
+            // PhotoBrowser
             // 
-            this.flashButton5.BackgroundImage = global::Client_PM.Properties.Resources.female_eye1;
-            this.flashButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flashButton5.ClickedImage = null;
-            this.flashButton5.DisabledImage = null;
-            this.flashButton5.Image = ((System.Drawing.Image)(resources.GetObject("flashButton5.Image")));
-            this.flashButton5.Location = new System.Drawing.Point(123, 38);
-            this.flashButton5.Name = "flashButton5";
-            this.flashButton5.NeutralImage = null;
-            this.flashButton5.OverImage = null;
-            this.flashButton5.Size = new System.Drawing.Size(36, 36);
-            this.flashButton5.TabIndex = 4;
-            this.flashButton5.Text = "flashButton5";
-            this.flashButton5.UseVisualStyleBackColor = true;
+            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
+            this.PhotoBrowser.Name = "PhotoBrowser";
+            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
+            this.PhotoBrowser.SelectedPhoto = null;
+            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
+            this.PhotoBrowser.TabIndex = 0;
             // 
             // MainForm
             // 

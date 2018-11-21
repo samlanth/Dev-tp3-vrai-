@@ -213,5 +213,8 @@
   <ItemGroup>
     <None Include="female-eye.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="201-spy-eyes.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
