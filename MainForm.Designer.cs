@@ -45,27 +45,34 @@
             this.BTN_Top = new System.Windows.Forms.Button();
             this.BTN_Left = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.flashButton1 = new PhotoManagerClient.FlashButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.flashButton4 = new PhotoManagerClient.FlashButton();
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
+            this.flashButton1 = new PhotoManagerClient.FlashButton();
+            this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.CBX_UsersList);
-            this.groupBox1.Location = new System.Drawing.Point(245, 27);
+            this.groupBox1.Location = new System.Drawing.Point(451, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(227, 105);
+            this.groupBox1.Size = new System.Drawing.Size(247, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -73,9 +80,9 @@
             // CBX_UsersList
             // 
             this.CBX_UsersList.FormattingEnabled = true;
-            this.CBX_UsersList.Location = new System.Drawing.Point(6, 25);
+            this.CBX_UsersList.Location = new System.Drawing.Point(6, 61);
             this.CBX_UsersList.Name = "CBX_UsersList";
-            this.CBX_UsersList.Size = new System.Drawing.Size(215, 28);
+            this.CBX_UsersList.Size = new System.Drawing.Size(225, 28);
             this.CBX_UsersList.TabIndex = 0;
             this.CBX_UsersList.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
@@ -129,10 +136,11 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
-            this.groupBox2.Location = new System.Drawing.Point(478, 27);
+            this.groupBox2.Location = new System.Drawing.Point(195, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(170, 105);
+            this.groupBox2.Size = new System.Drawing.Size(250, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
@@ -140,9 +148,9 @@
             // CBX_Keywords
             // 
             this.CBX_Keywords.FormattingEnabled = true;
-            this.CBX_Keywords.Location = new System.Drawing.Point(6, 25);
+            this.CBX_Keywords.Location = new System.Drawing.Point(6, 61);
             this.CBX_Keywords.Name = "CBX_Keywords";
-            this.CBX_Keywords.Size = new System.Drawing.Size(155, 28);
+            this.CBX_Keywords.Size = new System.Drawing.Size(225, 28);
             this.CBX_Keywords.TabIndex = 0;
             this.CBX_Keywords.SelectedIndexChanged += new System.EventHandler(this.CBX_Keywords_SelectedIndexChanged);
             // 
@@ -153,9 +161,9 @@
             this.groupBox3.Controls.Add(this.BTN_Right);
             this.groupBox3.Controls.Add(this.BTN_Top);
             this.groupBox3.Controls.Add(this.BTN_Left);
-            this.groupBox3.Location = new System.Drawing.Point(995, 27);
+            this.groupBox3.Location = new System.Drawing.Point(958, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(146, 105);
+            this.groupBox3.Size = new System.Drawing.Size(183, 105);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Placement";
@@ -209,47 +217,22 @@
             this.groupBox4.Controls.Add(this.flashButton1);
             this.groupBox4.Location = new System.Drawing.Point(12, 27);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(227, 105);
+            this.groupBox4.Size = new System.Drawing.Size(177, 105);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Commands";
             // 
-            // flashButton1
-            // 
-            this.flashButton1.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
-            this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flashButton1.ClickedImage = null;
-            this.flashButton1.DisabledImage = null;
-            this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(6, 41);
-            this.flashButton1.Name = "flashButton1";
-            this.flashButton1.NeutralImage = null;
-            this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(33, 31);
-            this.flashButton1.TabIndex = 3;
-            this.flashButton1.Text = "flashButton1";
-            this.flashButton1.UseVisualStyleBackColor = true;
-            // 
             // groupBox5
             // 
-            this.groupBox5.Location = new System.Drawing.Point(654, 27);
+            this.groupBox5.Controls.Add(this.checkBox3);
+            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Location = new System.Drawing.Point(704, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(336, 105);
+            this.groupBox5.Size = new System.Drawing.Size(248, 105);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
-            // 
-            // PhotoBrowser
-            // 
-            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
-            this.PhotoBrowser.Name = "PhotoBrowser";
-            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
-            this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
-            this.PhotoBrowser.TabIndex = 0;
             // 
             // groupBox6
             // 
@@ -258,10 +241,57 @@
             this.groupBox6.Controls.Add(this.flashButton2);
             this.groupBox6.Location = new System.Drawing.Point(12, 27);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(227, 105);
+            this.groupBox6.Size = new System.Drawing.Size(177, 105);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(205, 24);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.Text = "Recherche avec keyword";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 23);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(222, 24);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Ne pas afficher mes photos";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(9, 28);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 3;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(45, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(197, 28);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(45, 61);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(197, 28);
+            this.comboBox2.TabIndex = 0;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
             // flashButton4
             // 
@@ -311,6 +341,34 @@
             this.flashButton2.Text = "flashButton1";
             this.flashButton2.UseVisualStyleBackColor = true;
             // 
+            // flashButton1
+            // 
+            this.flashButton1.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
+            this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flashButton1.ClickedImage = null;
+            this.flashButton1.DisabledImage = null;
+            this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
+            this.flashButton1.Location = new System.Drawing.Point(6, 41);
+            this.flashButton1.Name = "flashButton1";
+            this.flashButton1.NeutralImage = null;
+            this.flashButton1.OverImage = null;
+            this.flashButton1.Size = new System.Drawing.Size(33, 31);
+            this.flashButton1.TabIndex = 3;
+            this.flashButton1.Text = "flashButton1";
+            this.flashButton1.UseVisualStyleBackColor = true;
+            // 
+            // PhotoBrowser
+            // 
+            this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
+            this.PhotoBrowser.Name = "PhotoBrowser";
+            this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
+            this.PhotoBrowser.SelectedPhoto = null;
+            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
+            this.PhotoBrowser.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -318,10 +376,10 @@
             this.ClientSize = new System.Drawing.Size(1153, 674);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.PhotoBrowser);
             this.Controls.Add(this.MS_Account);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -330,13 +388,18 @@
             this.MinimumSize = new System.Drawing.Size(1169, 713);
             this.Name = "MainForm";
             this.Text = "Photo manager client application";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.MS_Account.ResumeLayout(false);
             this.MS_Account.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -368,6 +431,11 @@
         private PhotoManagerClient.FlashButton flashButton4;
         private PhotoManagerClient.FlashButton flashButton3;
         private PhotoManagerClient.FlashButton flashButton2;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjouterPhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterPhoto.Designer.cs">
+      <DependentUpon>AjouterPhoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="DLG_Account.cs">
       <SubType>Form</SubType>
     </Compile>

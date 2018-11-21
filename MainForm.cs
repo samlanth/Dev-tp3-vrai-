@@ -175,5 +175,10 @@ namespace Client_PM
                 Setup_Logged_User();
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
