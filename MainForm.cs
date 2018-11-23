@@ -177,9 +177,28 @@ namespace Client_PM
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void AddNewPhoto_Click(object sender, EventArgs e)
         {
+            AjouterPhoto dlg = new AjouterPhoto();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+            }
+        }
 
+        private void EditerPhoto_Click(object sender, EventArgs e)
+        {
+            Update dlg = new Update();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+            }
+        }
+
+        private void ViewPhoto_Click(object sender, EventArgs e)
+        {
+            View dlg = new View();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+            }
         }
     }
 }

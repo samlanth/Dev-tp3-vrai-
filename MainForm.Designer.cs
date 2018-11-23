@@ -57,16 +57,16 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.ViewPhoto = new PhotoManagerClient.FlashButton();
+            this.DeletePhoto = new PhotoManagerClient.FlashButton();
+            this.EditerPhoto = new PhotoManagerClient.FlashButton();
+            this.AddNewPhoto = new PhotoManagerClient.FlashButton();
             this.PhotoBrowser = new PhotoManagerClient.PhotosBrowser();
             this.flashButton5 = new PhotoManagerClient.FlashButton();
             this.flashButton4 = new PhotoManagerClient.FlashButton();
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.flashButton1 = new PhotoManagerClient.FlashButton();
-            this.AddNewPhoto = new PhotoManagerClient.FlashButton();
-            this.EditerPhoto = new PhotoManagerClient.FlashButton();
-            this.DeletePhoto = new PhotoManagerClient.FlashButton();
-            this.ViewPhoto = new PhotoManagerClient.FlashButton();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -338,6 +338,69 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
             // 
+            // ViewPhoto
+            // 
+            this.ViewPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.BackgroundImage")));
+            this.ViewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ViewPhoto.ClickedImage = null;
+            this.ViewPhoto.DisabledImage = null;
+            this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
+            this.ViewPhoto.Location = new System.Drawing.Point(132, 41);
+            this.ViewPhoto.Name = "ViewPhoto";
+            this.ViewPhoto.NeutralImage = null;
+            this.ViewPhoto.OverImage = null;
+            this.ViewPhoto.Size = new System.Drawing.Size(36, 36);
+            this.ViewPhoto.TabIndex = 6;
+            this.ViewPhoto.UseVisualStyleBackColor = true;
+            this.ViewPhoto.Click += new System.EventHandler(this.ViewPhoto_Click);
+            // 
+            // DeletePhoto
+            // 
+            this.DeletePhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.BackgroundImage")));
+            this.DeletePhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DeletePhoto.ClickedImage = null;
+            this.DeletePhoto.DisabledImage = null;
+            this.DeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.Image")));
+            this.DeletePhoto.Location = new System.Drawing.Point(90, 41);
+            this.DeletePhoto.Name = "DeletePhoto";
+            this.DeletePhoto.NeutralImage = null;
+            this.DeletePhoto.OverImage = null;
+            this.DeletePhoto.Size = new System.Drawing.Size(36, 36);
+            this.DeletePhoto.TabIndex = 5;
+            this.DeletePhoto.UseVisualStyleBackColor = true;
+            // 
+            // EditerPhoto
+            // 
+            this.EditerPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.BackgroundImage")));
+            this.EditerPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.EditerPhoto.ClickedImage = null;
+            this.EditerPhoto.DisabledImage = null;
+            this.EditerPhoto.Image = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.Image")));
+            this.EditerPhoto.Location = new System.Drawing.Point(48, 41);
+            this.EditerPhoto.Name = "EditerPhoto";
+            this.EditerPhoto.NeutralImage = null;
+            this.EditerPhoto.OverImage = null;
+            this.EditerPhoto.Size = new System.Drawing.Size(36, 36);
+            this.EditerPhoto.TabIndex = 4;
+            this.EditerPhoto.UseVisualStyleBackColor = true;
+            this.EditerPhoto.Click += new System.EventHandler(this.EditerPhoto_Click);
+            // 
+            // AddNewPhoto
+            // 
+            this.AddNewPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.BackgroundImage")));
+            this.AddNewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AddNewPhoto.ClickedImage = null;
+            this.AddNewPhoto.DisabledImage = null;
+            this.AddNewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.Image")));
+            this.AddNewPhoto.Location = new System.Drawing.Point(6, 41);
+            this.AddNewPhoto.Name = "AddNewPhoto";
+            this.AddNewPhoto.NeutralImage = null;
+            this.AddNewPhoto.OverImage = null;
+            this.AddNewPhoto.Size = new System.Drawing.Size(36, 36);
+            this.AddNewPhoto.TabIndex = 3;
+            this.AddNewPhoto.UseVisualStyleBackColor = true;
+            this.AddNewPhoto.Click += new System.EventHandler(this.AddNewPhoto_Click);
+            // 
             // PhotoBrowser
             // 
             this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -425,66 +488,6 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             // 
-            // AddNewPhoto
-            // 
-            this.AddNewPhoto.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
-            this.AddNewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AddNewPhoto.ClickedImage = null;
-            this.AddNewPhoto.DisabledImage = null;
-            this.AddNewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.Image")));
-            this.AddNewPhoto.Location = new System.Drawing.Point(6, 41);
-            this.AddNewPhoto.Name = "AddNewPhoto";
-            this.AddNewPhoto.NeutralImage = null;
-            this.AddNewPhoto.OverImage = null;
-            this.AddNewPhoto.Size = new System.Drawing.Size(36, 36);
-            this.AddNewPhoto.TabIndex = 3;
-            this.AddNewPhoto.UseVisualStyleBackColor = true;
-            // 
-            // EditerPhoto
-            // 
-            this.EditerPhoto.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Editer_Neutre;
-            this.EditerPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.EditerPhoto.ClickedImage = null;
-            this.EditerPhoto.DisabledImage = null;
-            this.EditerPhoto.Image = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.Image")));
-            this.EditerPhoto.Location = new System.Drawing.Point(48, 41);
-            this.EditerPhoto.Name = "EditerPhoto";
-            this.EditerPhoto.NeutralImage = null;
-            this.EditerPhoto.OverImage = null;
-            this.EditerPhoto.Size = new System.Drawing.Size(36, 36);
-            this.EditerPhoto.TabIndex = 4;
-            this.EditerPhoto.UseVisualStyleBackColor = true;
-            // 
-            // DeletePhoto
-            // 
-            this.DeletePhoto.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Delete_Neutral;
-            this.DeletePhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DeletePhoto.ClickedImage = null;
-            this.DeletePhoto.DisabledImage = null;
-            this.DeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.Image")));
-            this.DeletePhoto.Location = new System.Drawing.Point(90, 41);
-            this.DeletePhoto.Name = "DeletePhoto";
-            this.DeletePhoto.NeutralImage = null;
-            this.DeletePhoto.OverImage = null;
-            this.DeletePhoto.Size = new System.Drawing.Size(36, 36);
-            this.DeletePhoto.TabIndex = 5;
-            this.DeletePhoto.UseVisualStyleBackColor = true;
-            // 
-            // ViewPhoto
-            // 
-            this.ViewPhoto.BackgroundImage = global::Client_PM.Properties.Resources._201_spy_eyes;
-            this.ViewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ViewPhoto.ClickedImage = null;
-            this.ViewPhoto.DisabledImage = null;
-            this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
-            this.ViewPhoto.Location = new System.Drawing.Point(132, 41);
-            this.ViewPhoto.Name = "ViewPhoto";
-            this.ViewPhoto.NeutralImage = null;
-            this.ViewPhoto.OverImage = null;
-            this.ViewPhoto.Size = new System.Drawing.Size(36, 36);
-            this.ViewPhoto.TabIndex = 6;
-            this.ViewPhoto.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -504,7 +507,6 @@
             this.MinimumSize = new System.Drawing.Size(1169, 713);
             this.Name = "MainForm";
             this.Text = "Photo manager client application";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
