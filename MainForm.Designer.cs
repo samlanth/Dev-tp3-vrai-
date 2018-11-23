@@ -275,8 +275,7 @@
             this.BTN_Left.Click += new System.EventHandler(this.BTN_Left_Click);
             // 
             // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.flashButton1);
+            //
             this.groupBox4.Location = new System.Drawing.Point(12, 27);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(177, 105);
@@ -325,10 +324,6 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.flashButton5);
-            this.groupBox6.Controls.Add(this.flashButton4);
-            this.groupBox6.Controls.Add(this.flashButton3);
-            this.groupBox6.Controls.Add(this.flashButton2);
             this.groupBox6.Location = new System.Drawing.Point(12, 27);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(177, 105);
@@ -337,13 +332,12 @@
             this.groupBox6.Text = "Commands";
             // 
             // flashButton5
-            // 
-            this.flashButton5.BackgroundImage = global::Client_PM.Properties.Resources._201_spy_eyes;
+            //
             this.flashButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton5.ClickedImage = null;
             this.flashButton5.DisabledImage = null;
             this.flashButton5.Image = ((System.Drawing.Image)(resources.GetObject("flashButton5.Image")));
-            this.flashButton5.Location = new System.Drawing.Point(123, 38);
+            this.flashButton5.Location = new System.Drawing.Point(123, 41);
             this.flashButton5.Name = "flashButton5";
             this.flashButton5.NeutralImage = null;
             this.flashButton5.OverImage = null;
@@ -353,8 +347,7 @@
             this.flashButton5.UseVisualStyleBackColor = true;
             // 
             // flashButton4
-            // 
-            this.flashButton4.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Delete_Neutral;
+            //
             this.flashButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton4.ClickedImage = null;
             this.flashButton4.DisabledImage = null;
@@ -369,8 +362,7 @@
             this.flashButton4.UseVisualStyleBackColor = true;
             // 
             // flashButton3
-            // 
-            this.flashButton3.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Annuler_Neutral;
+            //
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
@@ -385,8 +377,7 @@
             this.flashButton3.UseVisualStyleBackColor = true;
             // 
             // flashButton2
-            // 
-            this.flashButton2.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
+            //
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
             this.flashButton2.DisabledImage = null;
@@ -401,8 +392,7 @@
             this.flashButton2.UseVisualStyleBackColor = true;
             // 
             // flashButton1
-            // 
-            this.flashButton1.BackgroundImage = global::Client_PM.Properties.Resources.ICON_Add_Neutral;
+            //
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;

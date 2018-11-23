@@ -118,61 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ICON_ADD_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_ADD_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_Add_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Add_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ICON_Annuler_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Annuler_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_ADD_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_ADD_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_Add_Neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Add_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Photos\ICON_Add_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_Add_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Add_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Delete_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Delete_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Delete_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Delete_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Editer_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Editer_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Add_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Add_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Annuler_Neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Annuler_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Delete_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Delete_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Editer_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Editer_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Photos\ICON_Add_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_Annuler_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Annuler_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Photos\ICON_Annuler_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Annuler_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Annuler_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Annuler_Neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Annuler_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_Annuler_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Annuler_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Photos\ICON_Annuler_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="female-eye1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\female-eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_Delete_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Delete_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="female-eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\female-eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Editer_Neutre" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Editer_Neutre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICON_Editer_Survol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Editer_Survol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_Delete_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Delete_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ICON_Delete_Neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\ICON_Delete_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Photos\ICON_Delete_Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="201-spy-eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\201-spy-eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ICON_Delete_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Delete_Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Editer_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Editer_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Editer_Disable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Editer_Disable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Editer_Neutre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Editer_Neutre.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICON_Editer_Survol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\ICON_Editer_Survol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_201_spy_eyes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Photos\201-spy-eyes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
