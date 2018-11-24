@@ -58,14 +58,14 @@
             // 
             // TBX_UserName
             // 
-            this.TBX_UserName.Location = new System.Drawing.Point(377, 28);
+            this.TBX_UserName.Location = new System.Drawing.Point(99, 31);
             this.TBX_UserName.Name = "TBX_UserName";
             this.TBX_UserName.Size = new System.Drawing.Size(188, 26);
             this.TBX_UserName.TabIndex = 0;
             // 
             // TBX_Password
             // 
-            this.TBX_Password.Location = new System.Drawing.Point(99, 28);
+            this.TBX_Password.Location = new System.Drawing.Point(377, 31);
             this.TBX_Password.Name = "TBX_Password";
             this.TBX_Password.Size = new System.Drawing.Size(188, 26);
             this.TBX_Password.TabIndex = 1;
