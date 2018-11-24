@@ -30,6 +30,7 @@ namespace Client_PM
             ValidationProvider.AddControlToValidate(IBX_Avatar, Validate_IBX_Avatar);
             if (User != null)
                 User_To_DLG();
+
         }
         private void User_To_DLG()
         {

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.IBX_avatar = new PhotoManagerClient.ImageBox();
-            this.BT_Edit = new System.Windows.Forms.Button();
+            this.BT_Update = new System.Windows.Forms.Button();
             this.BT_Rotate = new System.Windows.Forms.Button();
             this.BT_exit = new System.Windows.Forms.Button();
             this.CB_Shared = new System.Windows.Forms.CheckBox();
@@ -53,26 +53,26 @@
             this.IBX_avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_avatar.ImportImageText = "Import image from file...";
-            this.IBX_avatar.Location = new System.Drawing.Point(23, 252);
+            this.IBX_avatar.Location = new System.Drawing.Point(18, 202);
             this.IBX_avatar.Name = "IBX_avatar";
             this.IBX_avatar.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_avatar.Size = new System.Drawing.Size(425, 166);
+            this.IBX_avatar.Size = new System.Drawing.Size(279, 166);
             this.IBX_avatar.TabIndex = 25;
             this.IBX_avatar.TabStop = false;
             // 
-            // BT_Edit
+            // BT_Update
             // 
-            this.BT_Edit.Location = new System.Drawing.Point(290, 437);
-            this.BT_Edit.Name = "BT_Edit";
-            this.BT_Edit.Size = new System.Drawing.Size(82, 31);
-            this.BT_Edit.TabIndex = 24;
-            this.BT_Edit.Text = "Edit";
-            this.BT_Edit.UseVisualStyleBackColor = true;
+            this.BT_Update.Location = new System.Drawing.Point(215, 374);
+            this.BT_Update.Name = "BT_Update";
+            this.BT_Update.Size = new System.Drawing.Size(82, 31);
+            this.BT_Update.TabIndex = 24;
+            this.BT_Update.Text = "Update";
+            this.BT_Update.UseVisualStyleBackColor = true;
             // 
             // BT_Rotate
             // 
-            this.BT_Rotate.Location = new System.Drawing.Point(16, 437);
+            this.BT_Rotate.Location = new System.Drawing.Point(18, 375);
             this.BT_Rotate.Name = "BT_Rotate";
             this.BT_Rotate.Size = new System.Drawing.Size(82, 31);
             this.BT_Rotate.TabIndex = 23;
@@ -81,7 +81,7 @@
             // 
             // BT_exit
             // 
-            this.BT_exit.Location = new System.Drawing.Point(378, 437);
+            this.BT_exit.Location = new System.Drawing.Point(116, 375);
             this.BT_exit.Name = "BT_exit";
             this.BT_exit.Size = new System.Drawing.Size(82, 31);
             this.BT_exit.TabIndex = 22;
@@ -91,7 +91,7 @@
             // CB_Shared
             // 
             this.CB_Shared.AutoSize = true;
-            this.CB_Shared.Location = new System.Drawing.Point(378, 210);
+            this.CB_Shared.Location = new System.Drawing.Point(15, 115);
             this.CB_Shared.Name = "CB_Shared";
             this.CB_Shared.Size = new System.Drawing.Size(60, 17);
             this.CB_Shared.TabIndex = 21;
@@ -101,7 +101,7 @@
             // LB_Keywords
             // 
             this.LB_Keywords.AutoSize = true;
-            this.LB_Keywords.Location = new System.Drawing.Point(20, 191);
+            this.LB_Keywords.Location = new System.Drawing.Point(15, 165);
             this.LB_Keywords.Name = "LB_Keywords";
             this.LB_Keywords.Size = new System.Drawing.Size(53, 13);
             this.LB_Keywords.TabIndex = 20;
@@ -110,7 +110,7 @@
             // LB_Description
             // 
             this.LB_Description.AutoSize = true;
-            this.LB_Description.Location = new System.Drawing.Point(20, 68);
+            this.LB_Description.Location = new System.Drawing.Point(15, 70);
             this.LB_Description.Name = "LB_Description";
             this.LB_Description.Size = new System.Drawing.Size(60, 13);
             this.LB_Description.TabIndex = 19;
@@ -119,7 +119,7 @@
             // LB_Date
             // 
             this.LB_Date.AutoSize = true;
-            this.LB_Date.Location = new System.Drawing.Point(258, 19);
+            this.LB_Date.Location = new System.Drawing.Point(15, 38);
             this.LB_Date.Name = "LB_Date";
             this.LB_Date.Size = new System.Drawing.Size(30, 13);
             this.LB_Date.TabIndex = 18;
@@ -128,48 +128,48 @@
             // LB_title
             // 
             this.LB_title.AutoSize = true;
-            this.LB_title.Location = new System.Drawing.Point(20, 19);
+            this.LB_title.Location = new System.Drawing.Point(15, 9);
             this.LB_title.Name = "LB_title";
-            this.LB_title.Size = new System.Drawing.Size(27, 13);
+            this.LB_title.Size = new System.Drawing.Size(28, 13);
             this.LB_title.TabIndex = 17;
-            this.LB_title.Text = "Title";
+            this.LB_title.Text = "Titre";
             // 
             // RTBX_description
             // 
-            this.RTBX_description.Location = new System.Drawing.Point(20, 84);
+            this.RTBX_description.Location = new System.Drawing.Point(84, 70);
             this.RTBX_description.Name = "RTBX_description";
-            this.RTBX_description.Size = new System.Drawing.Size(428, 96);
+            this.RTBX_description.Size = new System.Drawing.Size(214, 81);
             this.RTBX_description.TabIndex = 16;
             this.RTBX_description.Text = "";
             // 
             // TB_keyword
             // 
-            this.TB_keyword.Location = new System.Drawing.Point(20, 207);
+            this.TB_keyword.Location = new System.Drawing.Point(84, 165);
             this.TB_keyword.Name = "TB_keyword";
-            this.TB_keyword.Size = new System.Drawing.Size(325, 20);
+            this.TB_keyword.Size = new System.Drawing.Size(214, 20);
             this.TB_keyword.TabIndex = 15;
             // 
             // TB_date
             // 
-            this.TB_date.Location = new System.Drawing.Point(261, 35);
+            this.TB_date.Location = new System.Drawing.Point(84, 38);
             this.TB_date.Name = "TB_date";
-            this.TB_date.Size = new System.Drawing.Size(187, 20);
+            this.TB_date.Size = new System.Drawing.Size(214, 20);
             this.TB_date.TabIndex = 14;
             // 
             // TB_title
             // 
-            this.TB_title.Location = new System.Drawing.Point(20, 35);
+            this.TB_title.Location = new System.Drawing.Point(83, 9);
             this.TB_title.Name = "TB_title";
-            this.TB_title.Size = new System.Drawing.Size(187, 20);
+            this.TB_title.Size = new System.Drawing.Size(214, 20);
             this.TB_title.TabIndex = 13;
             // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 481);
+            this.ClientSize = new System.Drawing.Size(313, 414);
             this.Controls.Add(this.IBX_avatar);
-            this.Controls.Add(this.BT_Edit);
+            this.Controls.Add(this.BT_Update);
             this.Controls.Add(this.BT_Rotate);
             this.Controls.Add(this.BT_exit);
             this.Controls.Add(this.CB_Shared);
@@ -192,7 +192,7 @@
         #endregion
 
         private PhotoManagerClient.ImageBox IBX_avatar;
-        private System.Windows.Forms.Button BT_Edit;
+        private System.Windows.Forms.Button BT_Update;
         private System.Windows.Forms.Button BT_Rotate;
         private System.Windows.Forms.Button BT_exit;
         private System.Windows.Forms.CheckBox CB_Shared;

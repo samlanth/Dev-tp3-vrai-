@@ -40,54 +40,55 @@
             this.BTN_Ok = new System.Windows.Forms.Button();
             this.BTN_DeleteAccount = new System.Windows.Forms.Button();
             this.IBX_Avatar = new PhotoManagerClient.ImageBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // TBX_Username
             // 
-            this.TBX_Username.Location = new System.Drawing.Point(154, 24);
+            this.TBX_Username.Location = new System.Drawing.Point(115, 45);
             this.TBX_Username.Name = "TBX_Username";
-            this.TBX_Username.Size = new System.Drawing.Size(173, 26);
+            this.TBX_Username.Size = new System.Drawing.Size(196, 26);
             this.TBX_Username.TabIndex = 0;
             // 
             // TBX_Password
             // 
-            this.TBX_Password.Location = new System.Drawing.Point(154, 56);
+            this.TBX_Password.Location = new System.Drawing.Point(115, 94);
             this.TBX_Password.Name = "TBX_Password";
-            this.TBX_Password.Size = new System.Drawing.Size(173, 26);
+            this.TBX_Password.Size = new System.Drawing.Size(196, 26);
             this.TBX_Password.TabIndex = 1;
             this.TBX_Password.UseSystemPasswordChar = true;
             // 
             // TBX_VerifyPassword
             // 
-            this.TBX_VerifyPassword.Location = new System.Drawing.Point(154, 88);
+            this.TBX_VerifyPassword.Location = new System.Drawing.Point(115, 145);
             this.TBX_VerifyPassword.Name = "TBX_VerifyPassword";
-            this.TBX_VerifyPassword.Size = new System.Drawing.Size(173, 26);
+            this.TBX_VerifyPassword.Size = new System.Drawing.Size(196, 26);
             this.TBX_VerifyPassword.TabIndex = 2;
             this.TBX_VerifyPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 27);
+            this.label1.Location = new System.Drawing.Point(23, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Nom d\'usager";
+            this.label1.Text = "Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 59);
+            this.label2.Location = new System.Drawing.Point(12, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Mot de passe";
+            this.label2.Text = "Password";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 91);
+            this.label3.Location = new System.Drawing.Point(12, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 20);
             this.label3.TabIndex = 1;
@@ -96,7 +97,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 142);
+            this.label4.Location = new System.Drawing.Point(413, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 1;
@@ -104,34 +105,31 @@
             // 
             // BTN_Cancel
             // 
-            this.BTN_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.Location = new System.Drawing.Point(282, 415);
+            this.BTN_Cancel.Location = new System.Drawing.Point(223, 186);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(75, 29);
+            this.BTN_Cancel.Size = new System.Drawing.Size(88, 30);
             this.BTN_Cancel.TabIndex = 4;
-            this.BTN_Cancel.Text = "Annuler";
+            this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
             // 
             // BTN_Ok
             // 
-            this.BTN_Ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Ok.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.BTN_Ok.Location = new System.Drawing.Point(201, 415);
+            this.BTN_Ok.Location = new System.Drawing.Point(129, 187);
             this.BTN_Ok.Name = "BTN_Ok";
-            this.BTN_Ok.Size = new System.Drawing.Size(75, 29);
+            this.BTN_Ok.Size = new System.Drawing.Size(88, 29);
             this.BTN_Ok.TabIndex = 3;
-            this.BTN_Ok.Text = "Ok";
+            this.BTN_Ok.Text = "Create";
             this.BTN_Ok.UseVisualStyleBackColor = true;
             // 
             // BTN_DeleteAccount
             // 
-            this.BTN_DeleteAccount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.BTN_DeleteAccount.Location = new System.Drawing.Point(30, 415);
+            this.BTN_DeleteAccount.Location = new System.Drawing.Point(16, 187);
             this.BTN_DeleteAccount.Name = "BTN_DeleteAccount";
-            this.BTN_DeleteAccount.Size = new System.Drawing.Size(116, 29);
+            this.BTN_DeleteAccount.Size = new System.Drawing.Size(88, 29);
             this.BTN_DeleteAccount.TabIndex = 0;
-            this.BTN_DeleteAccount.Text = "Supprimer";
+            this.BTN_DeleteAccount.Text = "Delete";
             this.BTN_DeleteAccount.UseVisualStyleBackColor = true;
             this.BTN_DeleteAccount.Click += new System.EventHandler(this.BTN_DeleteAccount_Click);
             // 
@@ -143,14 +141,23 @@
             this.IBX_Avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_Avatar.ImportImageText = "Import image from file...";
-            this.IBX_Avatar.Location = new System.Drawing.Point(30, 165);
+            this.IBX_Avatar.Location = new System.Drawing.Point(333, 32);
             this.IBX_Avatar.Name = "IBX_Avatar";
             this.IBX_Avatar.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_Avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_Avatar.Size = new System.Drawing.Size(297, 236);
+            this.IBX_Avatar.Size = new System.Drawing.Size(217, 184);
             this.IBX_Avatar.TabIndex = 2;
             this.IBX_Avatar.TabStop = false;
             this.IBX_Avatar.BackgroundImageChanged += new System.EventHandler(this.IBX_Avatar_BackgroundImageChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(168, 20);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Create a New Account";
             // 
             // DLG_Account
             // 
@@ -158,7 +165,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Cancel;
-            this.ClientSize = new System.Drawing.Size(369, 456);
+            this.ClientSize = new System.Drawing.Size(568, 232);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.BTN_DeleteAccount);
             this.Controls.Add(this.BTN_Ok);
             this.Controls.Add(this.BTN_Cancel);
@@ -174,7 +182,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DLG_Account";
-            this.Text = "DLG_Account";
+            this.Text = "Create User";
             this.Load += new System.EventHandler(this.DLG_Account_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).EndInit();
             this.ResumeLayout(false);
@@ -195,5 +203,6 @@
         private System.Windows.Forms.Button BTN_Cancel;
         private System.Windows.Forms.Button BTN_Ok;
         private System.Windows.Forms.Button BTN_DeleteAccount;
+        private System.Windows.Forms.Label label5;
     }
 }

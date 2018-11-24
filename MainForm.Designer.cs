@@ -130,29 +130,30 @@
             // MI_Account_Login
             // 
             this.MI_Account_Login.Name = "MI_Account_Login";
-            this.MI_Account_Login.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Login.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Login.Text = "Login";
             this.MI_Account_Login.Click += new System.EventHandler(this.MI_Account_Login_Click);
             // 
             // MI_Account_Profil
             // 
             this.MI_Account_Profil.Name = "MI_Account_Profil";
-            this.MI_Account_Profil.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Profil.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Profil.Text = "Profil";
             this.MI_Account_Profil.Click += new System.EventHandler(this.MI_Account_Profil_Click);
             // 
             // Mi_Account_Create
             // 
             this.Mi_Account_Create.Name = "Mi_Account_Create";
-            this.Mi_Account_Create.Size = new System.Drawing.Size(108, 22);
+            this.Mi_Account_Create.Size = new System.Drawing.Size(152, 22);
             this.Mi_Account_Create.Text = "Create";
             this.Mi_Account_Create.Click += new System.EventHandler(this.Mi_Account_Create_Click);
             // 
             // MI_Account_Exit
             // 
             this.MI_Account_Exit.Name = "MI_Account_Exit";
-            this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Exit.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Exit.Text = "Exit";
+            this.MI_Account_Exit.Click += new System.EventHandler(this.MI_Account_Exit_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -168,25 +169,25 @@
             // topToolStripMenuItem
             // 
             this.topToolStripMenuItem.Name = "topToolStripMenuItem";
-            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.topToolStripMenuItem.Text = "Top";
             // 
             // downToolStripMenuItem
             // 
             this.downToolStripMenuItem.Name = "downToolStripMenuItem";
-            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.downToolStripMenuItem.Text = "Down";
             // 
             // leftToolStripMenuItem
             // 
             this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
-            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.leftToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.leftToolStripMenuItem.Text = "Left";
             // 
             // rightToolStripMenuItem
             // 
             this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
-            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.rightToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rightToolStripMenuItem.Text = "Right";
             // 
             // groupBox2
@@ -236,9 +237,9 @@
             // BTN_Bottom
             // 
             this.BTN_Bottom.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Bottom.Location = new System.Drawing.Point(109, 23);
+            this.BTN_Bottom.Location = new System.Drawing.Point(146, 40);
             this.BTN_Bottom.Name = "BTN_Bottom";
-            this.BTN_Bottom.Size = new System.Drawing.Size(30, 30);
+            this.BTN_Bottom.Size = new System.Drawing.Size(31, 36);
             this.BTN_Bottom.TabIndex = 0;
             this.BTN_Bottom.Text = "↓";
             this.BTN_Bottom.UseVisualStyleBackColor = true;
@@ -247,9 +248,9 @@
             // BTN_Right
             // 
             this.BTN_Right.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Right.Location = new System.Drawing.Point(75, 23);
+            this.BTN_Right.Location = new System.Drawing.Point(98, 41);
             this.BTN_Right.Name = "BTN_Right";
-            this.BTN_Right.Size = new System.Drawing.Size(30, 30);
+            this.BTN_Right.Size = new System.Drawing.Size(31, 36);
             this.BTN_Right.TabIndex = 0;
             this.BTN_Right.Text = "→";
             this.BTN_Right.UseVisualStyleBackColor = true;
@@ -258,9 +259,9 @@
             // BTN_Top
             // 
             this.BTN_Top.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Top.Location = new System.Drawing.Point(41, 23);
+            this.BTN_Top.Location = new System.Drawing.Point(52, 41);
             this.BTN_Top.Name = "BTN_Top";
-            this.BTN_Top.Size = new System.Drawing.Size(30, 30);
+            this.BTN_Top.Size = new System.Drawing.Size(31, 36);
             this.BTN_Top.TabIndex = 0;
             this.BTN_Top.Text = "↑";
             this.BTN_Top.UseVisualStyleBackColor = true;
@@ -269,9 +270,9 @@
             // BTN_Left
             // 
             this.BTN_Left.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Left.Location = new System.Drawing.Point(7, 23);
+            this.BTN_Left.Location = new System.Drawing.Point(6, 39);
             this.BTN_Left.Name = "BTN_Left";
-            this.BTN_Left.Size = new System.Drawing.Size(30, 30);
+            this.BTN_Left.Size = new System.Drawing.Size(31, 37);
             this.BTN_Left.TabIndex = 0;
             this.BTN_Left.Text = "← ";
             this.BTN_Left.UseVisualStyleBackColor = true;
@@ -507,6 +508,7 @@
             this.MinimumSize = new System.Drawing.Size(1169, 713);
             this.Name = "MainForm";
             this.Text = "Photo manager client application";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

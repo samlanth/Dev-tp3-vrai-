@@ -200,5 +200,14 @@ namespace Client_PM
             {
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void MI_Account_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

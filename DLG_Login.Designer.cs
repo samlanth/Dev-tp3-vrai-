@@ -34,12 +34,14 @@
             this.TBX_Password = new System.Windows.Forms.TextBox();
             this.BTN_Cancel = new System.Windows.Forms.Button();
             this.BTN_Ok = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 26);
+            this.label1.Location = new System.Drawing.Point(6, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 0;
@@ -48,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 73);
+            this.label2.Location = new System.Drawing.Point(293, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 0;
@@ -56,14 +58,14 @@
             // 
             // TBX_UserName
             // 
-            this.TBX_UserName.Location = new System.Drawing.Point(117, 23);
+            this.TBX_UserName.Location = new System.Drawing.Point(377, 28);
             this.TBX_UserName.Name = "TBX_UserName";
             this.TBX_UserName.Size = new System.Drawing.Size(188, 26);
             this.TBX_UserName.TabIndex = 0;
             // 
             // TBX_Password
             // 
-            this.TBX_Password.Location = new System.Drawing.Point(117, 70);
+            this.TBX_Password.Location = new System.Drawing.Point(99, 28);
             this.TBX_Password.Name = "TBX_Password";
             this.TBX_Password.Size = new System.Drawing.Size(188, 26);
             this.TBX_Password.TabIndex = 1;
@@ -73,9 +75,9 @@
             // 
             this.BTN_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.Location = new System.Drawing.Point(229, 114);
+            this.BTN_Cancel.Location = new System.Drawing.Point(99, 64);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(76, 29);
+            this.BTN_Cancel.Size = new System.Drawing.Size(83, 29);
             this.BTN_Cancel.TabIndex = 3;
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
@@ -83,12 +85,27 @@
             // BTN_Ok
             // 
             this.BTN_Ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Ok.Location = new System.Drawing.Point(147, 114);
+            this.BTN_Ok.Location = new System.Drawing.Point(10, 64);
             this.BTN_Ok.Name = "BTN_Ok";
-            this.BTN_Ok.Size = new System.Drawing.Size(76, 29);
+            this.BTN_Ok.Size = new System.Drawing.Size(83, 29);
             this.BTN_Ok.TabIndex = 2;
-            this.BTN_Ok.Text = "Login";
+            this.BTN_Ok.Text = "Log on";
             this.BTN_Ok.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.TBX_Password);
+            this.groupBox1.Controls.Add(this.BTN_Cancel);
+            this.groupBox1.Controls.Add(this.BTN_Ok);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.TBX_UserName);
+            this.groupBox1.Location = new System.Drawing.Point(23, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(581, 99);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Account Information";
             // 
             // DLG_Login
             // 
@@ -96,23 +113,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Cancel;
-            this.ClientSize = new System.Drawing.Size(343, 161);
+            this.ClientSize = new System.Drawing.Size(625, 130);
             this.ControlBox = false;
-            this.Controls.Add(this.BTN_Ok);
-            this.Controls.Add(this.BTN_Cancel);
-            this.Controls.Add(this.TBX_Password);
-            this.Controls.Add(this.TBX_UserName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DLG_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Login";
+            this.Text = "Log On";
             this.Load += new System.EventHandler(this.DLG_Login_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -124,5 +137,6 @@
         private System.Windows.Forms.TextBox TBX_Password;
         private System.Windows.Forms.Button BTN_Cancel;
         private System.Windows.Forms.Button BTN_Ok;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

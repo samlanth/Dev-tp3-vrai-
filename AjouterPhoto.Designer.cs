@@ -47,46 +47,46 @@
             // 
             // TB_title
             // 
-            this.TB_title.Location = new System.Drawing.Point(12, 21);
+            this.TB_title.Location = new System.Drawing.Point(80, 22);
             this.TB_title.Name = "TB_title";
-            this.TB_title.Size = new System.Drawing.Size(187, 20);
+            this.TB_title.Size = new System.Drawing.Size(214, 20);
             this.TB_title.TabIndex = 0;
             // 
             // TB_date
             // 
-            this.TB_date.Location = new System.Drawing.Point(253, 21);
+            this.TB_date.Location = new System.Drawing.Point(81, 51);
             this.TB_date.Name = "TB_date";
-            this.TB_date.Size = new System.Drawing.Size(187, 20);
+            this.TB_date.Size = new System.Drawing.Size(214, 20);
             this.TB_date.TabIndex = 1;
             // 
             // TB_keyword
             // 
-            this.TB_keyword.Location = new System.Drawing.Point(12, 193);
+            this.TB_keyword.Location = new System.Drawing.Point(81, 178);
             this.TB_keyword.Name = "TB_keyword";
-            this.TB_keyword.Size = new System.Drawing.Size(325, 20);
+            this.TB_keyword.Size = new System.Drawing.Size(214, 20);
             this.TB_keyword.TabIndex = 2;
             // 
             // RTBX_description
             // 
-            this.RTBX_description.Location = new System.Drawing.Point(12, 70);
+            this.RTBX_description.Location = new System.Drawing.Point(81, 83);
             this.RTBX_description.Name = "RTBX_description";
-            this.RTBX_description.Size = new System.Drawing.Size(428, 96);
+            this.RTBX_description.Size = new System.Drawing.Size(214, 81);
             this.RTBX_description.TabIndex = 3;
             this.RTBX_description.Text = "";
             // 
             // LB_title
             // 
             this.LB_title.AutoSize = true;
-            this.LB_title.Location = new System.Drawing.Point(12, 5);
+            this.LB_title.Location = new System.Drawing.Point(12, 22);
             this.LB_title.Name = "LB_title";
-            this.LB_title.Size = new System.Drawing.Size(27, 13);
+            this.LB_title.Size = new System.Drawing.Size(28, 13);
             this.LB_title.TabIndex = 4;
-            this.LB_title.Text = "Title";
+            this.LB_title.Text = "Titre";
             // 
             // LB_Date
             // 
             this.LB_Date.AutoSize = true;
-            this.LB_Date.Location = new System.Drawing.Point(250, 5);
+            this.LB_Date.Location = new System.Drawing.Point(12, 51);
             this.LB_Date.Name = "LB_Date";
             this.LB_Date.Size = new System.Drawing.Size(30, 13);
             this.LB_Date.TabIndex = 5;
@@ -95,7 +95,7 @@
             // LB_Description
             // 
             this.LB_Description.AutoSize = true;
-            this.LB_Description.Location = new System.Drawing.Point(12, 54);
+            this.LB_Description.Location = new System.Drawing.Point(12, 83);
             this.LB_Description.Name = "LB_Description";
             this.LB_Description.Size = new System.Drawing.Size(60, 13);
             this.LB_Description.TabIndex = 6;
@@ -104,7 +104,7 @@
             // LB_Keywords
             // 
             this.LB_Keywords.AutoSize = true;
-            this.LB_Keywords.Location = new System.Drawing.Point(12, 177);
+            this.LB_Keywords.Location = new System.Drawing.Point(12, 178);
             this.LB_Keywords.Name = "LB_Keywords";
             this.LB_Keywords.Size = new System.Drawing.Size(53, 13);
             this.LB_Keywords.TabIndex = 7;
@@ -113,7 +113,7 @@
             // CB_Shared
             // 
             this.CB_Shared.AutoSize = true;
-            this.CB_Shared.Location = new System.Drawing.Point(370, 196);
+            this.CB_Shared.Location = new System.Drawing.Point(12, 128);
             this.CB_Shared.Name = "CB_Shared";
             this.CB_Shared.Size = new System.Drawing.Size(60, 17);
             this.CB_Shared.TabIndex = 8;
@@ -122,7 +122,7 @@
             // 
             // BT_exit
             // 
-            this.BT_exit.Location = new System.Drawing.Point(370, 423);
+            this.BT_exit.Location = new System.Drawing.Point(113, 388);
             this.BT_exit.Name = "BT_exit";
             this.BT_exit.Size = new System.Drawing.Size(82, 31);
             this.BT_exit.TabIndex = 9;
@@ -131,16 +131,17 @@
             // 
             // BT_Rotate
             // 
-            this.BT_Rotate.Location = new System.Drawing.Point(8, 423);
+            this.BT_Rotate.Location = new System.Drawing.Point(15, 388);
             this.BT_Rotate.Name = "BT_Rotate";
             this.BT_Rotate.Size = new System.Drawing.Size(82, 31);
             this.BT_Rotate.TabIndex = 10;
             this.BT_Rotate.Text = "Rotate";
             this.BT_Rotate.UseVisualStyleBackColor = true;
+            this.BT_Rotate.Click += new System.EventHandler(this.BT_Rotate_Click);
             // 
             // BT_add
             // 
-            this.BT_add.Location = new System.Drawing.Point(282, 423);
+            this.BT_add.Location = new System.Drawing.Point(212, 387);
             this.BT_add.Name = "BT_add";
             this.BT_add.Size = new System.Drawing.Size(82, 31);
             this.BT_add.TabIndex = 11;
@@ -155,11 +156,11 @@
             this.IBX_avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_avatar.ImportImageText = "Import image from file...";
-            this.IBX_avatar.Location = new System.Drawing.Point(15, 238);
+            this.IBX_avatar.Location = new System.Drawing.Point(15, 215);
             this.IBX_avatar.Name = "IBX_avatar";
             this.IBX_avatar.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_avatar.Size = new System.Drawing.Size(425, 166);
+            this.IBX_avatar.Size = new System.Drawing.Size(279, 166);
             this.IBX_avatar.TabIndex = 12;
             this.IBX_avatar.TabStop = false;
             // 
@@ -167,7 +168,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 466);
+            this.ClientSize = new System.Drawing.Size(311, 429);
             this.Controls.Add(this.IBX_avatar);
             this.Controls.Add(this.BT_add);
             this.Controls.Add(this.BT_Rotate);
@@ -182,7 +183,7 @@
             this.Controls.Add(this.TB_date);
             this.Controls.Add(this.TB_title);
             this.Name = "AjouterPhoto";
-            this.Text = "AjouterPhoto";
+            this.Text = "Ajouter Une Photo";
             ((System.ComponentModel.ISupportInitialize)(this.IBX_avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
