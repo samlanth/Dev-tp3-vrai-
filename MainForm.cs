@@ -203,6 +203,12 @@ namespace Client_PM
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            ToolTip toolTipFlash = new ToolTip();
+
+            toolTipFlash.SetToolTip(AddNewPhoto, "Ajouter une photo");
+            toolTipFlash.SetToolTip(EditerPhoto, "Editer une photo");
+            toolTipFlash.SetToolTip(DeletePhoto, "Enlever une photo");
+            toolTipFlash.SetToolTip(ViewPhoto, "Details de la photo");
         }
 
         private void MI_Account_Exit_Click(object sender, EventArgs e)

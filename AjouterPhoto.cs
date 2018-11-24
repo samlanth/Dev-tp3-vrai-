@@ -16,10 +16,5 @@ namespace Client_PM
         {
             InitializeComponent();
         }
-
-        private void BT_Rotate_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

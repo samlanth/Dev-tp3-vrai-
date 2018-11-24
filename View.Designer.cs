@@ -105,7 +105,6 @@
             this.LB_Pixels.Size = new System.Drawing.Size(34, 13);
             this.LB_Pixels.TabIndex = 2;
             this.LB_Pixels.Text = "Pixels";
-            this.LB_Pixels.Click += new System.EventHandler(this.label3_Click);
             // 
             // LB_Shared
             // 

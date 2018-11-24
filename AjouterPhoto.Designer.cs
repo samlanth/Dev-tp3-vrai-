@@ -137,7 +137,6 @@
             this.BT_Rotate.TabIndex = 10;
             this.BT_Rotate.Text = "Rotate";
             this.BT_Rotate.UseVisualStyleBackColor = true;
-            this.BT_Rotate.Click += new System.EventHandler(this.BT_Rotate_Click);
             // 
             // BT_add
             // 
