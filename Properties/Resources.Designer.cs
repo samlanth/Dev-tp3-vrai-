@@ -73,6 +73,26 @@ namespace Client_PM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _201_spy_eyes_click {
+            get {
+                object obj = ResourceManager.GetObject("_201_spy_eyes_click", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _201_spy_eyes_hover {
+            get {
+                object obj = ResourceManager.GetObject("_201_spy_eyes_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_Add_Click {
             get {
                 object obj = ResourceManager.GetObject("ICON_Add_Click", resourceCulture);

@@ -209,5 +209,65 @@ namespace Client_PM
         {
             Application.Exit();
         }
+
+        private void AddNewPhoto_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.AddNewPhoto.BackgroundImage = Properties.Resources.ICON_Add_Click;
+        }
+
+        private void AddNewPhoto_MouseHover(object sender, EventArgs e)
+        {
+            this.AddNewPhoto.BackgroundImage = Properties.Resources.ICON_Add_Over;
+        }
+
+        private void AddNewPhoto_MouseLeave(object sender, EventArgs e)
+        {
+            this.AddNewPhoto.BackgroundImage = Properties.Resources.ICON_Add_Neutral;
+        }
+
+        private void EditerPhoto_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.EditerPhoto.BackgroundImage = Properties.Resources.ICON_Editer_Click;
+        }
+
+        private void EditerPhoto_MouseHover(object sender, EventArgs e)
+        {
+            this.EditerPhoto.BackgroundImage = Properties.Resources.ICON_Editer_Survol;
+        }
+
+        private void EditerPhoto_MouseLeave(object sender, EventArgs e)
+        {
+            this.EditerPhoto.BackgroundImage = Properties.Resources.ICON_Editer_Neutre;
+        }
+
+        private void DeletePhoto_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.DeletePhoto.BackgroundImage = Properties.Resources.ICON_Delete_Click;
+        }
+
+        private void DeletePhoto_MouseHover(object sender, EventArgs e)
+        {
+            this.DeletePhoto.BackgroundImage = Properties.Resources.ICON_Delete_Over;
+        }
+
+        private void DeletePhoto_MouseLeave(object sender, EventArgs e)
+        {
+            this.DeletePhoto.BackgroundImage = Properties.Resources.ICON_Delete_Neutral;
+        }
+
+        private void ViewPhoto_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.ViewPhoto.BackgroundImage = Properties.Resources._201_spy_eyes_hover;
+        }
+
+        private void ViewPhoto_MouseHover(object sender, EventArgs e)
+        {
+            this.ViewPhoto.BackgroundImage = Properties.Resources._201_spy_eyes_click;
+        }
+
+        private void ViewPhoto_MouseLeave(object sender, EventArgs e)
+        {
+            this.ViewPhoto.BackgroundImage = Properties.Resources._201_spy_eyes;
+        }
     }
 }

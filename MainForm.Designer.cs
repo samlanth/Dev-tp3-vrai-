@@ -130,28 +130,28 @@
             // MI_Account_Login
             // 
             this.MI_Account_Login.Name = "MI_Account_Login";
-            this.MI_Account_Login.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Login.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Login.Text = "Login";
             this.MI_Account_Login.Click += new System.EventHandler(this.MI_Account_Login_Click);
             // 
             // MI_Account_Profil
             // 
             this.MI_Account_Profil.Name = "MI_Account_Profil";
-            this.MI_Account_Profil.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Profil.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Profil.Text = "Profil";
             this.MI_Account_Profil.Click += new System.EventHandler(this.MI_Account_Profil_Click);
             // 
             // Mi_Account_Create
             // 
             this.Mi_Account_Create.Name = "Mi_Account_Create";
-            this.Mi_Account_Create.Size = new System.Drawing.Size(152, 22);
+            this.Mi_Account_Create.Size = new System.Drawing.Size(108, 22);
             this.Mi_Account_Create.Text = "Create";
             this.Mi_Account_Create.Click += new System.EventHandler(this.Mi_Account_Create_Click);
             // 
             // MI_Account_Exit
             // 
             this.MI_Account_Exit.Name = "MI_Account_Exit";
-            this.MI_Account_Exit.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Exit.Text = "Exit";
             this.MI_Account_Exit.Click += new System.EventHandler(this.MI_Account_Exit_Click);
             // 
@@ -169,25 +169,25 @@
             // topToolStripMenuItem
             // 
             this.topToolStripMenuItem.Name = "topToolStripMenuItem";
-            this.topToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.topToolStripMenuItem.Text = "Top";
             // 
             // downToolStripMenuItem
             // 
             this.downToolStripMenuItem.Name = "downToolStripMenuItem";
-            this.downToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.downToolStripMenuItem.Text = "Down";
             // 
             // leftToolStripMenuItem
             // 
             this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
-            this.leftToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.leftToolStripMenuItem.Text = "Left";
             // 
             // rightToolStripMenuItem
             // 
             this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
-            this.rightToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.rightToolStripMenuItem.Text = "Right";
             // 
             // groupBox2
@@ -354,6 +354,9 @@
             this.ViewPhoto.TabIndex = 6;
             this.ViewPhoto.UseVisualStyleBackColor = true;
             this.ViewPhoto.Click += new System.EventHandler(this.ViewPhoto_Click);
+            this.ViewPhoto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ViewPhoto_MouseDown);
+            this.ViewPhoto.MouseLeave += new System.EventHandler(this.ViewPhoto_MouseLeave);
+            this.ViewPhoto.MouseHover += new System.EventHandler(this.ViewPhoto_MouseHover);
             // 
             // DeletePhoto
             // 
@@ -369,6 +372,9 @@
             this.DeletePhoto.Size = new System.Drawing.Size(36, 36);
             this.DeletePhoto.TabIndex = 5;
             this.DeletePhoto.UseVisualStyleBackColor = true;
+            this.DeletePhoto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DeletePhoto_MouseDown);
+            this.DeletePhoto.MouseLeave += new System.EventHandler(this.DeletePhoto_MouseLeave);
+            this.DeletePhoto.MouseHover += new System.EventHandler(this.DeletePhoto_MouseHover);
             // 
             // EditerPhoto
             // 
@@ -385,6 +391,9 @@
             this.EditerPhoto.TabIndex = 4;
             this.EditerPhoto.UseVisualStyleBackColor = true;
             this.EditerPhoto.Click += new System.EventHandler(this.EditerPhoto_Click);
+            this.EditerPhoto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.EditerPhoto_MouseDown);
+            this.EditerPhoto.MouseLeave += new System.EventHandler(this.EditerPhoto_MouseLeave);
+            this.EditerPhoto.MouseHover += new System.EventHandler(this.EditerPhoto_MouseHover);
             // 
             // AddNewPhoto
             // 
@@ -401,6 +410,9 @@
             this.AddNewPhoto.TabIndex = 3;
             this.AddNewPhoto.UseVisualStyleBackColor = true;
             this.AddNewPhoto.Click += new System.EventHandler(this.AddNewPhoto_Click);
+            this.AddNewPhoto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewPhoto_MouseDown);
+            this.AddNewPhoto.MouseLeave += new System.EventHandler(this.AddNewPhoto_MouseLeave);
+            this.AddNewPhoto.MouseHover += new System.EventHandler(this.AddNewPhoto_MouseHover);
             // 
             // PhotoBrowser
             // 

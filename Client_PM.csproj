@@ -213,5 +213,9 @@
   <ItemGroup>
     <None Include="Photos\ICON_Editer_Survol.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Photos\201-spy-eyes_click.png" />
+    <Content Include="Photos\201-spy-eyes_hover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
