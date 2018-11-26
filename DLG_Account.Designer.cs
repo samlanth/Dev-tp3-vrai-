@@ -122,6 +122,7 @@
             this.BTN_Ok.TabIndex = 3;
             this.BTN_Ok.Text = "Create";
             this.BTN_Ok.UseVisualStyleBackColor = true;
+            this.BTN_Ok.Click += new System.EventHandler(this.BTN_Ok_Click);
             // 
             // BTN_DeleteAccount
             // 

@@ -115,6 +115,7 @@
             this.MS_Account.Size = new System.Drawing.Size(1153, 24);
             this.MS_Account.TabIndex = 2;
             this.MS_Account.Text = "menuStrip1";
+            this.MS_Account.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MS_Account_ItemClicked);
             // 
             // accountToolStripMenuItem
             // 

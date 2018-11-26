@@ -110,5 +110,10 @@ namespace Client_PM
                 Close();
             }
         }
+
+        private void BTN_Ok_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

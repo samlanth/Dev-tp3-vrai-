@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.GB_Owner = new System.Windows.Forms.GroupBox();
-            this.imagesLayout1 = new PhotoManagerClient.ImagesLayout();
             this.LB_Nom = new System.Windows.Forms.Label();
             this.LB_X = new System.Windows.Forms.Label();
             this.LB_Date = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.BTN_Fermer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.imagesLayout1 = new PhotoManagerClient.ImagesLayout();
             this.GB_Owner.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,16 +59,6 @@
             this.GB_Owner.TabIndex = 0;
             this.GB_Owner.TabStop = false;
             this.GB_Owner.Text = "Owner";
-            // 
-            // imagesLayout1
-            // 
-            this.imagesLayout1.AutoScroll = true;
-            this.imagesLayout1.Location = new System.Drawing.Point(6, 19);
-            this.imagesLayout1.Name = "imagesLayout1";
-            this.imagesLayout1.SelectedPhotoBox = null;
-            this.imagesLayout1.Size = new System.Drawing.Size(103, 77);
-            this.imagesLayout1.TabIndex = 1;
-            this.imagesLayout1.WrapContents = false;
             // 
             // LB_Nom
             // 
@@ -209,11 +199,21 @@
             this.textBox2.Size = new System.Drawing.Size(50, 20);
             this.textBox2.TabIndex = 8;
             // 
+            // imagesLayout1
+            // 
+            this.imagesLayout1.AutoScroll = true;
+            this.imagesLayout1.Location = new System.Drawing.Point(6, 19);
+            this.imagesLayout1.Name = "imagesLayout1";
+            this.imagesLayout1.SelectedPhotoBox = null;
+            this.imagesLayout1.Size = new System.Drawing.Size(103, 77);
+            this.imagesLayout1.TabIndex = 1;
+            this.imagesLayout1.WrapContents = false;
+            // 
             // View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 399);
+            this.ClientSize = new System.Drawing.Size(351, 397);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_Fermer);
             this.Controls.Add(this.textBox2);

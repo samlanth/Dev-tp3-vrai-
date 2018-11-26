@@ -180,8 +180,11 @@ namespace Client_PM
         private void AddNewPhoto_Click(object sender, EventArgs e)
         {
             AjouterPhoto dlg = new AjouterPhoto();
+            dlg.User = Logged_User;
             if (dlg.ShowDialog() == DialogResult.OK)
             {
+                PhotoBrowser.AddPhoto(dlg.photo);
+                LoadPhoto();
             }
         }
 
@@ -209,6 +212,7 @@ namespace Client_PM
             toolTipFlash.SetToolTip(EditerPhoto, "Editer une photo");
             toolTipFlash.SetToolTip(DeletePhoto, "Enlever une photo");
             toolTipFlash.SetToolTip(ViewPhoto, "Details de la photo");
+            
         }
 
         private void MI_Account_Exit_Click(object sender, EventArgs e)
@@ -274,6 +278,11 @@ namespace Client_PM
         private void ViewPhoto_MouseLeave(object sender, EventArgs e)
         {
             this.ViewPhoto.BackgroundImage = Properties.Resources._201_spy_eyes;
+        }
+
+        private void MS_Account_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

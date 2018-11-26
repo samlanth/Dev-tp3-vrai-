@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.TB_title = new System.Windows.Forms.TextBox();
-            this.TB_date = new System.Windows.Forms.TextBox();
             this.TB_keyword = new System.Windows.Forms.TextBox();
             this.RTBX_description = new System.Windows.Forms.RichTextBox();
             this.LB_title = new System.Windows.Forms.Label();
@@ -41,8 +40,9 @@
             this.BT_exit = new System.Windows.Forms.Button();
             this.BT_Rotate = new System.Windows.Forms.Button();
             this.BT_add = new System.Windows.Forms.Button();
-            this.IBX_avatar = new PhotoManagerClient.ImageBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_avatar)).BeginInit();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.IBX_photo = new PhotoManagerClient.ImageBox();
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).BeginInit();
             this.SuspendLayout();
             // 
             // TB_title
@@ -51,13 +51,6 @@
             this.TB_title.Name = "TB_title";
             this.TB_title.Size = new System.Drawing.Size(214, 20);
             this.TB_title.TabIndex = 0;
-            // 
-            // TB_date
-            // 
-            this.TB_date.Location = new System.Drawing.Point(81, 51);
-            this.TB_date.Name = "TB_date";
-            this.TB_date.Size = new System.Drawing.Size(214, 20);
-            this.TB_date.TabIndex = 1;
             // 
             // TB_keyword
             // 
@@ -128,6 +121,7 @@
             this.BT_exit.TabIndex = 9;
             this.BT_exit.Text = "Cancel";
             this.BT_exit.UseVisualStyleBackColor = true;
+            this.BT_exit.Click += new System.EventHandler(this.BT_exit_Click);
             // 
             // BT_Rotate
             // 
@@ -140,35 +134,45 @@
             // 
             // BT_add
             // 
+            this.BT_add.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.BT_add.Location = new System.Drawing.Point(212, 387);
             this.BT_add.Name = "BT_add";
             this.BT_add.Size = new System.Drawing.Size(82, 31);
             this.BT_add.TabIndex = 11;
             this.BT_add.Text = "Create";
             this.BT_add.UseVisualStyleBackColor = true;
+            this.BT_add.Click += new System.EventHandler(this.BT_add_Click);
             // 
-            // IBX_avatar
+            // dateTimePicker1
             // 
-            this.IBX_avatar.AllowDrop = true;
-            this.IBX_avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.IBX_avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IBX_avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
+            this.dateTimePicker1.Location = new System.Drawing.Point(81, 57);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
+            this.dateTimePicker1.TabIndex = 13;
+            // 
+            // IBX_photo
+            // 
+            this.IBX_photo.AllowDrop = true;
+            this.IBX_photo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.IBX_photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
-            this.IBX_avatar.ImportImageText = "Import image from file...";
-            this.IBX_avatar.Location = new System.Drawing.Point(15, 215);
-            this.IBX_avatar.Name = "IBX_avatar";
-            this.IBX_avatar.OpenFileDialogTitle = "Please choose image an file";
-            this.IBX_avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_avatar.Size = new System.Drawing.Size(279, 166);
-            this.IBX_avatar.TabIndex = 12;
-            this.IBX_avatar.TabStop = false;
+            this.IBX_photo.ImportImageText = "Import image from file...";
+            this.IBX_photo.Location = new System.Drawing.Point(15, 215);
+            this.IBX_photo.Name = "IBX_photo";
+            this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
+            this.IBX_photo.PasteMenuText = "Paste image from clipboard";
+            this.IBX_photo.Size = new System.Drawing.Size(279, 166);
+            this.IBX_photo.TabIndex = 12;
+            this.IBX_photo.TabStop = false;
             // 
             // AjouterPhoto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 429);
-            this.Controls.Add(this.IBX_avatar);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.IBX_photo);
             this.Controls.Add(this.BT_add);
             this.Controls.Add(this.BT_Rotate);
             this.Controls.Add(this.BT_exit);
@@ -179,11 +183,11 @@
             this.Controls.Add(this.LB_title);
             this.Controls.Add(this.RTBX_description);
             this.Controls.Add(this.TB_keyword);
-            this.Controls.Add(this.TB_date);
             this.Controls.Add(this.TB_title);
             this.Name = "AjouterPhoto";
             this.Text = "Ajouter Une Photo";
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_avatar)).EndInit();
+            this.Load += new System.EventHandler(this.AjouterPhoto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +196,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox TB_title;
-        private System.Windows.Forms.TextBox TB_date;
         private System.Windows.Forms.TextBox TB_keyword;
         private System.Windows.Forms.RichTextBox RTBX_description;
         private System.Windows.Forms.Label LB_title;
@@ -203,6 +206,7 @@
         private System.Windows.Forms.Button BT_exit;
         private System.Windows.Forms.Button BT_Rotate;
         private System.Windows.Forms.Button BT_add;
-        private PhotoManagerClient.ImageBox IBX_avatar;
+        private PhotoManagerClient.ImageBox IBX_photo;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
