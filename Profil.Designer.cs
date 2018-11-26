@@ -38,10 +38,10 @@
             this.TBX_VerifyPassword = new System.Windows.Forms.TextBox();
             this.TBX_Password = new System.Windows.Forms.TextBox();
             this.TBX_Username = new System.Windows.Forms.TextBox();
-            this.IBX_Avatar = new PhotoManagerClient.ImageBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).BeginInit();
+            this.IBX_Avatar = new PhotoManagerClient.ImageBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // BTN_DeleteAccount
@@ -72,6 +72,7 @@
             this.BTN_Cancel.TabIndex = 15;
             this.BTN_Cancel.Text = "Annuler";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
+            this.BTN_Cancel.Click += new System.EventHandler(this.BTN_Cancel_Click);
             // 
             // label3
             // 
@@ -123,6 +124,21 @@
             this.TBX_Username.Size = new System.Drawing.Size(201, 20);
             this.TBX_Username.TabIndex = 6;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.TBX_Username);
+            this.groupBox1.Controls.Add(this.TBX_Password);
+            this.groupBox1.Controls.Add(this.TBX_VerifyPassword);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(268, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(295, 152);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Information de base";
+            // 
             // IBX_Avatar
             // 
             this.IBX_Avatar.AllowDrop = true;
@@ -139,21 +155,6 @@
             this.IBX_Avatar.TabIndex = 12;
             this.IBX_Avatar.TabStop = false;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TBX_Username);
-            this.groupBox1.Controls.Add(this.TBX_Password);
-            this.groupBox1.Controls.Add(this.TBX_VerifyPassword);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(268, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(295, 152);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Information de base";
-            // 
             // Profil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,9 +167,9 @@
             this.Controls.Add(this.IBX_Avatar);
             this.Name = "Profil";
             this.Text = "Changer Profil";
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -59,5 +59,10 @@ namespace Client_PM
             Logged_User = DBPhotosWebServices.Login(TBX_UserName.Text, TBX_Password.Text);
             WaitSplash.Hide();
         }
+
+        private void BTN_Cancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

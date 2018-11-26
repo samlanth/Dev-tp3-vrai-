@@ -51,6 +51,7 @@ namespace Client_PM
         {
             WaitSplash.Show(this, "Loading photos from server...");
             PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            
             WaitSplash.Hide();
         }
 
@@ -153,6 +154,7 @@ namespace Client_PM
             {
                 Logged_User = dlg.Logged_User;
                 Setup_Logged_User();
+                
             }
         }
 
@@ -190,22 +192,30 @@ namespace Client_PM
 
         private void EditerPhoto_Click(object sender, EventArgs e)
         {
-            Update dlg = new Update();
+            Update dlg = new Update(PhotoBrowser.SelectedPhoto.Id);
             if (dlg.ShowDialog() == DialogResult.OK)
             {
+                
+                LoadPhoto();
             }
         }
 
         private void ViewPhoto_Click(object sender, EventArgs e)
         {
-            View dlg = new View();
+            View dlg = new View(PhotoBrowser.SelectedPhoto.Id,Logged_User.Id);
             if (dlg.ShowDialog() == DialogResult.OK)
             {
+                LoadPhoto();
             }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            //AddNewPhoto.Enabled = false;
+            //EditerPhoto.Enabled = false;
+            //ViewPhoto.Enabled = false;
+            //DeletePhoto.Enabled = false;
+
             ToolTip toolTipFlash = new ToolTip();
 
             toolTipFlash.SetToolTip(AddNewPhoto, "Ajouter une photo");
@@ -283,6 +293,15 @@ namespace Client_PM
         private void MS_Account_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void DeletePhoto_Click(object sender, EventArgs e)
+        {
+            var confirmResult = MessageBox.Show("Are you sure to delete this item ??","Confirm Delete!!",MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.Yes)
+            {
+                PhotoBrowser.DeleteSelectedPhoto();
+            }
         }
     }
 }

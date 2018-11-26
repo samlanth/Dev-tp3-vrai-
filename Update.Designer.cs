@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.IBX_avatar = new PhotoManagerClient.ImageBox();
             this.BT_Update = new System.Windows.Forms.Button();
             this.BT_Rotate = new System.Windows.Forms.Button();
             this.BT_exit = new System.Windows.Forms.Button();
@@ -40,35 +39,22 @@
             this.LB_title = new System.Windows.Forms.Label();
             this.RTBX_description = new System.Windows.Forms.RichTextBox();
             this.TB_keyword = new System.Windows.Forms.TextBox();
-            this.TB_date = new System.Windows.Forms.TextBox();
             this.TB_title = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_avatar)).BeginInit();
+            this.DTP_Date = new System.Windows.Forms.DateTimePicker();
+            this.IBX_photo = new PhotoManagerClient.ImageBox();
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // IBX_avatar
-            // 
-            this.IBX_avatar.AllowDrop = true;
-            this.IBX_avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.IBX_avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IBX_avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
-    "th context menu.";
-            this.IBX_avatar.ImportImageText = "Import image from file...";
-            this.IBX_avatar.Location = new System.Drawing.Point(18, 202);
-            this.IBX_avatar.Name = "IBX_avatar";
-            this.IBX_avatar.OpenFileDialogTitle = "Please choose image an file";
-            this.IBX_avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_avatar.Size = new System.Drawing.Size(279, 166);
-            this.IBX_avatar.TabIndex = 25;
-            this.IBX_avatar.TabStop = false;
             // 
             // BT_Update
             // 
+            this.BT_Update.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.BT_Update.Location = new System.Drawing.Point(215, 374);
             this.BT_Update.Name = "BT_Update";
             this.BT_Update.Size = new System.Drawing.Size(82, 31);
             this.BT_Update.TabIndex = 24;
             this.BT_Update.Text = "Update";
             this.BT_Update.UseVisualStyleBackColor = true;
+            this.BT_Update.Click += new System.EventHandler(this.BT_Update_Click);
             // 
             // BT_Rotate
             // 
@@ -78,6 +64,7 @@
             this.BT_Rotate.TabIndex = 23;
             this.BT_Rotate.Text = "Rotate";
             this.BT_Rotate.UseVisualStyleBackColor = true;
+            this.BT_Rotate.Click += new System.EventHandler(this.BT_Rotate_Click);
             // 
             // BT_exit
             // 
@@ -87,6 +74,7 @@
             this.BT_exit.TabIndex = 22;
             this.BT_exit.Text = "Cancel";
             this.BT_exit.UseVisualStyleBackColor = true;
+            this.BT_exit.Click += new System.EventHandler(this.BT_exit_Click);
             // 
             // CB_Shared
             // 
@@ -149,13 +137,6 @@
             this.TB_keyword.Size = new System.Drawing.Size(214, 20);
             this.TB_keyword.TabIndex = 15;
             // 
-            // TB_date
-            // 
-            this.TB_date.Location = new System.Drawing.Point(84, 38);
-            this.TB_date.Name = "TB_date";
-            this.TB_date.Size = new System.Drawing.Size(214, 20);
-            this.TB_date.TabIndex = 14;
-            // 
             // TB_title
             // 
             this.TB_title.Location = new System.Drawing.Point(83, 9);
@@ -163,12 +144,36 @@
             this.TB_title.Size = new System.Drawing.Size(214, 20);
             this.TB_title.TabIndex = 13;
             // 
+            // DTP_Date
+            // 
+            this.DTP_Date.Location = new System.Drawing.Point(83, 38);
+            this.DTP_Date.Name = "DTP_Date";
+            this.DTP_Date.Size = new System.Drawing.Size(215, 20);
+            this.DTP_Date.TabIndex = 26;
+            // 
+            // IBX_photo
+            // 
+            this.IBX_photo.AllowDrop = true;
+            this.IBX_photo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.IBX_photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
+    "th context menu.";
+            this.IBX_photo.ImportImageText = "Import image from file...";
+            this.IBX_photo.Location = new System.Drawing.Point(18, 202);
+            this.IBX_photo.Name = "IBX_photo";
+            this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
+            this.IBX_photo.PasteMenuText = "Paste image from clipboard";
+            this.IBX_photo.Size = new System.Drawing.Size(279, 166);
+            this.IBX_photo.TabIndex = 25;
+            this.IBX_photo.TabStop = false;
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(313, 414);
-            this.Controls.Add(this.IBX_avatar);
+            this.Controls.Add(this.DTP_Date);
+            this.Controls.Add(this.IBX_photo);
             this.Controls.Add(this.BT_Update);
             this.Controls.Add(this.BT_Rotate);
             this.Controls.Add(this.BT_exit);
@@ -179,11 +184,11 @@
             this.Controls.Add(this.LB_title);
             this.Controls.Add(this.RTBX_description);
             this.Controls.Add(this.TB_keyword);
-            this.Controls.Add(this.TB_date);
             this.Controls.Add(this.TB_title);
             this.Name = "Update";
             this.Text = "Update";
-            ((System.ComponentModel.ISupportInitialize)(this.IBX_avatar)).EndInit();
+            this.Load += new System.EventHandler(this.Update_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +196,7 @@
 
         #endregion
 
-        private PhotoManagerClient.ImageBox IBX_avatar;
+        private PhotoManagerClient.ImageBox IBX_photo;
         private System.Windows.Forms.Button BT_Update;
         private System.Windows.Forms.Button BT_Rotate;
         private System.Windows.Forms.Button BT_exit;
@@ -202,7 +207,7 @@
         private System.Windows.Forms.Label LB_title;
         private System.Windows.Forms.RichTextBox RTBX_description;
         private System.Windows.Forms.TextBox TB_keyword;
-        private System.Windows.Forms.TextBox TB_date;
         private System.Windows.Forms.TextBox TB_title;
+        private System.Windows.Forms.DateTimePicker DTP_Date;
     }
 }

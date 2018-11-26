@@ -16,5 +16,10 @@ namespace Client_PM
         {
             InitializeComponent();
         }
+
+        private void BTN_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

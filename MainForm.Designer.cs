@@ -345,7 +345,7 @@
             this.ViewPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.BackgroundImage")));
             this.ViewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ViewPhoto.ClickedImage = null;
-            this.ViewPhoto.DisabledImage = null;
+            this.ViewPhoto.DisabledImage = global::Client_PM.Properties.Resources._201_spy_eyes_disable;
             this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
             this.ViewPhoto.Location = new System.Drawing.Point(132, 41);
             this.ViewPhoto.Name = "ViewPhoto";
@@ -364,7 +364,7 @@
             this.DeletePhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.BackgroundImage")));
             this.DeletePhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DeletePhoto.ClickedImage = null;
-            this.DeletePhoto.DisabledImage = null;
+            this.DeletePhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.DisabledImage")));
             this.DeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.Image")));
             this.DeletePhoto.Location = new System.Drawing.Point(90, 41);
             this.DeletePhoto.Name = "DeletePhoto";
@@ -373,6 +373,7 @@
             this.DeletePhoto.Size = new System.Drawing.Size(36, 36);
             this.DeletePhoto.TabIndex = 5;
             this.DeletePhoto.UseVisualStyleBackColor = true;
+            this.DeletePhoto.Click += new System.EventHandler(this.DeletePhoto_Click);
             this.DeletePhoto.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DeletePhoto_MouseDown);
             this.DeletePhoto.MouseLeave += new System.EventHandler(this.DeletePhoto_MouseLeave);
             this.DeletePhoto.MouseHover += new System.EventHandler(this.DeletePhoto_MouseHover);
@@ -382,7 +383,7 @@
             this.EditerPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.BackgroundImage")));
             this.EditerPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EditerPhoto.ClickedImage = null;
-            this.EditerPhoto.DisabledImage = null;
+            this.EditerPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.DisabledImage")));
             this.EditerPhoto.Image = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.Image")));
             this.EditerPhoto.Location = new System.Drawing.Point(48, 41);
             this.EditerPhoto.Name = "EditerPhoto";
@@ -401,7 +402,7 @@
             this.AddNewPhoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.BackgroundImage")));
             this.AddNewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AddNewPhoto.ClickedImage = null;
-            this.AddNewPhoto.DisabledImage = null;
+            this.AddNewPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.DisabledImage")));
             this.AddNewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.Image")));
             this.AddNewPhoto.Location = new System.Drawing.Point(6, 41);
             this.AddNewPhoto.Name = "AddNewPhoto";

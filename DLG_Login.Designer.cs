@@ -81,6 +81,7 @@
             this.BTN_Cancel.TabIndex = 3;
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
+            this.BTN_Cancel.Click += new System.EventHandler(this.BTN_Cancel_Click);
             // 
             // BTN_Ok
             // 
