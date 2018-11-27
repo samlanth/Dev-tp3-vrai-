@@ -79,9 +79,9 @@
             // 
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.CBX_UsersList);
-            this.groupBox1.Location = new System.Drawing.Point(575, 27);
+            this.groupBox1.Location = new System.Drawing.Point(525, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(275, 105);
+            this.groupBox1.Size = new System.Drawing.Size(325, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -101,7 +101,7 @@
             this.CBX_UsersList.FormattingEnabled = true;
             this.CBX_UsersList.Location = new System.Drawing.Point(7, 61);
             this.CBX_UsersList.Name = "CBX_UsersList";
-            this.CBX_UsersList.Size = new System.Drawing.Size(250, 28);
+            this.CBX_UsersList.Size = new System.Drawing.Size(299, 28);
             this.CBX_UsersList.TabIndex = 0;
             this.CBX_UsersList.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
@@ -196,9 +196,9 @@
             // 
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
-            this.groupBox2.Location = new System.Drawing.Point(294, 27);
+            this.groupBox2.Location = new System.Drawing.Point(216, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 105);
+            this.groupBox2.Size = new System.Drawing.Size(303, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
@@ -218,7 +218,7 @@
             this.CBX_Keywords.FormattingEnabled = true;
             this.CBX_Keywords.Location = new System.Drawing.Point(7, 61);
             this.CBX_Keywords.Name = "CBX_Keywords";
-            this.CBX_Keywords.Size = new System.Drawing.Size(250, 28);
+            this.CBX_Keywords.Size = new System.Drawing.Size(290, 28);
             this.CBX_Keywords.TabIndex = 0;
             this.CBX_Keywords.SelectedIndexChanged += new System.EventHandler(this.CBX_Keywords_SelectedIndexChanged);
             // 
@@ -228,7 +228,7 @@
             this.groupBox3.Controls.Add(this.BTN_Right);
             this.groupBox3.Controls.Add(this.BTN_Top);
             this.groupBox3.Controls.Add(this.BTN_Left);
-            this.groupBox3.Location = new System.Drawing.Point(1137, 27);
+            this.groupBox3.Location = new System.Drawing.Point(1148, 27);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(210, 105);
             this.groupBox3.TabIndex = 1;
@@ -295,7 +295,7 @@
             this.groupBox5.Controls.Add(this.comboBox1);
             this.groupBox5.Location = new System.Drawing.Point(856, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(275, 105);
+            this.groupBox5.Size = new System.Drawing.Size(286, 105);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
@@ -335,7 +335,7 @@
             this.groupBox6.Controls.Add(this.AddNewPhoto);
             this.groupBox6.Location = new System.Drawing.Point(13, 27);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(275, 105);
+            this.groupBox6.Size = new System.Drawing.Size(197, 105);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
@@ -347,7 +347,7 @@
             this.ViewPhoto.ClickedImage = null;
             this.ViewPhoto.DisabledImage = global::Client_PM.Properties.Resources._201_spy_eyes_disable;
             this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
-            this.ViewPhoto.Location = new System.Drawing.Point(147, 41);
+            this.ViewPhoto.Location = new System.Drawing.Point(146, 42);
             this.ViewPhoto.Name = "ViewPhoto";
             this.ViewPhoto.NeutralImage = null;
             this.ViewPhoto.OverImage = null;
