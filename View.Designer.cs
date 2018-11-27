@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.GB_Owner = new System.Windows.Forms.GroupBox();
+            this.IBX_photo = new PhotoManagerClient.ImageBox();
             this.LB_Nom = new System.Windows.Forms.Label();
             this.LB_X = new System.Windows.Forms.Label();
             this.LB_Date = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TB_right = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.IBX_photo = new PhotoManagerClient.ImageBox();
             this.GB_Owner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).BeginInit();
             this.SuspendLayout();
@@ -59,15 +59,32 @@
             this.GB_Owner.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.GB_Owner.Name = "GB_Owner";
             this.GB_Owner.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.GB_Owner.Size = new System.Drawing.Size(453, 174);
+            this.GB_Owner.Size = new System.Drawing.Size(538, 174);
             this.GB_Owner.TabIndex = 0;
             this.GB_Owner.TabStop = false;
             this.GB_Owner.Text = "Owner";
             // 
+            // IBX_photo
+            // 
+            this.IBX_photo.AllowDrop = true;
+            this.IBX_photo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.IBX_photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
+    "th context menu.";
+            this.IBX_photo.ImportImageText = "Import image from file...";
+            this.IBX_photo.Location = new System.Drawing.Point(21, 29);
+            this.IBX_photo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.IBX_photo.Name = "IBX_photo";
+            this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
+            this.IBX_photo.PasteMenuText = "Paste image from clipboard";
+            this.IBX_photo.Size = new System.Drawing.Size(218, 125);
+            this.IBX_photo.TabIndex = 6;
+            this.IBX_photo.TabStop = false;
+            // 
             // LB_Nom
             // 
             this.LB_Nom.AutoSize = true;
-            this.LB_Nom.Location = new System.Drawing.Point(224, 79);
+            this.LB_Nom.Location = new System.Drawing.Point(271, 79);
             this.LB_Nom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LB_Nom.Name = "LB_Nom";
             this.LB_Nom.Size = new System.Drawing.Size(45, 20);
@@ -149,7 +166,7 @@
             this.TB_keywords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TB_keywords.Name = "TB_keywords";
             this.TB_keywords.ReadOnly = true;
-            this.TB_keywords.Size = new System.Drawing.Size(537, 26);
+            this.TB_keywords.Size = new System.Drawing.Size(244, 26);
             this.TB_keywords.TabIndex = 6;
             // 
             // TB_Left
@@ -183,7 +200,7 @@
             // 
             // BTN_Fermer
             // 
-            this.BTN_Fermer.Location = new System.Drawing.Point(440, 561);
+            this.BTN_Fermer.Location = new System.Drawing.Point(434, 549);
             this.BTN_Fermer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BTN_Fermer.Name = "BTN_Fermer";
             this.BTN_Fermer.Size = new System.Drawing.Size(124, 35);
@@ -219,23 +236,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(240, 26);
             this.dateTimePicker1.TabIndex = 13;
-            // 
-            // IBX_photo
-            // 
-            this.IBX_photo.AllowDrop = true;
-            this.IBX_photo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.IBX_photo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
-    "th context menu.";
-            this.IBX_photo.ImportImageText = "Import image from file...";
-            this.IBX_photo.Location = new System.Drawing.Point(24, 52);
-            this.IBX_photo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.IBX_photo.Name = "IBX_photo";
-            this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
-            this.IBX_photo.PasteMenuText = "Paste image from clipboard";
-            this.IBX_photo.Size = new System.Drawing.Size(165, 76);
-            this.IBX_photo.TabIndex = 6;
-            this.IBX_photo.TabStop = false;
             // 
             // View
             // 
