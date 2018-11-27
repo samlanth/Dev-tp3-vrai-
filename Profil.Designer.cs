@@ -46,9 +46,10 @@
             // 
             // BTN_DeleteAccount
             // 
-            this.BTN_DeleteAccount.Location = new System.Drawing.Point(241, 170);
+            this.BTN_DeleteAccount.Location = new System.Drawing.Point(402, 262);
+            this.BTN_DeleteAccount.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.BTN_DeleteAccount.Name = "BTN_DeleteAccount";
-            this.BTN_DeleteAccount.Size = new System.Drawing.Size(92, 29);
+            this.BTN_DeleteAccount.Size = new System.Drawing.Size(153, 45);
             this.BTN_DeleteAccount.TabIndex = 5;
             this.BTN_DeleteAccount.Text = "Delete";
             this.BTN_DeleteAccount.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // BTN_Change
             // 
             this.BTN_Change.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.BTN_Change.Location = new System.Drawing.Point(355, 170);
+            this.BTN_Change.Location = new System.Drawing.Point(592, 262);
+            this.BTN_Change.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.BTN_Change.Name = "BTN_Change";
-            this.BTN_Change.Size = new System.Drawing.Size(92, 29);
+            this.BTN_Change.Size = new System.Drawing.Size(153, 45);
             this.BTN_Change.TabIndex = 14;
             this.BTN_Change.Text = "Changer";
             this.BTN_Change.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // BTN_Cancel
             // 
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.Location = new System.Drawing.Point(471, 170);
+            this.BTN_Cancel.Location = new System.Drawing.Point(785, 262);
+            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(92, 29);
+            this.BTN_Cancel.Size = new System.Drawing.Size(153, 45);
             this.BTN_Cancel.TabIndex = 15;
             this.BTN_Cancel.Text = "Annuler";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
@@ -77,51 +80,57 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 106);
+            this.label3.Location = new System.Drawing.Point(10, 163);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(100, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Vérification";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 72);
+            this.label2.Location = new System.Drawing.Point(10, 111);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 40);
+            this.label1.Location = new System.Drawing.Point(10, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Name";
             // 
             // TBX_VerifyPassword
             // 
-            this.TBX_VerifyPassword.Location = new System.Drawing.Point(78, 106);
+            this.TBX_VerifyPassword.Location = new System.Drawing.Point(130, 163);
+            this.TBX_VerifyPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TBX_VerifyPassword.Name = "TBX_VerifyPassword";
-            this.TBX_VerifyPassword.Size = new System.Drawing.Size(201, 20);
+            this.TBX_VerifyPassword.Size = new System.Drawing.Size(332, 26);
             this.TBX_VerifyPassword.TabIndex = 13;
             this.TBX_VerifyPassword.UseSystemPasswordChar = true;
             // 
             // TBX_Password
             // 
-            this.TBX_Password.Location = new System.Drawing.Point(78, 72);
+            this.TBX_Password.Location = new System.Drawing.Point(130, 111);
+            this.TBX_Password.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TBX_Password.Name = "TBX_Password";
-            this.TBX_Password.Size = new System.Drawing.Size(201, 20);
+            this.TBX_Password.Size = new System.Drawing.Size(332, 26);
             this.TBX_Password.TabIndex = 11;
             this.TBX_Password.UseSystemPasswordChar = true;
             // 
             // TBX_Username
             // 
-            this.TBX_Username.Location = new System.Drawing.Point(78, 40);
+            this.TBX_Username.Location = new System.Drawing.Point(130, 62);
+            this.TBX_Username.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.TBX_Username.Name = "TBX_Username";
-            this.TBX_Username.Size = new System.Drawing.Size(201, 20);
+            this.TBX_Username.Size = new System.Drawing.Size(332, 26);
             this.TBX_Username.TabIndex = 6;
             // 
             // groupBox1
@@ -132,9 +141,11 @@
             this.groupBox1.Controls.Add(this.TBX_VerifyPassword);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(268, 12);
+            this.groupBox1.Location = new System.Drawing.Point(447, 18);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(295, 152);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Size = new System.Drawing.Size(492, 234);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information de base";
@@ -147,24 +158,27 @@
             this.IBX_Avatar.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_Avatar.ImportImageText = "Import image from file...";
-            this.IBX_Avatar.Location = new System.Drawing.Point(12, 12);
+            this.IBX_Avatar.Location = new System.Drawing.Point(20, 18);
+            this.IBX_Avatar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.IBX_Avatar.Name = "IBX_Avatar";
             this.IBX_Avatar.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_Avatar.PasteMenuText = "Paste image from clipboard";
-            this.IBX_Avatar.Size = new System.Drawing.Size(250, 152);
+            this.IBX_Avatar.Size = new System.Drawing.Size(415, 233);
             this.IBX_Avatar.TabIndex = 12;
             this.IBX_Avatar.TabStop = false;
             // 
             // Profil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 215);
+            this.ClientSize = new System.Drawing.Size(952, 331);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BTN_DeleteAccount);
             this.Controls.Add(this.BTN_Change);
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.IBX_Avatar);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Profil";
             this.Text = "Changer Profil";
             this.groupBox1.ResumeLayout(false);

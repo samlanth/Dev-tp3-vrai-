@@ -79,9 +79,9 @@
             // 
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.CBX_UsersList);
-            this.groupBox1.Location = new System.Drawing.Point(451, 27);
+            this.groupBox1.Location = new System.Drawing.Point(575, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(247, 105);
+            this.groupBox1.Size = new System.Drawing.Size(275, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -89,9 +89,9 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 23);
+            this.checkBox2.Location = new System.Drawing.Point(7, 23);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(222, 24);
+            this.checkBox2.Size = new System.Drawing.Size(248, 24);
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Ne pas afficher mes photos";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -99,9 +99,9 @@
             // CBX_UsersList
             // 
             this.CBX_UsersList.FormattingEnabled = true;
-            this.CBX_UsersList.Location = new System.Drawing.Point(6, 61);
+            this.CBX_UsersList.Location = new System.Drawing.Point(7, 61);
             this.CBX_UsersList.Name = "CBX_UsersList";
-            this.CBX_UsersList.Size = new System.Drawing.Size(225, 28);
+            this.CBX_UsersList.Size = new System.Drawing.Size(250, 28);
             this.CBX_UsersList.TabIndex = 0;
             this.CBX_UsersList.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
@@ -112,7 +112,8 @@
             this.toolStripMenuItem1});
             this.MS_Account.Location = new System.Drawing.Point(0, 0);
             this.MS_Account.Name = "MS_Account";
-            this.MS_Account.Size = new System.Drawing.Size(1153, 24);
+            this.MS_Account.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.MS_Account.Size = new System.Drawing.Size(1370, 24);
             this.MS_Account.TabIndex = 2;
             this.MS_Account.Text = "menuStrip1";
             this.MS_Account.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MS_Account_ItemClicked);
@@ -195,9 +196,9 @@
             // 
             this.groupBox2.Controls.Add(this.checkBox1);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
-            this.groupBox2.Location = new System.Drawing.Point(195, 27);
+            this.groupBox2.Location = new System.Drawing.Point(294, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 105);
+            this.groupBox2.Size = new System.Drawing.Size(275, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
@@ -205,9 +206,9 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 23);
+            this.checkBox1.Location = new System.Drawing.Point(7, 23);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(205, 24);
+            this.checkBox1.Size = new System.Drawing.Size(227, 24);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Recherche avec keyword";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -215,22 +216,21 @@
             // CBX_Keywords
             // 
             this.CBX_Keywords.FormattingEnabled = true;
-            this.CBX_Keywords.Location = new System.Drawing.Point(6, 61);
+            this.CBX_Keywords.Location = new System.Drawing.Point(7, 61);
             this.CBX_Keywords.Name = "CBX_Keywords";
-            this.CBX_Keywords.Size = new System.Drawing.Size(225, 28);
+            this.CBX_Keywords.Size = new System.Drawing.Size(250, 28);
             this.CBX_Keywords.TabIndex = 0;
             this.CBX_Keywords.SelectedIndexChanged += new System.EventHandler(this.CBX_Keywords_SelectedIndexChanged);
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.BTN_Bottom);
             this.groupBox3.Controls.Add(this.BTN_Right);
             this.groupBox3.Controls.Add(this.BTN_Top);
             this.groupBox3.Controls.Add(this.BTN_Left);
-            this.groupBox3.Location = new System.Drawing.Point(958, 27);
+            this.groupBox3.Location = new System.Drawing.Point(1137, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(183, 105);
+            this.groupBox3.Size = new System.Drawing.Size(210, 105);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Placement";
@@ -238,9 +238,9 @@
             // BTN_Bottom
             // 
             this.BTN_Bottom.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Bottom.Location = new System.Drawing.Point(146, 40);
+            this.BTN_Bottom.Location = new System.Drawing.Point(162, 40);
             this.BTN_Bottom.Name = "BTN_Bottom";
-            this.BTN_Bottom.Size = new System.Drawing.Size(31, 36);
+            this.BTN_Bottom.Size = new System.Drawing.Size(34, 36);
             this.BTN_Bottom.TabIndex = 0;
             this.BTN_Bottom.Text = "↓";
             this.BTN_Bottom.UseVisualStyleBackColor = true;
@@ -249,9 +249,9 @@
             // BTN_Right
             // 
             this.BTN_Right.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Right.Location = new System.Drawing.Point(98, 41);
+            this.BTN_Right.Location = new System.Drawing.Point(109, 41);
             this.BTN_Right.Name = "BTN_Right";
-            this.BTN_Right.Size = new System.Drawing.Size(31, 36);
+            this.BTN_Right.Size = new System.Drawing.Size(34, 36);
             this.BTN_Right.TabIndex = 0;
             this.BTN_Right.Text = "→";
             this.BTN_Right.UseVisualStyleBackColor = true;
@@ -260,9 +260,9 @@
             // BTN_Top
             // 
             this.BTN_Top.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Top.Location = new System.Drawing.Point(52, 41);
+            this.BTN_Top.Location = new System.Drawing.Point(57, 41);
             this.BTN_Top.Name = "BTN_Top";
-            this.BTN_Top.Size = new System.Drawing.Size(31, 36);
+            this.BTN_Top.Size = new System.Drawing.Size(34, 36);
             this.BTN_Top.TabIndex = 0;
             this.BTN_Top.Text = "↑";
             this.BTN_Top.UseVisualStyleBackColor = true;
@@ -271,9 +271,9 @@
             // BTN_Left
             // 
             this.BTN_Left.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Left.Location = new System.Drawing.Point(6, 39);
+            this.BTN_Left.Location = new System.Drawing.Point(7, 39);
             this.BTN_Left.Name = "BTN_Left";
-            this.BTN_Left.Size = new System.Drawing.Size(31, 37);
+            this.BTN_Left.Size = new System.Drawing.Size(34, 37);
             this.BTN_Left.TabIndex = 0;
             this.BTN_Left.Text = "← ";
             this.BTN_Left.UseVisualStyleBackColor = true;
@@ -281,9 +281,9 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Location = new System.Drawing.Point(12, 27);
+            this.groupBox4.Location = new System.Drawing.Point(13, 27);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(177, 105);
+            this.groupBox4.Size = new System.Drawing.Size(197, 105);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Commands";
@@ -293,9 +293,9 @@
             this.groupBox5.Controls.Add(this.checkBox3);
             this.groupBox5.Controls.Add(this.comboBox2);
             this.groupBox5.Controls.Add(this.comboBox1);
-            this.groupBox5.Location = new System.Drawing.Point(704, 27);
+            this.groupBox5.Location = new System.Drawing.Point(856, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(248, 105);
+            this.groupBox5.Size = new System.Drawing.Size(275, 105);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
@@ -303,7 +303,7 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(9, 28);
+            this.checkBox3.Location = new System.Drawing.Point(10, 28);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 3;
@@ -312,18 +312,18 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(45, 61);
+            this.comboBox2.Location = new System.Drawing.Point(50, 61);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(197, 28);
+            this.comboBox2.Size = new System.Drawing.Size(218, 28);
             this.comboBox2.TabIndex = 0;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 28);
+            this.comboBox1.Location = new System.Drawing.Point(50, 28);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(197, 28);
+            this.comboBox1.Size = new System.Drawing.Size(218, 28);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
@@ -333,9 +333,9 @@
             this.groupBox6.Controls.Add(this.DeletePhoto);
             this.groupBox6.Controls.Add(this.EditerPhoto);
             this.groupBox6.Controls.Add(this.AddNewPhoto);
-            this.groupBox6.Location = new System.Drawing.Point(12, 27);
+            this.groupBox6.Location = new System.Drawing.Point(13, 27);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(177, 105);
+            this.groupBox6.Size = new System.Drawing.Size(275, 105);
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
@@ -347,11 +347,11 @@
             this.ViewPhoto.ClickedImage = null;
             this.ViewPhoto.DisabledImage = global::Client_PM.Properties.Resources._201_spy_eyes_disable;
             this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
-            this.ViewPhoto.Location = new System.Drawing.Point(132, 41);
+            this.ViewPhoto.Location = new System.Drawing.Point(147, 41);
             this.ViewPhoto.Name = "ViewPhoto";
             this.ViewPhoto.NeutralImage = null;
             this.ViewPhoto.OverImage = null;
-            this.ViewPhoto.Size = new System.Drawing.Size(36, 36);
+            this.ViewPhoto.Size = new System.Drawing.Size(40, 36);
             this.ViewPhoto.TabIndex = 6;
             this.ViewPhoto.UseVisualStyleBackColor = true;
             this.ViewPhoto.Click += new System.EventHandler(this.ViewPhoto_Click);
@@ -366,11 +366,11 @@
             this.DeletePhoto.ClickedImage = null;
             this.DeletePhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.DisabledImage")));
             this.DeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.Image")));
-            this.DeletePhoto.Location = new System.Drawing.Point(90, 41);
+            this.DeletePhoto.Location = new System.Drawing.Point(100, 41);
             this.DeletePhoto.Name = "DeletePhoto";
             this.DeletePhoto.NeutralImage = null;
             this.DeletePhoto.OverImage = null;
-            this.DeletePhoto.Size = new System.Drawing.Size(36, 36);
+            this.DeletePhoto.Size = new System.Drawing.Size(40, 36);
             this.DeletePhoto.TabIndex = 5;
             this.DeletePhoto.UseVisualStyleBackColor = true;
             this.DeletePhoto.Click += new System.EventHandler(this.DeletePhoto_Click);
@@ -385,11 +385,11 @@
             this.EditerPhoto.ClickedImage = null;
             this.EditerPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.DisabledImage")));
             this.EditerPhoto.Image = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.Image")));
-            this.EditerPhoto.Location = new System.Drawing.Point(48, 41);
+            this.EditerPhoto.Location = new System.Drawing.Point(53, 41);
             this.EditerPhoto.Name = "EditerPhoto";
             this.EditerPhoto.NeutralImage = null;
             this.EditerPhoto.OverImage = null;
-            this.EditerPhoto.Size = new System.Drawing.Size(36, 36);
+            this.EditerPhoto.Size = new System.Drawing.Size(40, 36);
             this.EditerPhoto.TabIndex = 4;
             this.EditerPhoto.UseVisualStyleBackColor = true;
             this.EditerPhoto.Click += new System.EventHandler(this.EditerPhoto_Click);
@@ -404,11 +404,11 @@
             this.AddNewPhoto.ClickedImage = null;
             this.AddNewPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.DisabledImage")));
             this.AddNewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.Image")));
-            this.AddNewPhoto.Location = new System.Drawing.Point(6, 41);
+            this.AddNewPhoto.Location = new System.Drawing.Point(7, 41);
             this.AddNewPhoto.Name = "AddNewPhoto";
             this.AddNewPhoto.NeutralImage = null;
             this.AddNewPhoto.OverImage = null;
-            this.AddNewPhoto.Size = new System.Drawing.Size(36, 36);
+            this.AddNewPhoto.Size = new System.Drawing.Size(40, 36);
             this.AddNewPhoto.TabIndex = 3;
             this.AddNewPhoto.UseVisualStyleBackColor = true;
             this.AddNewPhoto.Click += new System.EventHandler(this.AddNewPhoto_Click);
@@ -421,11 +421,11 @@
             this.PhotoBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhotoBrowser.Location = new System.Drawing.Point(12, 138);
+            this.PhotoBrowser.Location = new System.Drawing.Point(13, 138);
             this.PhotoBrowser.Name = "PhotoBrowser";
             this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
             this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1129, 570);
+            this.PhotoBrowser.Size = new System.Drawing.Size(1347, 518);
             this.PhotoBrowser.TabIndex = 0;
             // 
             // flashButton5
@@ -505,9 +505,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1153, 674);
+            this.ClientSize = new System.Drawing.Size(1370, 572);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
@@ -516,10 +516,10 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.PhotoBrowser);
             this.Controls.Add(this.MS_Account);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.MS_Account;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1169, 713);
+            this.MinimumSize = new System.Drawing.Size(1139, 611);
             this.Name = "MainForm";
             this.Text = "Photo manager client application";
             this.Load += new System.EventHandler(this.MainForm_Load);

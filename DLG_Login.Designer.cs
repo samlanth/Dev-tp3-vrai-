@@ -41,33 +41,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 34);
+            this.label1.Location = new System.Drawing.Point(7, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "User name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 34);
+            this.label2.Location = new System.Drawing.Point(326, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Password";
             // 
             // TBX_UserName
             // 
-            this.TBX_UserName.Location = new System.Drawing.Point(99, 31);
+            this.TBX_UserName.Location = new System.Drawing.Point(110, 31);
             this.TBX_UserName.Name = "TBX_UserName";
-            this.TBX_UserName.Size = new System.Drawing.Size(188, 26);
+            this.TBX_UserName.Size = new System.Drawing.Size(208, 26);
             this.TBX_UserName.TabIndex = 0;
             // 
             // TBX_Password
             // 
-            this.TBX_Password.Location = new System.Drawing.Point(377, 31);
+            this.TBX_Password.Location = new System.Drawing.Point(419, 31);
             this.TBX_Password.Name = "TBX_Password";
-            this.TBX_Password.Size = new System.Drawing.Size(188, 26);
+            this.TBX_Password.Size = new System.Drawing.Size(208, 26);
             this.TBX_Password.TabIndex = 1;
             this.TBX_Password.UseSystemPasswordChar = true;
             // 
@@ -75,9 +75,9 @@
             // 
             this.BTN_Cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BTN_Cancel.Location = new System.Drawing.Point(99, 64);
+            this.BTN_Cancel.Location = new System.Drawing.Point(110, 64);
             this.BTN_Cancel.Name = "BTN_Cancel";
-            this.BTN_Cancel.Size = new System.Drawing.Size(83, 29);
+            this.BTN_Cancel.Size = new System.Drawing.Size(92, 29);
             this.BTN_Cancel.TabIndex = 3;
             this.BTN_Cancel.Text = "Cancel";
             this.BTN_Cancel.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // BTN_Ok
             // 
             this.BTN_Ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BTN_Ok.Location = new System.Drawing.Point(10, 64);
+            this.BTN_Ok.Location = new System.Drawing.Point(11, 64);
             this.BTN_Ok.Name = "BTN_Ok";
-            this.BTN_Ok.Size = new System.Drawing.Size(83, 29);
+            this.BTN_Ok.Size = new System.Drawing.Size(92, 29);
             this.BTN_Ok.TabIndex = 2;
             this.BTN_Ok.Text = "Log on";
             this.BTN_Ok.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TBX_UserName);
-            this.groupBox1.Location = new System.Drawing.Point(23, 12);
+            this.groupBox1.Location = new System.Drawing.Point(26, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(581, 99);
+            this.groupBox1.Size = new System.Drawing.Size(646, 99);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Information";
@@ -111,13 +111,13 @@
             // DLG_Login
             // 
             this.AcceptButton = this.BTN_Ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Cancel;
-            this.ClientSize = new System.Drawing.Size(625, 130);
+            this.ClientSize = new System.Drawing.Size(694, 130);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DLG_Login";
