@@ -62,14 +62,6 @@ namespace Client_PM
                 }
         }
 
-        private void MainForm_Shown(object sender, EventArgs e)
-        {
-            WaitSplash.Show(this, "Loading photos from server...");
-            photos = DBPhotosWebServices.GetAllPhotos();
-            //photos = DBPhotosWebServices.GetAllPhotos().Where(p=>BlacklistedUsers.indexof(p.ownerid)==-1).tolist();
-            WaitSplash.Hide();
-        }
-
         private void Slideshow_Load(object sender, EventArgs e)
         {
             Load_Settings();
@@ -95,6 +87,14 @@ namespace Client_PM
         private void Slideshow_FormClosing(object sender, FormClosingEventArgs e)
         {
             Save_settings();
+        }
+
+        private void Slideshow_Shown(object sender, EventArgs e)
+        {
+            WaitSplash.Show(this, "Loading photos from server...");
+            photos = DBPhotosWebServices.GetAllPhotos();
+            //photos = DBPhotosWebServices.GetAllPhotos().Where(p=>BlacklistedUsers.indexof(p.ownerid)==-1).tolist();
+            WaitSplash.Hide();
         }
     }
 }
