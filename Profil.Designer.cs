@@ -47,18 +47,19 @@
             // BTN_DeleteAccount
             // 
             this.BTN_DeleteAccount.Location = new System.Drawing.Point(402, 262);
-            this.BTN_DeleteAccount.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_DeleteAccount.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_DeleteAccount.Name = "BTN_DeleteAccount";
             this.BTN_DeleteAccount.Size = new System.Drawing.Size(153, 45);
             this.BTN_DeleteAccount.TabIndex = 5;
             this.BTN_DeleteAccount.Text = "Delete";
             this.BTN_DeleteAccount.UseVisualStyleBackColor = true;
+            this.BTN_DeleteAccount.Click += new System.EventHandler(this.BTN_DeleteAccount_Click);
             // 
             // BTN_Change
             // 
             this.BTN_Change.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.BTN_Change.Location = new System.Drawing.Point(592, 262);
-            this.BTN_Change.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_Change.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_Change.Name = "BTN_Change";
             this.BTN_Change.Size = new System.Drawing.Size(153, 45);
             this.BTN_Change.TabIndex = 14;
@@ -69,7 +70,7 @@
             // 
             this.BTN_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BTN_Cancel.Location = new System.Drawing.Point(785, 262);
-            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.BTN_Cancel.Margin = new System.Windows.Forms.Padding(5);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(153, 45);
             this.BTN_Cancel.TabIndex = 15;
@@ -110,7 +111,7 @@
             // TBX_VerifyPassword
             // 
             this.TBX_VerifyPassword.Location = new System.Drawing.Point(130, 163);
-            this.TBX_VerifyPassword.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TBX_VerifyPassword.Margin = new System.Windows.Forms.Padding(5);
             this.TBX_VerifyPassword.Name = "TBX_VerifyPassword";
             this.TBX_VerifyPassword.Size = new System.Drawing.Size(332, 26);
             this.TBX_VerifyPassword.TabIndex = 13;
@@ -119,7 +120,7 @@
             // TBX_Password
             // 
             this.TBX_Password.Location = new System.Drawing.Point(130, 111);
-            this.TBX_Password.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TBX_Password.Margin = new System.Windows.Forms.Padding(5);
             this.TBX_Password.Name = "TBX_Password";
             this.TBX_Password.Size = new System.Drawing.Size(332, 26);
             this.TBX_Password.TabIndex = 11;
@@ -128,7 +129,7 @@
             // TBX_Username
             // 
             this.TBX_Username.Location = new System.Drawing.Point(130, 62);
-            this.TBX_Username.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TBX_Username.Margin = new System.Windows.Forms.Padding(5);
             this.TBX_Username.Name = "TBX_Username";
             this.TBX_Username.Size = new System.Drawing.Size(332, 26);
             this.TBX_Username.TabIndex = 6;
@@ -142,9 +143,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(447, 18);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
             this.groupBox1.Size = new System.Drawing.Size(492, 234);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
@@ -159,7 +160,7 @@
     "th context menu.";
             this.IBX_Avatar.ImportImageText = "Import image from file...";
             this.IBX_Avatar.Location = new System.Drawing.Point(20, 18);
-            this.IBX_Avatar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.IBX_Avatar.Margin = new System.Windows.Forms.Padding(5);
             this.IBX_Avatar.Name = "IBX_Avatar";
             this.IBX_Avatar.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_Avatar.PasteMenuText = "Paste image from clipboard";
@@ -178,7 +179,7 @@
             this.Controls.Add(this.BTN_Cancel);
             this.Controls.Add(this.IBX_Avatar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Profil";
             this.Text = "Changer Profil";
             this.groupBox1.ResumeLayout(false);

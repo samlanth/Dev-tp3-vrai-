@@ -44,7 +44,6 @@
             this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.CBX_Keywords = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Bottom = new System.Windows.Forms.Button();
@@ -53,6 +52,8 @@
             this.BTN_Left = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.ViewPhoto = new PhotoManagerClient.FlashButton();
@@ -65,8 +66,7 @@
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.flashButton1 = new PhotoManagerClient.FlashButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.BT_openSlideShow = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -194,7 +194,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.BT_openSlideShow);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
             this.groupBox2.Location = new System.Drawing.Point(216, 27);
             this.groupBox2.Name = "groupBox2";
@@ -202,16 +202,6 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(227, 24);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Recherche avec keyword";
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // CBX_Keywords
             // 
@@ -299,6 +289,20 @@
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(46, 63);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(234, 26);
+            this.dateTimePicker2.TabIndex = 4;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(46, 28);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(234, 26);
+            this.dateTimePicker1.TabIndex = 4;
             // 
             // checkBox3
             // 
@@ -485,19 +489,15 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // BT_openSlideShow
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(46, 28);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(234, 26);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(46, 63);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(234, 26);
-            this.dateTimePicker2.TabIndex = 4;
+            this.BT_openSlideShow.Location = new System.Drawing.Point(7, 25);
+            this.BT_openSlideShow.Name = "BT_openSlideShow";
+            this.BT_openSlideShow.Size = new System.Drawing.Size(290, 29);
+            this.BT_openSlideShow.TabIndex = 3;
+            this.BT_openSlideShow.Text = "Slide Show";
+            this.BT_openSlideShow.UseVisualStyleBackColor = true;
+            this.BT_openSlideShow.Click += new System.EventHandler(this.BT_openSlideShow_Click);
             // 
             // MainForm
             // 
@@ -525,7 +525,6 @@
             this.MS_Account.ResumeLayout(false);
             this.MS_Account.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -561,7 +560,6 @@
         private PhotoManagerClient.FlashButton flashButton3;
         private PhotoManagerClient.FlashButton flashButton2;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem topToolStripMenuItem;
@@ -575,6 +573,7 @@
         private PhotoManagerClient.FlashButton AddNewPhoto;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button BT_openSlideShow;
     }
 }
 

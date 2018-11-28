@@ -69,5 +69,16 @@ namespace Client_PM
         {
             SubmitTask();
         }
+
+        private Image Rotate270(Image source)
+        {
+            Image rotated = (Image)source.Clone();
+            rotated.RotateFlip(RotateFlipType.Rotate270FlipNone);
+            return rotated;
+        }
+        private void BT_Rotate_Click(object sender, EventArgs e)
+        {
+            IBX_photo.BackgroundImage = Rotate270(IBX_photo.BackgroundImage);
+        }
     }
 }

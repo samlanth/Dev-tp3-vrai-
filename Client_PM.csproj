@@ -64,6 +64,12 @@
     <Compile Include="AjouterPhoto.Designer.cs">
       <DependentUpon>AjouterPhoto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Diaporama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diaporama.Designer.cs">
+      <DependentUpon>Diaporama.cs</DependentUpon>
+    </Compile>
     <Compile Include="DLG_Account.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,15 @@
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSlideShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSlideShow.Designer.cs">
+      <DependentUpon>ManageSlideShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoPanel.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="PM_Controls\FlashButton.cs">
       <SubType>Component</SubType>
@@ -111,6 +126,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Slideshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Slideshow.Designer.cs">
+      <DependentUpon>Slideshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlideshowHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideshowHelp.Designer.cs">
+      <DependentUpon>SlideshowHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Update.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +156,9 @@
     <EmbeddedResource Include="AjouterPhoto.resx">
       <DependentUpon>AjouterPhoto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diaporama.resx">
+      <DependentUpon>Diaporama.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DLG_Account.resx">
       <DependentUpon>DLG_Account.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +168,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageSlideShow.resx">
+      <DependentUpon>ManageSlideShow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Profil.resx">
       <DependentUpon>Profil.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,6 +178,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slideshow.resx">
+      <DependentUpon>Slideshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideshowHelp.resx">
+      <DependentUpon>SlideshowHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.cs</DependentUpon>

@@ -303,5 +303,13 @@ namespace Client_PM
                 PhotoBrowser.DeleteSelectedPhoto();
             }
         }
+
+        private void BT_openSlideShow_Click(object sender, EventArgs e)
+        {
+            Slideshow dlg = new Slideshow();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+            }
+        }
     }
 }
