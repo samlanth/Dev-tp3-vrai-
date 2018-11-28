@@ -77,17 +77,11 @@ namespace Client_PM
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
                 ManageSlideShow dlg = new ManageSlideShow();
                 dlg.SlideShowList = SlideShowList;
                 dlg.PhotoPool = photos;
                 dlg.ShowDialog();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("lag");
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
