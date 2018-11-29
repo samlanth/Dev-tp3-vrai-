@@ -19,6 +19,7 @@ namespace Client_PM
 
         // Liste des photos incluses dans le diaporama
         public List<Photo> PhotoPool { get; set; }
+        private List<Photo> Slides;
 
         // Liste des index de photo dans définissant l'ordre de passation
         private int[] PhotosOrder;
@@ -41,6 +42,7 @@ namespace Client_PM
         private void Diaporama_Shown(object sender, EventArgs e)
         {
             WaitSplash.Show(this, "Loading slide show photos...");
+            Slides = new List<Photo>();
             // PhotoPool = new List<Photo>();
             foreach (int photoId in SlideShowList)
             {
@@ -48,7 +50,7 @@ namespace Client_PM
                 // Photo photo = DBPhotosWebServices.GetPhoto(photoId);
                 Photo photo = PhotoPool.Where(p => p.Id == photoId).First<Photo>();
                 if (photo != null)
-                    PhotoPool.Add(photo);
+                    Slides.Add(photo);
             }
             WaitSplash.Hide();
             // Définir l'ordre des photos
@@ -97,15 +99,10 @@ namespace Client_PM
             if (PhotosOrder.Count() > 0)
             {
                 // Régler l'image de fond avec la prochaine photo
-                this.BackgroundImage = PhotoPool[PhotosOrder[Current_PhotosOrder_Index]].GetOriginalImage();
+                this.BackgroundImage = Slides[PhotosOrder[Current_PhotosOrder_Index]].GetOriginalImage();
                 // Index de la prochaine photo. Si était la dernière, revenir à la première
-                Current_PhotosOrder_Index = (Current_PhotosOrder_Index < PhotoPool.Count - 1 ? Current_PhotosOrder_Index + 1 : 0);
+                Current_PhotosOrder_Index = (Current_PhotosOrder_Index < Slides.Count - 1 ? Current_PhotosOrder_Index + 1 : 0);
             }
-        }
-        private void SlideshowTimer_Tick(object sender, EventArgs e)
-        {
-            // passer à la prochaine photo
-            Next();
         }
 
         // Mélanger les photos aléatoirement
@@ -149,7 +146,13 @@ namespace Client_PM
             SlideshowHelp dlg = new SlideshowHelp();
             dlg.ShowDialog();
         }
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void SlideshowTimer_Tick_1(object sender, EventArgs e)
+        {
+            Next();
+        }
+
+        private void helpToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ShowHelp();
         }
