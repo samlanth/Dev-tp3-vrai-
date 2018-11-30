@@ -15,9 +15,11 @@ namespace Client_PM
     {
         User Logged_User = null;
         PhotoFilter PhotoFilter = null;
+        public List<int> Black_Liste;
         public MainForm()
         {
             InitializeComponent();
+            Black_Liste = new List<int>();
             Text = "Photo Manager Client application - Not connected";
         }
 
@@ -50,8 +52,8 @@ namespace Client_PM
         private void LoadPhoto()
         {
             WaitSplash.Show(this, "Loading photos from server...");
-            PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
-            
+            PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Black_Liste.IndexOf(P.OwnerId) == -1).ToList());
+            // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
             WaitSplash.Hide();
         }
 
@@ -215,7 +217,7 @@ namespace Client_PM
             //EditerPhoto.Enabled = false;
             //ViewPhoto.Enabled = false;
             //DeletePhoto.Enabled = false;
-
+            Load_Settings();
             ToolTip toolTipFlash = new ToolTip();
 
             toolTipFlash.SetToolTip(AddNewPhoto, "Ajouter une photo");
@@ -309,6 +311,58 @@ namespace Client_PM
             Slideshow dlg = new Slideshow();
             if (dlg.ShowDialog() == DialogResult.OK)
             {
+            }
+        }
+        private void Load_Settings()
+        {
+            if (!Properties.Settings.Default.First_Execution)
+            {
+                LoadSlideShowList();
+            }
+            else
+            {
+                Black_Liste = new List<int>();
+            }
+        }
+        private void LoadSlideShowList()
+        {
+            Black_Liste = new List<int>();
+            if (Properties.Settings.Default.Black_List_save != null)
+            {
+                foreach (string userId in Properties.Settings.Default.Black_List_save)
+                {
+                    int UserId = int.Parse(userId);
+                    Black_Liste.Add(UserId);
+                }
+            }
+        }
+        private void topToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhotoBrowser.Placement = PhotoBrowserPlacement.Top;
+        }
+
+        private void downToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhotoBrowser.Placement = PhotoBrowserPlacement.Bottom;
+        }
+
+        private void leftToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhotoBrowser.Placement = PhotoBrowserPlacement.Left;
+        }
+
+        private void rightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PhotoBrowser.Placement = PhotoBrowserPlacement.Right;
+        }
+
+        private void BT_Blacklist_Click(object sender, EventArgs e)
+        {
+            Blacklist dlg = new Blacklist();
+            
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                Black_Liste = dlg.Black_Liste;
             }
         }
     }

@@ -44,6 +44,7 @@
             this.leftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BT_openSlideShow = new System.Windows.Forms.Button();
             this.CBX_Keywords = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.BTN_Bottom = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             this.flashButton3 = new PhotoManagerClient.FlashButton();
             this.flashButton2 = new PhotoManagerClient.FlashButton();
             this.flashButton1 = new PhotoManagerClient.FlashButton();
-            this.BT_openSlideShow = new System.Windows.Forms.Button();
+            this.BT_Blacklist = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -171,26 +172,30 @@
             // topToolStripMenuItem
             // 
             this.topToolStripMenuItem.Name = "topToolStripMenuItem";
-            this.topToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.topToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.topToolStripMenuItem.Text = "Top";
+            this.topToolStripMenuItem.Click += new System.EventHandler(this.topToolStripMenuItem_Click);
             // 
             // downToolStripMenuItem
             // 
             this.downToolStripMenuItem.Name = "downToolStripMenuItem";
-            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.downToolStripMenuItem.Text = "Down";
+            this.downToolStripMenuItem.Click += new System.EventHandler(this.downToolStripMenuItem_Click);
             // 
             // leftToolStripMenuItem
             // 
             this.leftToolStripMenuItem.Name = "leftToolStripMenuItem";
-            this.leftToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.leftToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.leftToolStripMenuItem.Text = "Left";
+            this.leftToolStripMenuItem.Click += new System.EventHandler(this.leftToolStripMenuItem_Click);
             // 
             // rightToolStripMenuItem
             // 
             this.rightToolStripMenuItem.Name = "rightToolStripMenuItem";
-            this.rightToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.rightToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.rightToolStripMenuItem.Text = "Right";
+            this.rightToolStripMenuItem.Click += new System.EventHandler(this.rightToolStripMenuItem_Click);
             // 
             // groupBox2
             // 
@@ -202,6 +207,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
+            // 
+            // BT_openSlideShow
+            // 
+            this.BT_openSlideShow.Location = new System.Drawing.Point(7, 25);
+            this.BT_openSlideShow.Name = "BT_openSlideShow";
+            this.BT_openSlideShow.Size = new System.Drawing.Size(290, 29);
+            this.BT_openSlideShow.TabIndex = 3;
+            this.BT_openSlideShow.Text = "Slide Show";
+            this.BT_openSlideShow.UseVisualStyleBackColor = true;
+            this.BT_openSlideShow.Click += new System.EventHandler(this.BT_openSlideShow_Click);
             // 
             // CBX_Keywords
             // 
@@ -489,21 +504,22 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             // 
-            // BT_openSlideShow
+            // BT_Blacklist
             // 
-            this.BT_openSlideShow.Location = new System.Drawing.Point(7, 25);
-            this.BT_openSlideShow.Name = "BT_openSlideShow";
-            this.BT_openSlideShow.Size = new System.Drawing.Size(290, 29);
-            this.BT_openSlideShow.TabIndex = 3;
-            this.BT_openSlideShow.Text = "Slide Show";
-            this.BT_openSlideShow.UseVisualStyleBackColor = true;
-            this.BT_openSlideShow.Click += new System.EventHandler(this.BT_openSlideShow_Click);
+            this.BT_Blacklist.Location = new System.Drawing.Point(532, 0);
+            this.BT_Blacklist.Name = "BT_Blacklist";
+            this.BT_Blacklist.Size = new System.Drawing.Size(75, 23);
+            this.BT_Blacklist.TabIndex = 3;
+            this.BT_Blacklist.Text = "Blacklist";
+            this.BT_Blacklist.UseVisualStyleBackColor = true;
+            this.BT_Blacklist.Click += new System.EventHandler(this.BT_Blacklist_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 572);
+            this.Controls.Add(this.BT_Blacklist);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
@@ -574,6 +590,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button BT_openSlideShow;
+        private System.Windows.Forms.Button BT_Blacklist;
     }
 }
 

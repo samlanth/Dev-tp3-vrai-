@@ -45,5 +45,16 @@ namespace Client_PM.Properties {
                 this["SlideShowList"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection Black_List_save {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["Black_List_save"]));
+            }
+            set {
+                this["Black_List_save"] = value;
+            }
+        }
     }
 }

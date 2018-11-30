@@ -156,6 +156,11 @@ namespace Client_PM
         {
             ShowHelp();
         }
+
+        private void Diaporama_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

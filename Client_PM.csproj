@@ -64,6 +64,12 @@
     <Compile Include="AjouterPhoto.Designer.cs">
       <DependentUpon>AjouterPhoto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Blacklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blacklist.Designer.cs">
+      <DependentUpon>Blacklist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diaporama.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="AjouterPhoto.resx">
       <DependentUpon>AjouterPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blacklist.resx">
+      <DependentUpon>Blacklist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diaporama.resx">
       <DependentUpon>Diaporama.cs</DependentUpon>

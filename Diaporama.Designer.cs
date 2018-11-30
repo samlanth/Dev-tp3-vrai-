@@ -67,6 +67,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Diaporama";
             this.Text = "Diaporama";
+            this.Load += new System.EventHandler(this.Diaporama_Load);
             this.Shown += new System.EventHandler(this.Diaporama_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
