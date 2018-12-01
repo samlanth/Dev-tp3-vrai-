@@ -38,12 +38,14 @@ namespace Client_PM
         {
             // Suspendre la mise à jour 
             SuspendLayout();
-            ////photos = DBPhotosWebServices.GetAllPhotos().Where(p=>BlacklistedUsers.indexof(p.ownerid)==-1).tolist();
-            foreach (Photo photo in PhotoPool)
+            
+            foreach (Photo photo in PhotoPool.Where(p=> Properties.Settings.Default.Black_List_save.IndexOf(p.OwnerId.ToString())==-1))
             {
                 Panel pp = MakePhotoPanel(photo.Id);
                 if (pp != null)
+                {
                     FLPN_Photos.Controls.Add(pp);
+                }
             }
             // Reprendre la mise à jour
             ResumeLayout();
@@ -53,8 +55,6 @@ namespace Client_PM
         {
             //Photo photo = DBPhotosWebServices.GetPhoto(photoId);
             Photo photo = PhotoPool.Where(p => p.Id == photoId).First<Photo>();
-            // Photo photo = PhotoPool.Where(p=>Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
-            //Photo photo = DBPhotosWebServices.GetAllPhotos().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.OwnerId) == -1); 
             if (photo != null)
             {
                 // Boîte d'image

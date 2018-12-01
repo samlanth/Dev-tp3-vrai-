@@ -32,6 +32,7 @@ namespace Client_PM
                     Black_Liste.Add(UserId);
                 }
             }
+            
         }
 
         private void Load_Settings()
@@ -49,7 +50,7 @@ namespace Client_PM
         private void Blacklist_Load(object sender, EventArgs e)
         {
             Load_Settings();
-            foreach (User User in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString())==-1))
+            foreach (User User in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
             {
                 LBOX_Usager.Items.Add(User);
             }
@@ -57,6 +58,7 @@ namespace Client_PM
             {
                 LBOX_Blacklist.Items.Add(User);
             }
+            
         }
 
         private void BT_Droite_Click(object sender, EventArgs e)
@@ -97,6 +99,7 @@ namespace Client_PM
         {
             Properties.Settings.Default.First_Execution = false;
             SaveBlackList();
+            
             Properties.Settings.Default.Save();
         }
     }

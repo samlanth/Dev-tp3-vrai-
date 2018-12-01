@@ -125,7 +125,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox LBOX_Usager;
-        private System.Windows.Forms.ListBox LBOX_Blacklist;
+        public System.Windows.Forms.ListBox LBOX_Blacklist;
         private System.Windows.Forms.Label LB_Usager;
         private System.Windows.Forms.Label LB_Blacklist;
         private System.Windows.Forms.Button BT_Droite;
