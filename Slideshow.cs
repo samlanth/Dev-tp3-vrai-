@@ -15,6 +15,7 @@ namespace Client_PM
     {
         private List<Photo> photos;
         private List<int> SlideShowList;
+       private  List<int> bl;
         public Slideshow()
         {
             InitializeComponent();
@@ -37,6 +38,8 @@ namespace Client_PM
             SaveSlideShowList();
             Properties.Settings.Default.Save();
         }
+
+
         private void LoadSlideShowList()
         {
             SlideShowList = new List<int>();
@@ -62,6 +65,11 @@ namespace Client_PM
                 }
         }
 
+       public void setblacklist(List<int> b)
+        {
+            bl = b;
+        }
+
         private void Slideshow_Load(object sender, EventArgs e)
         {
             Load_Settings();
@@ -79,6 +87,7 @@ namespace Client_PM
         private void button3_Click(object sender, EventArgs e)
         {
             Diaporama dlg = new Diaporama();
+            dlg.setblacklist(bl);
             dlg.SlideShowList = SlideShowList;
             dlg.PhotoPool = photos;
             dlg.ShowDialog();
@@ -93,7 +102,7 @@ namespace Client_PM
         {
             WaitSplash.Show(this, "Loading photos from server...");
             photos = DBPhotosWebServices.GetAllPhotos();
-            //photos = DBPhotosWebServices.GetAllPhotos().Where(p=>BlacklistedUsers.indexof(p.ownerid)==-1).tolist();
+            //photos = DBPhotosWebServices.GetAllPhotos().Where(p=>bl.IndexOf(p.OwnerId)==-1).ToList();
             WaitSplash.Hide();
         }
     }

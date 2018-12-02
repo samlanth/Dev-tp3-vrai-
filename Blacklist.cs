@@ -31,6 +31,7 @@ namespace Client_PM
                     int UserId = int.Parse(userId);
                     Black_Liste.Add(UserId);
                 }
+                int a = Black_Liste.Count();
             }
             
         }
@@ -39,7 +40,7 @@ namespace Client_PM
         {
             if (!Properties.Settings.Default.First_Execution)
             {
-                LoadSlideShowList();
+                //LoadSlideShowList();
             }
             else
             {
@@ -50,14 +51,20 @@ namespace Client_PM
         private void Blacklist_Load(object sender, EventArgs e)
         {
             Load_Settings();
-            foreach (User User in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
+            Black_Liste = new List<int>();
+            int ab = Black_Liste.Count();
+            int aab = User.GetAllUsers().Count();
+            foreach (User user in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
             {
-                LBOX_Usager.Items.Add(User);
+                LBOX_Usager.Items.Add(user);
             }
-            foreach (User User in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) != -1))
+            foreach (User user in  User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) != -1))
             {
-                LBOX_Blacklist.Items.Add(User);
+                Black_Liste.Add(user.Id);
+                LBOX_Blacklist.Items.Add(user);
             }
+            int a = Black_Liste.Count();
+            int b = User.GetAllUsers().Count();
             
         }
 
@@ -71,13 +78,20 @@ namespace Client_PM
         private void BT_Gauche_Click(object sender, EventArgs e)
         {
             LBOX_Usager.Items.Add(LBOX_Blacklist.SelectedItem);
+            int b = Black_Liste.Count;
+            Black_Liste.RemoveAt(LBOX_Blacklist.SelectedIndex);
+            int a = Black_Liste.Count;
+            //Properties.Settings.Default.Black_List_save.RemoveAt(LBOX_Blacklist.SelectedIndex);
+            //int a =  Properties.Settings.Default.Black_List_save.Count;
             LBOX_Blacklist.Items.RemoveAt(LBOX_Blacklist.SelectedIndex);
+            Save_settings();
             this.Refresh();
         }
         
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Save_settings();
             foreach (User user in LBOX_Blacklist.Items)
             {
                 Black_Liste.Add(user.Id);
@@ -87,20 +101,27 @@ namespace Client_PM
         private void SaveBlackList()
         {
             if (Properties.Settings.Default.Black_List_save == null)
+            {
                 Properties.Settings.Default.Black_List_save = new System.Collections.Specialized.StringCollection();
+            }
+
             Properties.Settings.Default.Black_List_save.Clear();
             if (Black_Liste != null)
-                foreach (int photoId in Black_Liste)
+            {
+                foreach (int UserId in Black_Liste)
                 {
-                    Properties.Settings.Default.Black_List_save.Add(photoId.ToString());
+                    Properties.Settings.Default.Black_List_save.Add(UserId.ToString());
                 }
+            }
+            int a = Black_Liste.Count();
+            Properties.Settings.Default.Save();
         }
         private void Save_settings()
         {
             Properties.Settings.Default.First_Execution = false;
             SaveBlackList();
             
-            Properties.Settings.Default.Save();
+           // Properties.Settings.Default.Save();
         }
     }
 }

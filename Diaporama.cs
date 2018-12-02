@@ -20,7 +20,7 @@ namespace Client_PM
         // Liste des photos incluses dans le diaporama
         public List<Photo> PhotoPool { get; set; }
         private List<Photo> Slides;
-
+        private List<int> bl;
         // Liste des index de photo dans définissant l'ordre de passation
         private int[] PhotosOrder;
         // Ordre aléatoire si vrai
@@ -39,6 +39,10 @@ namespace Client_PM
             this.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
+        public void setblacklist(List<int> b)
+        {
+            bl = b;
+        }
         private void Diaporama_Shown(object sender, EventArgs e)
         {
             WaitSplash.Show(this, "Loading slide show photos...");
@@ -47,10 +51,15 @@ namespace Client_PM
             foreach (int photoId in SlideShowList)
             {
                 // Obtenir la photo du service
-                // Photo photo = DBPhotosWebServices.GetPhoto(photoId);
-                Photo photo = PhotoPool.Where(p => p.Id == photoId).First<Photo>();
+                Photo photo = DBPhotosWebServices.GetPhoto(photoId);
+                //Photo photo = PhotoPool.Where(p => p.Id == photoId).First<Photo>();
                 if (photo != null)
-                    Slides.Add(photo);
+                {
+                    if (bl.IndexOf(photo.OwnerId) == -1)
+                    {
+                        Slides.Add(photo);
+                    }
+                }
             }
             WaitSplash.Hide();
             // Définir l'ordre des photos

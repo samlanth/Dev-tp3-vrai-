@@ -306,14 +306,6 @@ namespace Client_PM
             }
         }
 
-        private void BT_openSlideShow_Click(object sender, EventArgs e)
-        {
-            Slideshow dlg = new Slideshow();
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-            }
-        }
-
         private void topToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PhotoBrowser.Placement = PhotoBrowserPlacement.Top;
@@ -333,15 +325,26 @@ namespace Client_PM
         {
             PhotoBrowser.Placement = PhotoBrowserPlacement.Right;
         }
+        
 
-        private void BT_Blacklist_Click(object sender, EventArgs e)
+        private void blacklistToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Blacklist dlg = new Blacklist();
-            
+
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-                
+
                 Black_Liste = dlg.Black_Liste;
+            }
+        }
+
+        private void slideShowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Slideshow dlg = new Slideshow();
+            dlg.setblacklist(Black_Liste);
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+
             }
         }
     }
