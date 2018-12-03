@@ -58,7 +58,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.Cb_keyword = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.ViewPhoto = new PhotoManagerClient.FlashButton();
             this.DeletePhoto = new PhotoManagerClient.FlashButton();
             this.EditerPhoto = new PhotoManagerClient.FlashButton();
@@ -87,6 +87,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // checkBox2
             // 
@@ -97,6 +98,7 @@
             this.checkBox2.TabIndex = 3;
             this.checkBox2.Text = "Ne pas afficher mes photos";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // CBX_UsersList
             // 
@@ -136,28 +138,28 @@
             // MI_Account_Login
             // 
             this.MI_Account_Login.Name = "MI_Account_Login";
-            this.MI_Account_Login.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Login.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Login.Text = "Login";
             this.MI_Account_Login.Click += new System.EventHandler(this.MI_Account_Login_Click);
             // 
             // MI_Account_Profil
             // 
             this.MI_Account_Profil.Name = "MI_Account_Profil";
-            this.MI_Account_Profil.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Profil.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Profil.Text = "Profil";
             this.MI_Account_Profil.Click += new System.EventHandler(this.MI_Account_Profil_Click);
             // 
             // Mi_Account_Create
             // 
             this.Mi_Account_Create.Name = "Mi_Account_Create";
-            this.Mi_Account_Create.Size = new System.Drawing.Size(108, 22);
+            this.Mi_Account_Create.Size = new System.Drawing.Size(152, 22);
             this.Mi_Account_Create.Text = "Create";
             this.Mi_Account_Create.Click += new System.EventHandler(this.Mi_Account_Create_Click);
             // 
             // MI_Account_Exit
             // 
             this.MI_Account_Exit.Name = "MI_Account_Exit";
-            this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
+            this.MI_Account_Exit.Size = new System.Drawing.Size(152, 22);
             this.MI_Account_Exit.Text = "Exit";
             this.MI_Account_Exit.Click += new System.EventHandler(this.MI_Account_Exit_Click);
             // 
@@ -216,7 +218,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Cb_keyword);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.CBX_Keywords);
             this.groupBox2.Location = new System.Drawing.Point(216, 27);
             this.groupBox2.Name = "groupBox2";
@@ -224,9 +226,11 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // CBX_Keywords
             // 
+            this.CBX_Keywords.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBX_Keywords.FormattingEnabled = true;
             this.CBX_Keywords.Location = new System.Drawing.Point(23, 61);
             this.CBX_Keywords.Name = "CBX_Keywords";
@@ -318,6 +322,7 @@
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(215, 26);
             this.dateTimePicker2.TabIndex = 4;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dateTimePicker1
             // 
@@ -325,6 +330,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(215, 26);
             this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // checkBox3
             // 
@@ -334,6 +340,7 @@
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 3;
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // groupBox6
             // 
@@ -348,15 +355,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
             // 
-            // Cb_keyword
+            // label1
             // 
-            this.Cb_keyword.AutoSize = true;
-            this.Cb_keyword.Location = new System.Drawing.Point(23, 28);
-            this.Cb_keyword.Name = "Cb_keyword";
-            this.Cb_keyword.Size = new System.Drawing.Size(227, 24);
-            this.Cb_keyword.TabIndex = 3;
-            this.Cb_keyword.Text = "Recherche avec keyword";
-            this.Cb_keyword.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Recherche";
             // 
             // ViewPhoto
             // 
@@ -364,6 +370,7 @@
             this.ViewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ViewPhoto.ClickedImage = null;
             this.ViewPhoto.DisabledImage = global::Client_PM.Properties.Resources._201_spy_eyes_disable;
+            this.ViewPhoto.Enabled = false;
             this.ViewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("ViewPhoto.Image")));
             this.ViewPhoto.Location = new System.Drawing.Point(146, 42);
             this.ViewPhoto.Name = "ViewPhoto";
@@ -383,6 +390,7 @@
             this.DeletePhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DeletePhoto.ClickedImage = null;
             this.DeletePhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.DisabledImage")));
+            this.DeletePhoto.Enabled = false;
             this.DeletePhoto.Image = ((System.Drawing.Image)(resources.GetObject("DeletePhoto.Image")));
             this.DeletePhoto.Location = new System.Drawing.Point(100, 41);
             this.DeletePhoto.Name = "DeletePhoto";
@@ -402,6 +410,7 @@
             this.EditerPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.EditerPhoto.ClickedImage = null;
             this.EditerPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.DisabledImage")));
+            this.EditerPhoto.Enabled = false;
             this.EditerPhoto.Image = ((System.Drawing.Image)(resources.GetObject("EditerPhoto.Image")));
             this.EditerPhoto.Location = new System.Drawing.Point(53, 41);
             this.EditerPhoto.Name = "EditerPhoto";
@@ -421,6 +430,7 @@
             this.AddNewPhoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AddNewPhoto.ClickedImage = null;
             this.AddNewPhoto.DisabledImage = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.DisabledImage")));
+            this.AddNewPhoto.Enabled = false;
             this.AddNewPhoto.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPhoto.Image")));
             this.AddNewPhoto.Location = new System.Drawing.Point(7, 41);
             this.AddNewPhoto.Name = "AddNewPhoto";
@@ -445,6 +455,7 @@
             this.PhotoBrowser.SelectedPhoto = null;
             this.PhotoBrowser.Size = new System.Drawing.Size(1347, 518);
             this.PhotoBrowser.TabIndex = 0;
+            this.PhotoBrowser.SelectedChanged += new PhotoManagerClient.PhotosBrowser.SelectedChangedHandler(this.PhotoBrowser_SelectedChanged);
             // 
             // flashButton5
             // 
@@ -598,7 +609,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ToolStripMenuItem blacklistToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem slideShowToolStripMenuItem;
-        private System.Windows.Forms.CheckBox Cb_keyword;
+        private System.Windows.Forms.Label label1;
     }
 }
 

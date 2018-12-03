@@ -80,6 +80,7 @@
             this.IBX_photo.Size = new System.Drawing.Size(218, 125);
             this.IBX_photo.TabIndex = 6;
             this.IBX_photo.TabStop = false;
+            this.IBX_photo.Click += new System.EventHandler(this.IBX_photo_Click);
             // 
             // LB_Nom
             // 
@@ -90,6 +91,7 @@
             this.LB_Nom.Size = new System.Drawing.Size(45, 20);
             this.LB_Nom.TabIndex = 5;
             this.LB_Nom.Text = "Nom";
+            this.LB_Nom.Click += new System.EventHandler(this.LB_Nom_Click);
             // 
             // LB_X
             // 

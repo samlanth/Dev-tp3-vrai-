@@ -52,7 +52,9 @@ namespace Client_PM
             {
                 // Obtenir la photo du service
                 Photo photo = DBPhotosWebServices.GetPhoto(photoId);
+                //Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1).ToList());
                 //Photo photo = PhotoPool.Where(p => p.Id == photoId).First<Photo>();
+                //Photo photo = PhotoPool.Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1);
                 if (photo != null)
                 {
                     if (bl.IndexOf(photo.OwnerId) == -1)
@@ -105,7 +107,7 @@ namespace Client_PM
         }
         private void Next()
         {
-            if (PhotosOrder.Count() > 0)
+            if (PhotosOrder.Count() > 2)
             {
                 // Régler l'image de fond avec la prochaine photo
                 this.BackgroundImage = Slides[PhotosOrder[Current_PhotosOrder_Index]].GetOriginalImage();

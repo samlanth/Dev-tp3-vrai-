@@ -44,6 +44,7 @@
             this.LBOX_Usager.Name = "LBOX_Usager";
             this.LBOX_Usager.Size = new System.Drawing.Size(120, 160);
             this.LBOX_Usager.TabIndex = 0;
+            this.LBOX_Usager.SelectedIndexChanged += new System.EventHandler(this.LBOX_Usager_SelectedIndexChanged);
             // 
             // LBOX_Blacklist
             // 
@@ -52,6 +53,7 @@
             this.LBOX_Blacklist.Name = "LBOX_Blacklist";
             this.LBOX_Blacklist.Size = new System.Drawing.Size(120, 160);
             this.LBOX_Blacklist.TabIndex = 1;
+            this.LBOX_Blacklist.SelectedIndexChanged += new System.EventHandler(this.LBOX_Blacklist_SelectedIndexChanged);
             // 
             // LB_Usager
             // 
@@ -73,6 +75,7 @@
             // 
             // BT_Droite
             // 
+            this.BT_Droite.Enabled = false;
             this.BT_Droite.Location = new System.Drawing.Point(217, 90);
             this.BT_Droite.Name = "BT_Droite";
             this.BT_Droite.Size = new System.Drawing.Size(125, 30);
@@ -83,6 +86,7 @@
             // 
             // BT_Gauche
             // 
+            this.BT_Gauche.Enabled = false;
             this.BT_Gauche.Location = new System.Drawing.Point(217, 141);
             this.BT_Gauche.Name = "BT_Gauche";
             this.BT_Gauche.Size = new System.Drawing.Size(125, 30);

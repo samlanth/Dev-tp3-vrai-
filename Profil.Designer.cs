@@ -65,6 +65,7 @@
             this.BTN_Change.TabIndex = 14;
             this.BTN_Change.Text = "Changer";
             this.BTN_Change.UseVisualStyleBackColor = true;
+            this.BTN_Change.Click += new System.EventHandler(this.BTN_Change_Click);
             // 
             // BTN_Cancel
             // 
@@ -182,6 +183,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Profil";
             this.Text = "Changer Profil";
+            this.Load += new System.EventHandler(this.Profil_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IBX_Avatar)).EndInit();

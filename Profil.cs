@@ -36,5 +36,21 @@ namespace Client_PM
                 Close();
             }
         }
+
+        private void Profil_Load(object sender, EventArgs e)
+        {
+            TBX_Password.Text = User.Password;
+            TBX_Username.Text = User.Name;
+            TBX_VerifyPassword.Text = User.Password;
+            IBX_Avatar.BackgroundImage = User.GetAvatarOriginalImage();
+        }
+
+        private void BTN_Change_Click(object sender, EventArgs e)
+        {
+            User.Name = TBX_Username.Text;
+            User.Password = TBX_Password.Text;
+            User.SetAvatarImage(IBX_Avatar.BackgroundImage);
+            DBPhotosWebServices.UpdateUser(User);
+        }
     }
 }

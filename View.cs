@@ -34,7 +34,8 @@ namespace Client_PM
             IBX_photo.BackgroundImage = photo.GetOriginalImage();
             TB_Left.Text = photo.GetOriginalImage().Width.ToString();
             TB_right.Text = photo.GetOriginalImage().Height.ToString();
-            LB_Nom.Text = User.Name;
+            User u = DBPhotosWebServices.GetUser(photo.OwnerId);
+            LB_Nom.Text = u.Name;
             if (photo.Shared)
                 LB_Shared.Text = "Shared";
             else
@@ -49,6 +50,16 @@ namespace Client_PM
         private void BTN_Fermer_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LB_Nom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IBX_photo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

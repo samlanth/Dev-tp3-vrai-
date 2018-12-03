@@ -52,8 +52,9 @@ namespace Client_PM
         private void LoadPhoto()
         {
             WaitSplash.Show(this, "Loading photos from server...");
-            PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Black_Liste.IndexOf(P.OwnerId)==-1).ToList());
-           // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Black_Liste.IndexOf(P.OwnerId)==-1).ToList());
+            // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1).ToList());
             WaitSplash.Hide();
         }
 
@@ -132,6 +133,8 @@ namespace Client_PM
         {
             if (Logged_User != null)
             {
+                AddNewPhoto.Enabled = true;
+                AddNewPhoto.BackgroundImage = Properties.Resources.ICON_Add_Neutral;
                 Text = "Photo Manager Client application -" + Logged_User.Name;
                 PhotoFilter = new PhotoFilter(Logged_User.Id);
                 Init_UsersList();
@@ -142,6 +145,7 @@ namespace Client_PM
             }
             else
             {
+                AddNewPhoto.Enabled = false;
                 CBX_UsersList.Items.Clear();
                 CBX_Keywords.Items.Clear();
                 PhotoBrowser.Clear();
@@ -162,7 +166,7 @@ namespace Client_PM
 
         private void MI_Account_Profil_Click(object sender, EventArgs e)
         {
-            DLG_Account dlg = new DLG_Account();
+            Profil dlg = new Profil();
             dlg.User = Logged_User;
             if (dlg.ShowDialog() == DialogResult.OK)
             {
@@ -217,7 +221,9 @@ namespace Client_PM
             //EditerPhoto.Enabled = false;
             //ViewPhoto.Enabled = false;
             //DeletePhoto.Enabled = false;
-
+            this.Refresh();
+            PhotoBrowser.Refresh();
+            
             ToolTip toolTipFlash = new ToolTip();
 
             toolTipFlash.SetToolTip(AddNewPhoto, "Ajouter une photo");
@@ -335,6 +341,7 @@ namespace Client_PM
             {
 
                 Black_Liste = dlg.Black_Liste;
+                LoadPhoto();
             }
         }
 
@@ -345,6 +352,113 @@ namespace Client_PM
             if (dlg.ShowDialog() == DialogResult.OK)
             {
 
+            }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PhotoBrowser_SelectedChanged(object sender, EventArgs e)
+        {
+            if (PhotoBrowser.SelectedPhoto != null)
+            {
+                EditerPhoto.Enabled = true;
+                EditerPhoto.BackgroundImage = Properties.Resources.ICON_Editer_Neutre;
+                DeletePhoto.Enabled = true;
+                DeletePhoto.BackgroundImage = Properties.Resources.ICON_Delete_Neutral;
+                ViewPhoto.Enabled = true;
+                ViewPhoto.BackgroundImage = Properties.Resources._201_spy_eyes;
+                if (PhotoBrowser.SelectedPhoto.OwnerId != Logged_User.Id)
+                {
+                    EditerPhoto.Enabled = false;
+                    DeletePhoto.Enabled = false;
+                }
+            }
+            else
+            {
+                EditerPhoto.Enabled = false;
+                DeletePhoto.Enabled = false;
+                ViewPhoto.Enabled = false;
+            }
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                PhotoFilter.SetUserFilter(true, true, 0);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+            else
+            {
+                PhotoFilter.SetUserFilter(false, true, 0);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                PhotoFilter.SetDateFilter(true, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+            else
+            {
+                PhotoFilter.SetDateFilter(false, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                PhotoFilter.SetDateFilter(true, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+            else
+            {
+                PhotoFilter.SetDateFilter(false, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                PhotoFilter.SetDateFilter(true, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
+            }
+            else
+            {
+                PhotoFilter.SetDateFilter(false, dateTimePicker1.Value, dateTimePicker2.Value);
+                LoadPhoto();
+                PhotoBrowser.SelectNext();
+                PhotoBrowser.Focus();
             }
         }
     }

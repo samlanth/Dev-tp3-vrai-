@@ -70,22 +70,35 @@ namespace Client_PM
 
         private void BT_Droite_Click(object sender, EventArgs e)
         {
-            LBOX_Blacklist.Items.Add(LBOX_Usager.SelectedItem);
-            LBOX_Usager.Items.RemoveAt(LBOX_Usager.SelectedIndex);
+            if (LBOX_Usager.SelectedIndex < 0)
+            {
+                MessageBox.Show("Veuillez choisir un usager");
+            }
+            else
+            {
+                LBOX_Blacklist.Items.Add(LBOX_Usager.SelectedItem);
+                //Black_Liste.Add(DBPhotosWebServices.GetUser.(LBOX_Usager.SelectedItem.ToString());
+                Black_Liste.Add(LBOX_Usager.SelectedIndex);
+                LBOX_Usager.Items.RemoveAt(LBOX_Usager.SelectedIndex);
+            }
+
             this.Refresh();
         }
 
         private void BT_Gauche_Click(object sender, EventArgs e)
         {
-            LBOX_Usager.Items.Add(LBOX_Blacklist.SelectedItem);
-            int b = Black_Liste.Count;
-            Black_Liste.RemoveAt(LBOX_Blacklist.SelectedIndex);
-            int a = Black_Liste.Count;
-            //Properties.Settings.Default.Black_List_save.RemoveAt(LBOX_Blacklist.SelectedIndex);
-            //int a =  Properties.Settings.Default.Black_List_save.Count;
-            LBOX_Blacklist.Items.RemoveAt(LBOX_Blacklist.SelectedIndex);
-            Save_settings();
-            this.Refresh();
+            if (LBOX_Blacklist.SelectedIndex < 0)
+            {
+                MessageBox.Show("Veuillez choisir un usager");
+            }
+            else
+            {
+                LBOX_Usager.Items.Add(LBOX_Blacklist.SelectedItem);
+                Black_Liste.RemoveAt(LBOX_Blacklist.SelectedIndex);
+                LBOX_Blacklist.Items.RemoveAt(LBOX_Blacklist.SelectedIndex);
+                Save_settings();
+                this.Refresh();
+            }
         }
         
 
@@ -97,6 +110,7 @@ namespace Client_PM
                 Black_Liste.Add(user.Id);
             }
             Save_settings();
+            
         }
         private void SaveBlackList()
         {
@@ -122,6 +136,34 @@ namespace Client_PM
             SaveBlackList();
             
            // Properties.Settings.Default.Save();
+        }
+
+        private void LBOX_Blacklist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (LBOX_Blacklist.SelectedIndex >= 0)
+            {
+                BT_Gauche.Enabled = true;
+                BT_Droite.Enabled = false;
+            }
+            else
+            {
+                // BT_Droite.Enabled = true;
+                BT_Gauche.Enabled = false;
+            }
+        }
+
+        private void LBOX_Usager_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (LBOX_Usager.SelectedIndex >= 0)
+            {
+                BT_Gauche.Enabled = false;
+                BT_Droite.Enabled = true;
+            }
+            else
+            {
+                BT_Droite.Enabled = false;
+                // BT_Gauche.Enabled = true;
+            }
         }
     }
 }
