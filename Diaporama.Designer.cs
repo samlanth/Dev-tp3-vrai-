@@ -66,6 +66,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Diaporama";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diaporama";
             this.Load += new System.EventHandler(this.Diaporama_Load);
             this.Shown += new System.EventHandler(this.Diaporama_Shown);

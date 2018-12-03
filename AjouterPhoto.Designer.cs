@@ -47,33 +47,33 @@
             // 
             // TB_title
             // 
-            this.TB_title.Location = new System.Drawing.Point(133, 34);
+            this.TB_title.Location = new System.Drawing.Point(25, 33);
             this.TB_title.Margin = new System.Windows.Forms.Padding(5);
             this.TB_title.Name = "TB_title";
-            this.TB_title.Size = new System.Drawing.Size(354, 26);
+            this.TB_title.Size = new System.Drawing.Size(210, 26);
             this.TB_title.TabIndex = 0;
             // 
             // TB_keyword
             // 
-            this.TB_keyword.Location = new System.Drawing.Point(135, 274);
+            this.TB_keyword.Location = new System.Drawing.Point(25, 147);
             this.TB_keyword.Margin = new System.Windows.Forms.Padding(5);
             this.TB_keyword.Name = "TB_keyword";
-            this.TB_keyword.Size = new System.Drawing.Size(354, 26);
+            this.TB_keyword.Size = new System.Drawing.Size(210, 26);
             this.TB_keyword.TabIndex = 2;
             // 
             // RTBX_description
             // 
-            this.RTBX_description.Location = new System.Drawing.Point(135, 128);
+            this.RTBX_description.Location = new System.Drawing.Point(25, 213);
             this.RTBX_description.Margin = new System.Windows.Forms.Padding(5);
             this.RTBX_description.Name = "RTBX_description";
-            this.RTBX_description.Size = new System.Drawing.Size(354, 122);
+            this.RTBX_description.Size = new System.Drawing.Size(210, 122);
             this.RTBX_description.TabIndex = 3;
             this.RTBX_description.Text = "";
             // 
             // LB_title
             // 
             this.LB_title.AutoSize = true;
-            this.LB_title.Location = new System.Drawing.Point(20, 34);
+            this.LB_title.Location = new System.Drawing.Point(21, 9);
             this.LB_title.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LB_title.Name = "LB_title";
             this.LB_title.Size = new System.Drawing.Size(45, 20);
@@ -83,7 +83,7 @@
             // LB_Date
             // 
             this.LB_Date.AutoSize = true;
-            this.LB_Date.Location = new System.Drawing.Point(20, 78);
+            this.LB_Date.Location = new System.Drawing.Point(21, 64);
             this.LB_Date.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LB_Date.Name = "LB_Date";
             this.LB_Date.Size = new System.Drawing.Size(48, 20);
@@ -93,7 +93,7 @@
             // LB_Description
             // 
             this.LB_Description.AutoSize = true;
-            this.LB_Description.Location = new System.Drawing.Point(20, 128);
+            this.LB_Description.Location = new System.Drawing.Point(21, 188);
             this.LB_Description.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LB_Description.Name = "LB_Description";
             this.LB_Description.Size = new System.Drawing.Size(100, 20);
@@ -103,7 +103,7 @@
             // LB_Keywords
             // 
             this.LB_Keywords.AutoSize = true;
-            this.LB_Keywords.Location = new System.Drawing.Point(20, 274);
+            this.LB_Keywords.Location = new System.Drawing.Point(21, 122);
             this.LB_Keywords.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LB_Keywords.Name = "LB_Keywords";
             this.LB_Keywords.Size = new System.Drawing.Size(85, 20);
@@ -113,7 +113,7 @@
             // CB_Shared
             // 
             this.CB_Shared.AutoSize = true;
-            this.CB_Shared.Location = new System.Drawing.Point(20, 197);
+            this.CB_Shared.Location = new System.Drawing.Point(149, 184);
             this.CB_Shared.Margin = new System.Windows.Forms.Padding(5);
             this.CB_Shared.Name = "CB_Shared";
             this.CB_Shared.Size = new System.Drawing.Size(86, 24);
@@ -123,10 +123,10 @@
             // 
             // BT_exit
             // 
-            this.BT_exit.Location = new System.Drawing.Point(188, 597);
+            this.BT_exit.Location = new System.Drawing.Point(393, 345);
             this.BT_exit.Margin = new System.Windows.Forms.Padding(5);
             this.BT_exit.Name = "BT_exit";
-            this.BT_exit.Size = new System.Drawing.Size(137, 48);
+            this.BT_exit.Size = new System.Drawing.Size(112, 35);
             this.BT_exit.TabIndex = 9;
             this.BT_exit.Text = "Cancel";
             this.BT_exit.UseVisualStyleBackColor = true;
@@ -134,10 +134,10 @@
             // 
             // BT_Rotate
             // 
-            this.BT_Rotate.Location = new System.Drawing.Point(25, 597);
+            this.BT_Rotate.Location = new System.Drawing.Point(271, 345);
             this.BT_Rotate.Margin = new System.Windows.Forms.Padding(5);
             this.BT_Rotate.Name = "BT_Rotate";
-            this.BT_Rotate.Size = new System.Drawing.Size(137, 48);
+            this.BT_Rotate.Size = new System.Drawing.Size(112, 35);
             this.BT_Rotate.TabIndex = 10;
             this.BT_Rotate.Text = "Rotate";
             this.BT_Rotate.UseVisualStyleBackColor = true;
@@ -146,10 +146,10 @@
             // BT_add
             // 
             this.BT_add.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.BT_add.Location = new System.Drawing.Point(353, 595);
+            this.BT_add.Location = new System.Drawing.Point(25, 345);
             this.BT_add.Margin = new System.Windows.Forms.Padding(5);
             this.BT_add.Name = "BT_add";
-            this.BT_add.Size = new System.Drawing.Size(137, 48);
+            this.BT_add.Size = new System.Drawing.Size(112, 35);
             this.BT_add.TabIndex = 11;
             this.BT_add.Text = "Create";
             this.BT_add.UseVisualStyleBackColor = true;
@@ -157,10 +157,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(135, 88);
+            this.dateTimePicker1.Location = new System.Drawing.Point(25, 91);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(352, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(210, 26);
             this.dateTimePicker1.TabIndex = 13;
             // 
             // IBX_photo
@@ -171,12 +171,12 @@
             this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_photo.ImportImageText = "Import image from file...";
-            this.IBX_photo.Location = new System.Drawing.Point(25, 331);
+            this.IBX_photo.Location = new System.Drawing.Point(271, 33);
             this.IBX_photo.Margin = new System.Windows.Forms.Padding(5);
             this.IBX_photo.Name = "IBX_photo";
             this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_photo.PasteMenuText = "Paste image from clipboard";
-            this.IBX_photo.Size = new System.Drawing.Size(464, 254);
+            this.IBX_photo.Size = new System.Drawing.Size(236, 302);
             this.IBX_photo.TabIndex = 12;
             this.IBX_photo.TabStop = false;
             // 
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 660);
+            this.ClientSize = new System.Drawing.Size(523, 398);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.IBX_photo);
             this.Controls.Add(this.BT_add);
@@ -199,8 +199,13 @@
             this.Controls.Add(this.TB_keyword);
             this.Controls.Add(this.TB_title);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(539, 437);
+            this.MinimumSize = new System.Drawing.Size(539, 437);
             this.Name = "AjouterPhoto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ajouter Une Photo";
             this.Load += new System.EventHandler(this.AjouterPhoto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IBX_photo)).EndInit();

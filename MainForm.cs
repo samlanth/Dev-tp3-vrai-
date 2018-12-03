@@ -133,6 +133,7 @@ namespace Client_PM
         {
             if (Logged_User != null)
             {
+                blacklistToolStripMenuItem.Enabled = true;
                 AddNewPhoto.Enabled = true;
                 AddNewPhoto.BackgroundImage = Properties.Resources.ICON_Add_Neutral;
                 Text = "Photo Manager Client application -" + Logged_User.Name;
@@ -145,6 +146,7 @@ namespace Client_PM
             }
             else
             {
+                blacklistToolStripMenuItem.Enabled = false;
                 AddNewPhoto.Enabled = false;
                 CBX_UsersList.Items.Clear();
                 CBX_Keywords.Items.Clear();

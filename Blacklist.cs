@@ -51,6 +51,8 @@ namespace Client_PM
         private void Blacklist_Load(object sender, EventArgs e)
         {
             Load_Settings();
+            this.ControlBox = false;
+            this.Text = "  ";
             Black_Liste = new List<int>();
             int ab = Black_Liste.Count();
             int aab = User.GetAllUsers().Count();

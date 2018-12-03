@@ -23,6 +23,8 @@ namespace Client_PM
         }
         private void DLG_Account_Load(object sender, EventArgs e)
         {
+            this.ControlBox = false;
+            this.Text = "  ";
             ValidationProvider = new ValidationProvider(this, SubmitTask);
             ValidationProvider.AddControlToValidate(TBX_Username, Validate_TBX_Username, Validate_TBX_Username_OnSubmit);
             ValidationProvider.AddControlToValidate(TBX_Password, Validate_TBX_Password);

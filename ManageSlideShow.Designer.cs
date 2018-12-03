@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(469, 440);
             this.Controls.Add(this.FLPN_Photos);
             this.Name = "ManageSlideShow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageSlideShow";
             this.Shown += new System.EventHandler(this.ManageSlideShow_Shown);
             this.ResumeLayout(false);

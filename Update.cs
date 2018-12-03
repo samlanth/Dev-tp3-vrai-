@@ -43,6 +43,8 @@ namespace Client_PM
         private void Update_Load(object sender, EventArgs e)
         {
             User_To_DLG();
+            this.ControlBox = false;
+            this.Text = "  ";
             ValidationProvider = new ValidationProvider(this, SubmitTask);
             ValidationProvider.AddControlToValidate(TB_title, Validate_TB_title);
             ValidationProvider.AddControlToValidate(IBX_photo, Validate_IBX_Avatar);

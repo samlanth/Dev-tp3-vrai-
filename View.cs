@@ -45,6 +45,8 @@ namespace Client_PM
         private void View_Load(object sender, EventArgs e)
         {
             User_To_DLG();
+            this.ControlBox = false;
+            this.Text = "  ";
         }
 
         private void BTN_Fermer_Click(object sender, EventArgs e)

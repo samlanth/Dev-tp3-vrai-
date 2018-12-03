@@ -39,6 +39,8 @@ namespace Client_PM
 
         private void Profil_Load(object sender, EventArgs e)
         {
+            this.ControlBox = false;
+            this.Text = "  ";
             TBX_Password.Text = User.Password;
             TBX_Username.Text = User.Name;
             TBX_VerifyPassword.Text = User.Password;

@@ -114,7 +114,7 @@
             this.MS_Account.Location = new System.Drawing.Point(0, 0);
             this.MS_Account.Name = "MS_Account";
             this.MS_Account.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.MS_Account.Size = new System.Drawing.Size(1370, 24);
+            this.MS_Account.Size = new System.Drawing.Size(848, 24);
             this.MS_Account.TabIndex = 2;
             this.MS_Account.Text = "menuStrip1";
             this.MS_Account.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MS_Account_ItemClicked);
@@ -199,6 +199,7 @@
             // 
             // blacklistToolStripMenuItem
             // 
+            this.blacklistToolStripMenuItem.Enabled = false;
             this.blacklistToolStripMenuItem.Name = "blacklistToolStripMenuItem";
             this.blacklistToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.blacklistToolStripMenuItem.Text = "Blacklist";
@@ -253,6 +254,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox5.Controls.Add(this.dateTimePicker2);
             this.groupBox5.Controls.Add(this.dateTimePicker1);
             this.groupBox5.Controls.Add(this.checkBox3);
@@ -388,10 +390,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PhotoBrowser.Location = new System.Drawing.Point(13, 138);
+            this.PhotoBrowser.MaximumSize = new System.Drawing.Size(824, 600);
+            this.PhotoBrowser.MinimumSize = new System.Drawing.Size(824, 411);
             this.PhotoBrowser.Name = "PhotoBrowser";
             this.PhotoBrowser.Placement = PhotoManagerClient.PhotoBrowserPlacement.Left;
             this.PhotoBrowser.SelectedPhoto = null;
-            this.PhotoBrowser.Size = new System.Drawing.Size(1347, 518);
+            this.PhotoBrowser.Size = new System.Drawing.Size(824, 411);
             this.PhotoBrowser.TabIndex = 0;
             this.PhotoBrowser.SelectedChanged += new PhotoManagerClient.PhotosBrowser.SelectedChangedHandler(this.PhotoBrowser_SelectedChanged);
             // 
@@ -474,7 +478,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 572);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(848, 561);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -485,8 +490,11 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.MS_Account;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1139, 611);
+            this.MaximumSize = new System.Drawing.Size(864, 600);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(864, 600);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Photo manager client application";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
@@ -505,8 +513,6 @@
         }
 
         #endregion
-
-        private PhotoManagerClient.PhotosBrowser PhotoBrowser;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MenuStrip MS_Account;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
@@ -541,6 +547,7 @@
         private System.Windows.Forms.ToolStripMenuItem blacklistToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem slideShowToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private PhotoManagerClient.PhotosBrowser PhotoBrowser;
     }
 }
 

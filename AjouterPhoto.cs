@@ -55,6 +55,8 @@ namespace Client_PM
         }
         private void AjouterPhoto_Load(object sender, EventArgs e)
         {
+            this.ControlBox = false;
+            this.Text = "  ";
             ValidationProvider = new ValidationProvider(this, SubmitTask);
             ValidationProvider.AddControlToValidate(TB_title, Validate_TB_title);
             ValidationProvider.AddControlToValidate(IBX_photo, Validate_IBX_Avatar);

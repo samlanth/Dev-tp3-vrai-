@@ -40,7 +40,7 @@
             // LBOX_Usager
             // 
             this.LBOX_Usager.FormattingEnabled = true;
-            this.LBOX_Usager.Location = new System.Drawing.Point(91, 55);
+            this.LBOX_Usager.Location = new System.Drawing.Point(12, 42);
             this.LBOX_Usager.Name = "LBOX_Usager";
             this.LBOX_Usager.Size = new System.Drawing.Size(120, 160);
             this.LBOX_Usager.TabIndex = 0;
@@ -49,7 +49,7 @@
             // LBOX_Blacklist
             // 
             this.LBOX_Blacklist.FormattingEnabled = true;
-            this.LBOX_Blacklist.Location = new System.Drawing.Point(348, 55);
+            this.LBOX_Blacklist.Location = new System.Drawing.Point(269, 42);
             this.LBOX_Blacklist.Name = "LBOX_Blacklist";
             this.LBOX_Blacklist.Size = new System.Drawing.Size(120, 160);
             this.LBOX_Blacklist.TabIndex = 1;
@@ -58,27 +58,29 @@
             // LB_Usager
             // 
             this.LB_Usager.AutoSize = true;
-            this.LB_Usager.Location = new System.Drawing.Point(88, 20);
+            this.LB_Usager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Usager.Location = new System.Drawing.Point(12, 9);
             this.LB_Usager.Name = "LB_Usager";
-            this.LB_Usager.Size = new System.Drawing.Size(41, 13);
+            this.LB_Usager.Size = new System.Drawing.Size(67, 20);
             this.LB_Usager.TabIndex = 2;
             this.LB_Usager.Text = "Usager";
             // 
             // LB_Blacklist
             // 
             this.LB_Blacklist.AutoSize = true;
-            this.LB_Blacklist.Location = new System.Drawing.Point(345, 20);
+            this.LB_Blacklist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_Blacklist.Location = new System.Drawing.Point(265, 9);
             this.LB_Blacklist.Name = "LB_Blacklist";
-            this.LB_Blacklist.Size = new System.Drawing.Size(46, 13);
+            this.LB_Blacklist.Size = new System.Drawing.Size(76, 20);
             this.LB_Blacklist.TabIndex = 3;
             this.LB_Blacklist.Text = "Blacklist";
             // 
             // BT_Droite
             // 
             this.BT_Droite.Enabled = false;
-            this.BT_Droite.Location = new System.Drawing.Point(217, 90);
+            this.BT_Droite.Location = new System.Drawing.Point(138, 42);
             this.BT_Droite.Name = "BT_Droite";
-            this.BT_Droite.Size = new System.Drawing.Size(125, 30);
+            this.BT_Droite.Size = new System.Drawing.Size(125, 29);
             this.BT_Droite.TabIndex = 4;
             this.BT_Droite.Text = "--->";
             this.BT_Droite.UseVisualStyleBackColor = true;
@@ -87,9 +89,9 @@
             // BT_Gauche
             // 
             this.BT_Gauche.Enabled = false;
-            this.BT_Gauche.Location = new System.Drawing.Point(217, 141);
+            this.BT_Gauche.Location = new System.Drawing.Point(138, 107);
             this.BT_Gauche.Name = "BT_Gauche";
-            this.BT_Gauche.Size = new System.Drawing.Size(125, 30);
+            this.BT_Gauche.Size = new System.Drawing.Size(125, 29);
             this.BT_Gauche.TabIndex = 5;
             this.BT_Gauche.Text = "<---";
             this.BT_Gauche.UseVisualStyleBackColor = true;
@@ -98,7 +100,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(444, 232);
+            this.button1.Location = new System.Drawing.Point(138, 173);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 29);
             this.button1.TabIndex = 6;
@@ -110,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 273);
+            this.ClientSize = new System.Drawing.Size(405, 217);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BT_Gauche);
             this.Controls.Add(this.BT_Droite);
@@ -118,7 +120,9 @@
             this.Controls.Add(this.LB_Usager);
             this.Controls.Add(this.LBOX_Blacklist);
             this.Controls.Add(this.LBOX_Usager);
+            this.MaximizeBox = false;
             this.Name = "Blacklist";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blacklist";
             this.Load += new System.EventHandler(this.Blacklist_Load);
             this.ResumeLayout(false);
