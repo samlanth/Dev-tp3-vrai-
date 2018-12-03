@@ -167,5 +167,17 @@ namespace Client_PM
                 // BT_Gauche.Enabled = true;
             }
         }
+
+        private void bt_reset_Click(object sender, EventArgs e)
+        {
+            LBOX_Blacklist.Items.Clear();
+            LBOX_Usager.Items.Clear();
+            foreach (User user in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
+            {
+                LBOX_Usager.Items.Add(user);
+            }
+            this.Refresh();
+            Black_Liste.Clear();
+        }
     }
 }

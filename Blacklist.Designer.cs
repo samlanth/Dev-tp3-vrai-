@@ -35,6 +35,7 @@
             this.BT_Droite = new System.Windows.Forms.Button();
             this.BT_Gauche = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.bt_reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBOX_Usager
@@ -42,7 +43,7 @@
             this.LBOX_Usager.FormattingEnabled = true;
             this.LBOX_Usager.Location = new System.Drawing.Point(12, 42);
             this.LBOX_Usager.Name = "LBOX_Usager";
-            this.LBOX_Usager.Size = new System.Drawing.Size(120, 160);
+            this.LBOX_Usager.Size = new System.Drawing.Size(120, 134);
             this.LBOX_Usager.TabIndex = 0;
             this.LBOX_Usager.SelectedIndexChanged += new System.EventHandler(this.LBOX_Usager_SelectedIndexChanged);
             // 
@@ -51,7 +52,7 @@
             this.LBOX_Blacklist.FormattingEnabled = true;
             this.LBOX_Blacklist.Location = new System.Drawing.Point(269, 42);
             this.LBOX_Blacklist.Name = "LBOX_Blacklist";
-            this.LBOX_Blacklist.Size = new System.Drawing.Size(120, 160);
+            this.LBOX_Blacklist.Size = new System.Drawing.Size(120, 134);
             this.LBOX_Blacklist.TabIndex = 1;
             this.LBOX_Blacklist.SelectedIndexChanged += new System.EventHandler(this.LBOX_Blacklist_SelectedIndexChanged);
             // 
@@ -89,7 +90,7 @@
             // BT_Gauche
             // 
             this.BT_Gauche.Enabled = false;
-            this.BT_Gauche.Location = new System.Drawing.Point(138, 107);
+            this.BT_Gauche.Location = new System.Drawing.Point(138, 77);
             this.BT_Gauche.Name = "BT_Gauche";
             this.BT_Gauche.Size = new System.Drawing.Size(125, 29);
             this.BT_Gauche.TabIndex = 5;
@@ -100,7 +101,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(138, 173);
+            this.button1.Location = new System.Drawing.Point(138, 147);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 29);
             this.button1.TabIndex = 6;
@@ -108,11 +109,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bt_reset
+            // 
+            this.bt_reset.Location = new System.Drawing.Point(138, 112);
+            this.bt_reset.Name = "bt_reset";
+            this.bt_reset.Size = new System.Drawing.Size(125, 29);
+            this.bt_reset.TabIndex = 7;
+            this.bt_reset.Text = "Reset Blacklist";
+            this.bt_reset.UseVisualStyleBackColor = true;
+            this.bt_reset.Click += new System.EventHandler(this.bt_reset_Click);
+            // 
             // Blacklist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 217);
+            this.ClientSize = new System.Drawing.Size(405, 185);
+            this.Controls.Add(this.bt_reset);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BT_Gauche);
             this.Controls.Add(this.BT_Droite);
@@ -139,5 +151,6 @@
         private System.Windows.Forms.Button BT_Droite;
         private System.Windows.Forms.Button BT_Gauche;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_reset;
     }
 }

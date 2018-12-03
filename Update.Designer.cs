@@ -82,7 +82,7 @@
             // CB_Shared
             // 
             this.CB_Shared.AutoSize = true;
-            this.CB_Shared.Location = new System.Drawing.Point(371, 10);
+            this.CB_Shared.Location = new System.Drawing.Point(181, 141);
             this.CB_Shared.Margin = new System.Windows.Forms.Padding(5);
             this.CB_Shared.Name = "CB_Shared";
             this.CB_Shared.Size = new System.Drawing.Size(86, 24);
@@ -171,12 +171,12 @@
             this.IBX_photo.ControlToolTipText = "You can either drag & drop, paste image from clipboard or choose an image file wi" +
     "th context menu.";
             this.IBX_photo.ImportImageText = "Import image from file...";
-            this.IBX_photo.Location = new System.Drawing.Point(319, 38);
+            this.IBX_photo.Location = new System.Drawing.Point(319, 14);
             this.IBX_photo.Margin = new System.Windows.Forms.Padding(5);
             this.IBX_photo.Name = "IBX_photo";
             this.IBX_photo.OpenFileDialogTitle = "Please choose image an file";
             this.IBX_photo.PasteMenuText = "Paste image from clipboard";
-            this.IBX_photo.Size = new System.Drawing.Size(201, 243);
+            this.IBX_photo.Size = new System.Drawing.Size(201, 267);
             this.IBX_photo.TabIndex = 25;
             this.IBX_photo.TabStop = false;
             // 

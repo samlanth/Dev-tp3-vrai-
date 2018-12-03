@@ -310,6 +310,7 @@ namespace Client_PM
             var confirmResult = MessageBox.Show("Are you sure to delete this item ??","Confirm Delete!!",MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
+                DBPhotosWebServices.DeletePhoto(PhotoBrowser.SelectedPhoto);
                 PhotoBrowser.DeleteSelectedPhoto();
             }
         }
