@@ -24,6 +24,11 @@ namespace Client_PM
 
         private void DLG_Login_Load(object sender, EventArgs e)
         {
+            if(CB_REMBEMBER.Checked)
+            {
+                TBX_Password.Text = Properties.Settings.Default.UserName;
+                TBX_UserName.Text = Properties.Settings.Default.Password;
+            }
             ValidationProvider = new ValidationProvider(this, Submit_Task);
             ValidationProvider.AddControlToValidate(TBX_UserName, Validate_UserName, Validate_UserName_OnSubmit);
             ValidationProvider.AddControlToValidate(TBX_Password, Validate_Password, Validate_Password_OnSubmit);
@@ -57,6 +62,12 @@ namespace Client_PM
         {
             WaitSplash.Show(this, "Login...");
             Logged_User = DBPhotosWebServices.Login(TBX_UserName.Text, TBX_Password.Text);
+            if(CB_REMBEMBER.Checked)
+            {
+                Properties.Settings.Default.Password = TBX_Password.Text;
+                Properties.Settings.Default.UserName = TBX_UserName.Text;
+                Properties.Settings.Default.Save();
+            }
             WaitSplash.Hide();
         }
 

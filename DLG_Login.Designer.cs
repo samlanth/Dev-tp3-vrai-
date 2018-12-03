@@ -35,6 +35,7 @@
             this.BTN_Cancel = new System.Windows.Forms.Button();
             this.BTN_Ok = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CB_REMBEMBER = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +96,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CB_REMBEMBER);
             this.groupBox1.Controls.Add(this.TBX_Password);
             this.groupBox1.Controls.Add(this.BTN_Cancel);
             this.groupBox1.Controls.Add(this.BTN_Ok);
@@ -107,6 +109,18 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account Information";
+            // 
+            // CB_REMBEMBER
+            // 
+            this.CB_REMBEMBER.AutoSize = true;
+            this.CB_REMBEMBER.Checked = true;
+            this.CB_REMBEMBER.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_REMBEMBER.Location = new System.Drawing.Point(222, 67);
+            this.CB_REMBEMBER.Name = "CB_REMBEMBER";
+            this.CB_REMBEMBER.Size = new System.Drawing.Size(144, 24);
+            this.CB_REMBEMBER.TabIndex = 4;
+            this.CB_REMBEMBER.Text = "Remember Me";
+            this.CB_REMBEMBER.UseVisualStyleBackColor = true;
             // 
             // DLG_Login
             // 
@@ -139,5 +153,6 @@
         private System.Windows.Forms.Button BTN_Cancel;
         private System.Windows.Forms.Button BTN_Ok;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox CB_REMBEMBER;
     }
 }

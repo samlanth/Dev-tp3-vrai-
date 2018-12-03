@@ -46,19 +46,14 @@
             this.blacklistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.slideShowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.CBX_Keywords = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BTN_Bottom = new System.Windows.Forms.Button();
-            this.BTN_Right = new System.Windows.Forms.Button();
-            this.BTN_Top = new System.Windows.Forms.Button();
-            this.BTN_Left = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.ViewPhoto = new PhotoManagerClient.FlashButton();
             this.DeletePhoto = new PhotoManagerClient.FlashButton();
             this.EditerPhoto = new PhotoManagerClient.FlashButton();
@@ -72,7 +67,6 @@
             this.groupBox1.SuspendLayout();
             this.MS_Account.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
@@ -81,9 +75,9 @@
             // 
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.CBX_UsersList);
-            this.groupBox1.Location = new System.Drawing.Point(525, 27);
+            this.groupBox1.Location = new System.Drawing.Point(390, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(305, 105);
+            this.groupBox1.Size = new System.Drawing.Size(172, 105);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Users";
@@ -92,20 +86,21 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(24, 28);
+            this.checkBox2.Location = new System.Drawing.Point(6, 36);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(248, 24);
+            this.checkBox2.Size = new System.Drawing.Size(122, 24);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Ne pas afficher mes photos";
+            this.checkBox2.Text = "Mes Photos";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // CBX_UsersList
             // 
+            this.CBX_UsersList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBX_UsersList.FormattingEnabled = true;
-            this.CBX_UsersList.Location = new System.Drawing.Point(24, 61);
+            this.CBX_UsersList.Location = new System.Drawing.Point(6, 61);
             this.CBX_UsersList.Name = "CBX_UsersList";
-            this.CBX_UsersList.Size = new System.Drawing.Size(257, 28);
+            this.CBX_UsersList.Size = new System.Drawing.Size(156, 28);
             this.CBX_UsersList.TabIndex = 0;
             this.CBX_UsersList.SelectedIndexChanged += new System.EventHandler(this.CBX_UsersList_SelectedIndexChanged);
             // 
@@ -138,28 +133,28 @@
             // MI_Account_Login
             // 
             this.MI_Account_Login.Name = "MI_Account_Login";
-            this.MI_Account_Login.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Login.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Login.Text = "Login";
             this.MI_Account_Login.Click += new System.EventHandler(this.MI_Account_Login_Click);
             // 
             // MI_Account_Profil
             // 
             this.MI_Account_Profil.Name = "MI_Account_Profil";
-            this.MI_Account_Profil.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Profil.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Profil.Text = "Profil";
             this.MI_Account_Profil.Click += new System.EventHandler(this.MI_Account_Profil_Click);
             // 
             // Mi_Account_Create
             // 
             this.Mi_Account_Create.Name = "Mi_Account_Create";
-            this.Mi_Account_Create.Size = new System.Drawing.Size(152, 22);
+            this.Mi_Account_Create.Size = new System.Drawing.Size(108, 22);
             this.Mi_Account_Create.Text = "Create";
             this.Mi_Account_Create.Click += new System.EventHandler(this.Mi_Account_Create_Click);
             // 
             // MI_Account_Exit
             // 
             this.MI_Account_Exit.Name = "MI_Account_Exit";
-            this.MI_Account_Exit.Size = new System.Drawing.Size(152, 22);
+            this.MI_Account_Exit.Size = new System.Drawing.Size(108, 22);
             this.MI_Account_Exit.Text = "Exit";
             this.MI_Account_Exit.Click += new System.EventHandler(this.MI_Account_Exit_Click);
             // 
@@ -222,78 +217,30 @@
             this.groupBox2.Controls.Add(this.CBX_Keywords);
             this.groupBox2.Location = new System.Drawing.Point(216, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(303, 105);
+            this.groupBox2.Size = new System.Drawing.Size(168, 105);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Keyword";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Recherche";
+            // 
             // CBX_Keywords
             // 
             this.CBX_Keywords.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBX_Keywords.FormattingEnabled = true;
-            this.CBX_Keywords.Location = new System.Drawing.Point(23, 61);
+            this.CBX_Keywords.Location = new System.Drawing.Point(6, 61);
             this.CBX_Keywords.Name = "CBX_Keywords";
-            this.CBX_Keywords.Size = new System.Drawing.Size(257, 28);
+            this.CBX_Keywords.Size = new System.Drawing.Size(156, 28);
             this.CBX_Keywords.TabIndex = 0;
             this.CBX_Keywords.SelectedIndexChanged += new System.EventHandler(this.CBX_Keywords_SelectedIndexChanged);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.BTN_Bottom);
-            this.groupBox3.Controls.Add(this.BTN_Right);
-            this.groupBox3.Controls.Add(this.BTN_Top);
-            this.groupBox3.Controls.Add(this.BTN_Left);
-            this.groupBox3.Location = new System.Drawing.Point(1138, 27);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 105);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Placement";
-            // 
-            // BTN_Bottom
-            // 
-            this.BTN_Bottom.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Bottom.Location = new System.Drawing.Point(162, 40);
-            this.BTN_Bottom.Name = "BTN_Bottom";
-            this.BTN_Bottom.Size = new System.Drawing.Size(34, 36);
-            this.BTN_Bottom.TabIndex = 0;
-            this.BTN_Bottom.Text = "↓";
-            this.BTN_Bottom.UseVisualStyleBackColor = true;
-            this.BTN_Bottom.Click += new System.EventHandler(this.BTN_Bottom_Click);
-            // 
-            // BTN_Right
-            // 
-            this.BTN_Right.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Right.Location = new System.Drawing.Point(109, 41);
-            this.BTN_Right.Name = "BTN_Right";
-            this.BTN_Right.Size = new System.Drawing.Size(34, 36);
-            this.BTN_Right.TabIndex = 0;
-            this.BTN_Right.Text = "→";
-            this.BTN_Right.UseVisualStyleBackColor = true;
-            this.BTN_Right.Click += new System.EventHandler(this.BTN_Right_Click);
-            // 
-            // BTN_Top
-            // 
-            this.BTN_Top.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Top.Location = new System.Drawing.Point(57, 41);
-            this.BTN_Top.Name = "BTN_Top";
-            this.BTN_Top.Size = new System.Drawing.Size(34, 36);
-            this.BTN_Top.TabIndex = 0;
-            this.BTN_Top.Text = "↑";
-            this.BTN_Top.UseVisualStyleBackColor = true;
-            this.BTN_Top.Click += new System.EventHandler(this.BTN_Top_Click);
-            // 
-            // BTN_Left
-            // 
-            this.BTN_Left.Font = new System.Drawing.Font("Bernard MT Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_Left.Location = new System.Drawing.Point(6, 39);
-            this.BTN_Left.Name = "BTN_Left";
-            this.BTN_Left.Size = new System.Drawing.Size(35, 37);
-            this.BTN_Left.TabIndex = 0;
-            this.BTN_Left.Text = "← ";
-            this.BTN_Left.UseVisualStyleBackColor = true;
-            this.BTN_Left.Click += new System.EventHandler(this.BTN_Left_Click);
             // 
             // groupBox4
             // 
@@ -309,9 +256,9 @@
             this.groupBox5.Controls.Add(this.dateTimePicker2);
             this.groupBox5.Controls.Add(this.dateTimePicker1);
             this.groupBox5.Controls.Add(this.checkBox3);
-            this.groupBox5.Location = new System.Drawing.Point(836, 27);
+            this.groupBox5.Location = new System.Drawing.Point(568, 27);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(296, 105);
+            this.groupBox5.Size = new System.Drawing.Size(268, 105);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Date interval";
@@ -354,15 +301,6 @@
             this.groupBox6.TabIndex = 1;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Commands";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Recherche";
             // 
             // ViewPhoto
             // 
@@ -537,7 +475,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 572);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -559,7 +496,6 @@
             this.MS_Account.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -581,11 +517,6 @@
         private System.Windows.Forms.ComboBox CBX_UsersList;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox CBX_Keywords;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button BTN_Bottom;
-        private System.Windows.Forms.Button BTN_Right;
-        private System.Windows.Forms.Button BTN_Top;
-        private System.Windows.Forms.Button BTN_Left;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private PhotoManagerClient.FlashButton flashButton1;
