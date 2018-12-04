@@ -101,6 +101,7 @@ namespace Client_PM
         private void Slideshow_Shown(object sender, EventArgs e)
         {
             WaitSplash.Show(this, "Loading photos from server...");
+
             photos = DBPhotosWebServices.GetAllPhotos();
             //photos = DBPhotosWebServices.GetAllPhotos().Where(p=>bl.IndexOf(p.OwnerId)==-1).ToList();
             WaitSplash.Hide();

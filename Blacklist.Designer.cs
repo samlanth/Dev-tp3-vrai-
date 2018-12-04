@@ -137,6 +137,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blacklist";
             this.Load += new System.EventHandler(this.Blacklist_Load);
+            this.Shown += new System.EventHandler(this.Blacklist_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

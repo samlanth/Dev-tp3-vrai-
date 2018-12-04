@@ -31,7 +31,6 @@ namespace Client_PM
                     int UserId = int.Parse(userId);
                     Black_Liste.Add(UserId);
                 }
-                int a = Black_Liste.Count();
             }
             
         }
@@ -40,7 +39,6 @@ namespace Client_PM
         {
             if (!Properties.Settings.Default.First_Execution)
             {
-                //LoadSlideShowList();
             }
             else
             {
@@ -54,6 +52,11 @@ namespace Client_PM
             this.ControlBox = false;
             this.Text = "  ";
             Black_Liste = new List<int>();
+            if (Properties.Settings.Default.Black_List_save == null)
+            {
+                Properties.Settings.Default.Black_List_save = new System.Collections.Specialized.StringCollection();
+            }
+
             foreach (User user in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
             {
                 LBOX_Usager.Items.Add(user);
@@ -74,8 +77,6 @@ namespace Client_PM
             else
             {
                 LBOX_Blacklist.Items.Add(LBOX_Usager.SelectedItem);
-                //Black_Liste.Add(DBPhotosWebServices.GetUser.(LBOX_Usager.SelectedItem.ToString());
-                Black_Liste.Add(LBOX_Usager.SelectedIndex);
                 LBOX_Usager.Items.RemoveAt(LBOX_Usager.SelectedIndex);
             }
 
@@ -124,8 +125,8 @@ namespace Client_PM
                     Properties.Settings.Default.Black_List_save.Add(UserId.ToString());
                 }
             }
-            int a = Black_Liste.Count();
             Properties.Settings.Default.Save();
+            
         }
         private void Save_settings()
         {
@@ -173,6 +174,10 @@ namespace Client_PM
             }
             this.Refresh();
             Black_Liste.Clear();
+        }
+
+        private void Blacklist_Shown(object sender, EventArgs e)
+        {
         }
     }
 }

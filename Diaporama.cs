@@ -44,6 +44,7 @@ namespace Client_PM
         }
         private void Diaporama_Shown(object sender, EventArgs e)
         {
+
             WaitSplash.Show(this, "Loading slide show photos...");
             Slides = new List<Photo>();
             // PhotoPool = new List<Photo>();
@@ -59,6 +60,7 @@ namespace Client_PM
                     }
                 }
             }
+            
             WaitSplash.Hide();
             // Définir l'ordre des photos
             SetPhotosOrder();

@@ -48,14 +48,33 @@ namespace Client_PM
             }
             CBX_UsersList.SelectedIndex = 0;
         }
+        private void Save_Settings()
+        {
+            Properties.Settings.Default.First_Execution = false;
+            Properties.Settings.Default.Save();
+        }
 
         private void LoadPhoto()
         {
             WaitSplash.Show(this, "Loading photos from server...");
-            // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Black_Liste.IndexOf(P.OwnerId)==-1).ToList());
-            // PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
-            PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1).ToList());
+
+            if (!Properties.Settings.Default.First_Execution)
+            {
+                if (Properties.Settings.Default.Black_List_save != null)
+                    PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1).ToList());
+                else
+                    PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            }
+            else
+            {
+                PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            }
             WaitSplash.Hide();
+            //WaitSplash.Show(this, "Loading photos from server...");
+            //// PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Black_Liste.IndexOf(P.OwnerId)==-1).ToList());
+            //// PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos());
+            //PhotoBrowser.LoadPhotos(PhotoFilter.GetPhotos().Where(P => Properties.Settings.Default.Black_List_save.IndexOf(P.OwnerId.ToString()) == -1).ToList());
+            //WaitSplash.Hide();
         }
 
 
@@ -342,7 +361,6 @@ namespace Client_PM
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-
                 Black_Liste = dlg.Black_Liste;
                 LoadPhoto();
             }
@@ -453,6 +471,11 @@ namespace Client_PM
                 PhotoBrowser.SelectNext();
                 PhotoBrowser.Focus();
             }
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Save_Settings();
         }
     }
 }
