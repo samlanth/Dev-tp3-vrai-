@@ -358,16 +358,6 @@ namespace Client_PM
             }
         }
 
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void PhotoBrowser_SelectedChanged(object sender, EventArgs e)
         {
             if (PhotoBrowser.SelectedPhoto != null)

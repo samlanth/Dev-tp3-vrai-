@@ -53,15 +53,5 @@ namespace Client_PM
         {
             this.Close();
         }
-
-        private void LB_Nom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IBX_photo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
