@@ -54,8 +54,6 @@ namespace Client_PM
             this.ControlBox = false;
             this.Text = "  ";
             Black_Liste = new List<int>();
-            int ab = Black_Liste.Count();
-            int aab = User.GetAllUsers().Count();
             foreach (User user in User.GetAllUsers().Where(p => Properties.Settings.Default.Black_List_save.IndexOf(p.Id.ToString()) == -1))
             {
                 LBOX_Usager.Items.Add(user);
@@ -65,9 +63,6 @@ namespace Client_PM
                 Black_Liste.Add(user.Id);
                 LBOX_Blacklist.Items.Add(user);
             }
-            int a = Black_Liste.Count();
-            int b = User.GetAllUsers().Count();
-            
         }
 
         private void BT_Droite_Click(object sender, EventArgs e)
