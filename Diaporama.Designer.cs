@@ -70,8 +70,6 @@
             this.Text = "Diaporama";
             this.Shown += new System.EventHandler(this.Diaporama_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Diaporama_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Diaporama_KeyPress);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Diaporama_KeyUp);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -88,20 +88,6 @@ namespace Client_PM
             }
         }
         
-        private void DLG_Slideshow_KeyDown(object sender, KeyEventArgs e)
-        {
-            switch (e.KeyCode)
-            {
-                case Keys.F1: ShowHelp(); break;
-                case Keys.F11: Toggle_FullScreen(); break;
-                case Keys.P: SlideshowTimer.Start(); break;
-                case Keys.S: SlideshowTimer.Stop(); break;
-                case Keys.R: RandomOrder = !RandomOrder; SetPhotosOrder(); break;
-                case Keys.Down: SlideshowTimer.Interval = (SlideshowTimer.Interval < 60000 ? SlideshowTimer.Interval + 250 : SlideshowTimer.Interval); break;
-                case Keys.Up: SlideshowTimer.Interval = (SlideshowTimer.Interval > 500 ? SlideshowTimer.Interval - 250 : SlideshowTimer.Interval); break;
-                case Keys.Escape: SlideshowTimer.Stop(); Close(); break;
-            }
-        }
         private void Next()
         {
             if ((PhotosOrder.Count() > 0)
@@ -166,14 +152,6 @@ namespace Client_PM
         private void helpToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             ShowHelp();
-        }
-
-        private void Diaporama_KeyUp(object sender, KeyEventArgs e)
-        {
-        }
-
-        private void Diaporama_KeyPress(object sender, KeyPressEventArgs e)
-        {
         }
 
         private void Diaporama_KeyDown(object sender, KeyEventArgs e)
